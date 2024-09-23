@@ -232,22 +232,6 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    public void SelectTarget(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out RaycastHit hit))
-            {
-                if (hit.collider != null)
-                {
-                    Debug.Log(hit.collider.gameObject.name);
-                }
-            }
-        }
-    }
-
     public void FocusTarget(InputAction.CallbackContext context)
     {
         if (context.performed)
