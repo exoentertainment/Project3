@@ -17,7 +17,7 @@ public class PlanetInfrastructure : MonoBehaviour, iInteractable
         if (Time.timeScale == 1)
         {
             Time.timeScale = 0;
-            GameObject window = (GameObject)Instantiate(Resources.Load("Planet Infrastructure Display"), GameObject.FindGameObjectWithTag("UI").transform.position, Quaternion.identity);
+            infrastructureWindow.SetActive(true);
         }
     }
 

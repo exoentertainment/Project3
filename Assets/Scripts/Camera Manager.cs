@@ -12,6 +12,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private CinemachineCamera vcam;
 
     [Header("Variables")] 
+    [SerializeField] LayerMask cameraLayerMask;
     [SerializeField] private float panSpeed;
     [SerializeField] private float rotateSpeed;
     [SerializeField] float zoomSpeed;
@@ -29,6 +30,22 @@ public class CameraManager : MonoBehaviour
     private bool isZoomingIn;
 
     int scrollDirection;
+
+    private GameObject currentFocus;
+    
+    public static CameraManager instance;
+    
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+    
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     
     private void Update()
     {
@@ -133,7 +150,7 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    void MoveCameraToFocus(RaycastHit hit)
+    public void MoveCameraToFocus(RaycastHit hit)
     {
         cameraTarget.position = cameraTarget.position - hit.collider.transform.position;
     }
@@ -238,11 +255,15 @@ public class CameraManager : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, cameraLayerMask))
             {
                 if (hit.collider != null)
                 {
-                    MoveCameraToFocus(hit);
+                    if (currentFocus != hit.collider.gameObject)
+                    {
+                        MoveCameraToFocus(hit);
+                        currentFocus = hit.collider.gameObject;
+                    }
                 }
             }
         }
