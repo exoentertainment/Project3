@@ -1,27 +1,63 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
-public class WeaponPlatformManager : MonoBehaviour, iInteractable
+public class WeaponPlatformManager : MonoBehaviour
 {
-    [Header("Components")]
-    [SerializeField] Transform[] platformTransforms;
+    [Header("Serialized Variables")] 
+    [SerializeField] private LayerMask weaponLayerMask;
     
-    [Header("Events")]
-    [SerializeField] UnityEvent onInteract;
+    public static WeaponPlatformManager instance;
     
-    //Display platform slots and bring up platform selection screen
-    public void PrimaryInteract()
+    [HideInInspector]
+    public UnityEvent enablePlatformMeshesEvent;
+    [HideInInspector]
+    public UnityEvent disablePlatformMeshesEvent;
+    
+    private void Awake()
     {
-        onInteract?.Invoke();
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    public void SecondaryInteract()
+    public void ShowWeaponPlatforms(InputAction.CallbackContext context)
     {
-        
+        if (context.performed)
+        {
+            enablePlatformMeshesEvent?.Invoke();
+        }
+        else if (context.canceled)
+        {
+            disablePlatformMeshesEvent?.Invoke();
+        }
     }
 
-    public void AddPlatform(GameObject platform)
+    public void SelectWeaponPlatform(InputAction.CallbackContext context)
     {
-        
+        if (context.performed)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, weaponLayerMask))
+            {
+                if (hit.collider != null)
+                {
+                    if (hit.collider.gameObject.TryGetComponent<iInteractable>(out iInteractable slot)) 
+                    {
+                        slot.PrimaryInteract();
+                    }
+                    else
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }

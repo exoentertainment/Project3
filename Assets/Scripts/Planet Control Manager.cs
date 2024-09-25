@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
@@ -11,8 +12,24 @@ public class PlanetControlManager : MonoBehaviour
 
     #endregion
 
-    public static UnityEvent disablePlatformMeshesEvent;
+    public static PlanetControlManager instance;
     
+    [HideInInspector]
+    public UnityEvent disablePlatformMeshesEvent;
+
+    private GameObject currentOrbitalSlot;
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void CheckPlanetInteraction(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -23,9 +40,11 @@ public class PlanetControlManager : MonoBehaviour
             {
                 if (hit.collider != null)
                 {
-                   if (hit.collider.gameObject.TryGetComponent<iInteractable>(out iInteractable interactable)) 
+                   if (hit.collider.gameObject.TryGetComponent<iInteractable>(out iInteractable slot)) 
                    {
-                        interactable.PrimaryInteract();
+                       currentOrbitalSlot = hit.collider.gameObject;
+                       //slot.PlaceWeaponPlatform();
+                        slot.PrimaryInteract();
                    }
                    else
                    {

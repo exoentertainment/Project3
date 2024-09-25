@@ -78,12 +78,12 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Focus Target",
+                    "name": "Show Weapon Slots",
                     "type": "Button",
-                    "id": "a7b93064-f378-488b-b59b-35cd32053106",
+                    "id": "ba27052e-dbea-4d49-a359-96f7e0f63129",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -178,12 +178,12 @@
                 },
                 {
                     "name": "",
-                    "id": "6e87d6b2-a0a2-4e54-af3d-255fe0508f01",
-                    "path": "<Mouse>/rightButton",
+                    "id": "06e72777-6ec5-471d-a7b5-82eabc54bbab",
+                    "path": "<Keyboard>/alt",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Focus Target",
+                    "action": "Show Weapon Slots",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

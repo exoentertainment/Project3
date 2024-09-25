@@ -1,22 +1,40 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WeaponPlatformSlot : MonoBehaviour, iInteractable
 {
+    //This holds the installed weapon platform
+    private GameObject weaponPlatform;
+
+    [SerializeField] GameObject weaponPlatformWindow;
+    
     private void Start()
     {
-        PlanetControlManager.disablePlatformMeshesEvent.AddListener(DisableMeshRenderer);
+        WeaponPlatformManager.instance.disablePlatformMeshesEvent.AddListener(DisableMeshRenderer);
+        WeaponPlatformManager.instance.enablePlatformMeshesEvent.AddListener(EnableMeshRenderer);
+        
+        Debug.Log(weaponPlatformWindow.name);
     }
 
     void DisableMeshRenderer()
     {
-        Debug.Log("Disabling mesh renderer");
         GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    void EnableMeshRenderer()
+    {
+        GetComponent<MeshRenderer>().enabled = true;
+    }
+    
+    public void PlaceWeaponPlatform()
+    {
     }
     
     public void PrimaryInteract()
     {
-        Debug.Log("Primary interact");
+        weaponPlatformWindow.SetActive(true);
+        weaponPlatformWindow.GetComponent<WeaponPlatformWindow>().AssignWeaponPlatformSlot(weaponPlatform);
     }
 
     public void SecondaryInteract()
