@@ -11,7 +11,6 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
     
     private void Start()
     {
-        // weaponPlatform = new GameObject();
         WeaponPlatformManager.instance.disablePlatformMeshesEvent.AddListener(DisableMeshRenderer);
         WeaponPlatformManager.instance.enablePlatformMeshesEvent.AddListener(EnableMeshRenderer);
     }
@@ -26,21 +25,22 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
         GetComponent<MeshRenderer>().enabled = true;
     }
     
+    //Take the weapon platform taken from the selection window and instantiate it to weaponPlatform. Then make it a child of this object
     public void PlaceWeaponPlatform(GameObject weaponPlatformObject)
     {
+        //If player is replacing an existing platform, destroy the existing one
+        if(weaponPlatform == null)
+            Destroy(weaponPlatform);
+        
         weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.identity);
         weaponPlatform.transform.SetParent(transform);
     }
     
-    public void PrimaryInteract()
+    //Pause the game and activate the weapon platform selection window. Then pass the gameobject to the selection window
+    public void Interact()
     {
         Time.timeScale = 0;
         weaponPlatformWindow.SetActive(true);
         weaponPlatformWindow.GetComponent<WeaponPlatformWindow>().AssignWeaponPlatformSlot(this.gameObject);
-    }
-
-    public void SecondaryInteract()
-    {
-        
     }
 }

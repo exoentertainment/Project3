@@ -26,6 +26,7 @@ public class WeaponPlatformManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    //Enable/disable weapon platform slot icons depending on state of key press
     public void ShowWeaponPlatforms(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -38,6 +39,7 @@ public class WeaponPlatformManager : MonoBehaviour
         }
     }
 
+    //If player clicks on a weapon platform slot, then call the interact function
     public void SelectWeaponPlatform(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -50,11 +52,7 @@ public class WeaponPlatformManager : MonoBehaviour
                 {
                     if (hit.collider.gameObject.TryGetComponent<iInteractable>(out iInteractable slot)) 
                     {
-                        slot.PrimaryInteract();
-                    }
-                    else
-                    {
-
+                        slot.Interact();
                     }
                 }
             }
