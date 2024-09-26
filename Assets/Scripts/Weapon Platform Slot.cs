@@ -7,6 +7,7 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
     //This holds the installed weapon platform
     private GameObject weaponPlatform;
 
+    [SerializeField] LayerMask OccupiedPlatformLayer;
     [SerializeField] GameObject weaponPlatformWindow;
     
     private void Start()
@@ -34,6 +35,7 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
         
         weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.identity);
         weaponPlatform.transform.SetParent(transform);
+        gameObject.layer = OccupiedPlatformLayer.value;
     }
     
     //Pause the game and activate the weapon platform selection window. Then pass the gameobject to the selection window

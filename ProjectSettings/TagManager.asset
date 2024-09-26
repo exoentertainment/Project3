@@ -15,9 +15,9 @@ TagManager:
   - UI
   - Celestial Body
   - Weapon Platform
-  - 
-  - 
-  - 
+  - Enemy
+  - Target Body
+  - Empty Weapon Platform
   - 
   - 
   - 
