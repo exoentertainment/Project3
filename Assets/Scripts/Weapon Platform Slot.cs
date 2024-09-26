@@ -11,10 +11,9 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
     
     private void Start()
     {
+        // weaponPlatform = new GameObject();
         WeaponPlatformManager.instance.disablePlatformMeshesEvent.AddListener(DisableMeshRenderer);
         WeaponPlatformManager.instance.enablePlatformMeshesEvent.AddListener(EnableMeshRenderer);
-        
-        Debug.Log(weaponPlatformWindow.name);
     }
 
     void DisableMeshRenderer()
@@ -27,14 +26,17 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
         GetComponent<MeshRenderer>().enabled = true;
     }
     
-    public void PlaceWeaponPlatform()
+    public void PlaceWeaponPlatform(GameObject weaponPlatformObject)
     {
+        weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.identity);
+        weaponPlatform.transform.SetParent(transform);
     }
     
     public void PrimaryInteract()
     {
+        Time.timeScale = 0;
         weaponPlatformWindow.SetActive(true);
-        weaponPlatformWindow.GetComponent<WeaponPlatformWindow>().AssignWeaponPlatformSlot(weaponPlatform);
+        weaponPlatformWindow.GetComponent<WeaponPlatformWindow>().AssignWeaponPlatformSlot(this.gameObject);
     }
 
     public void SecondaryInteract()
