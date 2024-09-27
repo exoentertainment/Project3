@@ -6,8 +6,7 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
 {
     //This holds the installed weapon platform
     private GameObject weaponPlatform;
-
-    [SerializeField] LayerMask OccupiedPlatformLayer;
+    
     [SerializeField] GameObject weaponPlatformWindow;
     
     private void Start()
@@ -30,12 +29,14 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
     public void PlaceWeaponPlatform(GameObject weaponPlatformObject)
     {
         //If player is replacing an existing platform, destroy the existing one
-        if(weaponPlatform == null)
+        if(weaponPlatform != null)
             Destroy(weaponPlatform);
         
-        weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.identity);
+        float newAngle = Vector3.Angle(transform.position, transform.parent.position);
+        weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.Euler(0, 90, 0));
         weaponPlatform.transform.SetParent(transform);
-        gameObject.layer = OccupiedPlatformLayer.value;
+
+        gameObject.layer = LayerMask.NameToLayer("Weapon Platform");
     }
     
     //Pause the game and activate the weapon platform selection window. Then pass the gameobject to the selection window
