@@ -11,7 +11,11 @@ public class PlatformTurretAttack : MonoBehaviour
     [Header("Prefab Object")] [SerializeField]
     GameObject projectilePrefab;
 
-    [Header("Variables")] [SerializeField] LayerMask targetLayer;
+    [Header("Components")] 
+    [SerializeField] private Transform spawnPoint;
+    
+    [Header("Variables")] 
+    [SerializeField] LayerMask targetLayer;
 
     #endregion
 
@@ -27,6 +31,7 @@ public class PlatformTurretAttack : MonoBehaviour
     {
         SearchForTarget();
         RotateTowardsTarget();
+        Fire();
     }
 
     void SearchForTarget()
@@ -63,9 +68,20 @@ public class PlatformTurretAttack : MonoBehaviour
         if(Time.timeScale == 1)
             if (target != null)
             {
-                if (Time.time - lastFireTime >= platformTurretSO.attackSpeed)
+                if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
                 {
+                    Vector3 targetVector = target.transform.position - transform.position;
+                    targetVector.Normalize();
+                    float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
+                    float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
+                    float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
+            
+                    float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
+                    float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX);
+                    float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY);
                     
+                    Instantiate(projectilePrefab, spawnPoint.position, Quaternion.Euler(newAngleX, newAngleY, newAngleZ));
+                    lastFireTime = Time.time;
                 }
             }
     }
