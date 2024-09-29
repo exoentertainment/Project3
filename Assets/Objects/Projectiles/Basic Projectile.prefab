@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 476582}
   - component: {fileID: 19862452}
   - component: {fileID: 19907392}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StretchyBit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4777,8 +4777,11 @@ GameObject:
   - component: {fileID: 19910066}
   - component: {fileID: 19854330}
   - component: {fileID: 11450336}
-  m_Layer: 0
-  m_Name: BulletRed
+  - component: {fileID: -8287591983379590672}
+  - component: {fileID: 1604927993216971902}
+  - component: {fileID: -6778462667613567412}
+  m_Layer: 11
+  m_Name: Basic Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9650,3 +9653,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomPercent: 10
+--- !u!114 &-8287591983379590672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6125d546c06eba269e333014ffac192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSO: {fileID: 11400000, guid: 10a30eb8cf04129d6b7b4ffbe26829df, type: 2}
+--- !u!65 &1604927993216971902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0424, y: 1.0424, z: 2.5224}
+  m_Center: {x: 0, y: 0, z: -0.75}
+--- !u!54 &-6778462667613567412
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177226}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

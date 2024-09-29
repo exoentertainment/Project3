@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5101994322502746449}
   - component: {fileID: 3302583761476093445}
+  - component: {fileID: 7990281232734065982}
+  - component: {fileID: 5253535308535612197}
   m_Layer: 0
   m_Name: Resource Station
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30.587807, y: 33.280785, z: -1520.402}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 798657648820523649}
@@ -35,6 +37,7 @@ Transform:
   - {fileID: 6028596988150193880}
   - {fileID: 4593311097968994817}
   - {fileID: 5103859900670074982}
+  - {fileID: 7696743047677841553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3302583761476093445
@@ -58,6 +61,79 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 150, y: 70, z: 358}
   m_Center: {x: 1, y: 0.0000076293945, z: 10}
+--- !u!54 &7990281232734065982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222582089520713646}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5253535308535612197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222582089520713646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d587fafa5e86ec01198bb7f1f2df0c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cargoShipPrefab: {fileID: 3734522196602789370, guid: 1de7f1dee9d9c8fecb6e755b26d930d9, type: 3}
+  cargoShipSpawnPoint: {fileID: 7696743047677841553}
+  resourceStationSO: {fileID: 11400000, guid: a20ffdd424ba2918fb552bbe4f8a6c00, type: 2}
+--- !u!1 &1916727308203763180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7696743047677841553}
+  m_Layer: 0
+  m_Name: Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7696743047677841553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916727308203763180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5101994322502746449}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &909691506861143402
 PrefabInstance:
   m_ObjectHideFlags: 0

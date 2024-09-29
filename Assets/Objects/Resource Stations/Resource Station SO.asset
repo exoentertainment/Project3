@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc6c9415477f1023fae1816dc1daed68, type: 3}
-  m_Name: Basic Platform
+  m_Script: {fileID: 11500000, guid: 99f4017efd992dd69b64ddc84a4c6999, type: 3}
+  m_Name: Resource Station SO
   m_EditorClassIdentifier: 
-  attackSpeed: 1
-  attackRange: 3000
+  cargoShipSpawnTime: 2

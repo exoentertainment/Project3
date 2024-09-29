@@ -240,7 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
   projectilePrefab: {fileID: 177226, guid: 25f2ab6ca58db6c92b4c053b4978e010, type: 3}
-  spawnPoint: {fileID: 6505443834119037103}
+  spawnPoints:
+  - {fileID: 6505443834119037103}
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -589,7 +590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
   projectilePrefab: {fileID: 177226, guid: 25f2ab6ca58db6c92b4c053b4978e010, type: 3}
-  spawnPoint: {fileID: 1583132811633165622}
+  spawnPoints:
+  - {fileID: 1583132811633165622}
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
