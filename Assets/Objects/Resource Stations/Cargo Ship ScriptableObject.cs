@@ -4,4 +4,5 @@ using UnityEngine;
 public class CargoShipScriptableObject : ScriptableObject
 {
     public int moveSpeed;
+    public int moveDelay;
 }

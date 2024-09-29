@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
 
         while (isFloating)
         {
-            transform.position += Vector3.forward * (moveSpeed * Time.deltaTime);
+            transform.position += transform.forward * (moveSpeed * Time.deltaTime);
             
             floatTime += Time.deltaTime;
             if (floatTime >= floatDuration)

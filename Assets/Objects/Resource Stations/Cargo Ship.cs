@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class CargoShip : MonoBehaviour
@@ -16,9 +17,11 @@ public class CargoShip : MonoBehaviour
     private GameObject originStation;
     private GameObject target;
 
+    private bool isFloating = true;
+
     private void Start()
     {
-        
+        StartCoroutine(FloatShipRoutine());
     }
 
     private void Update()
@@ -26,15 +29,16 @@ public class CargoShip : MonoBehaviour
         if (Time.timeScale == 1 && originStation != null)
         {
             Rotate();
-            Move();
+            MoveTowardsTarget();
         }
     }
 
     public void SetOriginStation(GameObject station)
     {
         originStation = station;
+        transform.rotation = originStation.transform.rotation;
         
-        FindNearestStation();
+        //FindNearestStation();
     }
 
     void FindNearestStation()
@@ -75,8 +79,45 @@ public class CargoShip : MonoBehaviour
         }
     }
     
-    void Move()
+    void MoveTowardsTarget()
     {
-        
+        if (target == null && !isFloating)
+        {
+            FindNearestStation();
+            return;
+        }
+
+        if (!isFloating)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, cargoShipSO.moveSpeed * Time.deltaTime);
+        }
+    }
+    
+    IEnumerator FloatShipRoutine()
+    {
+        float floatTime = 0;
+
+        while (isFloating)
+        {
+            transform.position += transform.forward * (cargoShipSO.moveSpeed * Time.deltaTime);
+            
+            floatTime += Time.deltaTime;
+            if (floatTime >= cargoShipSO.moveDelay)
+            {
+                isFloating = false;
+                FindNearestStation();
+            }
+
+            yield return null;
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject != originStation)
+        {
+            Debug.Log("OnCollisionEnter");
+            Destroy(gameObject);
+        }
     }
 }

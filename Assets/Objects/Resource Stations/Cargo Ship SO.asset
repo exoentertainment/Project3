@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb7c37b3e27ec99082bc3c7b34e27b6, type: 3}
   m_Name: Cargo Ship SO
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 500
+  moveDelay: 3

@@ -35,6 +35,7 @@ public class ResourceStation : MonoBehaviour
     {
         if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
         {
+
             GameObject cargoShip = Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
             cargoShip.transform.SetParent(transform.parent);
             cargoShip.GetComponent<CargoShip>().SetOriginStation(this.gameObject);

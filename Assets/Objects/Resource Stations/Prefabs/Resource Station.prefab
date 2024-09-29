@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3302583761476093445}
   - component: {fileID: 7990281232734065982}
   - component: {fileID: 5253535308535612197}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Resource Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,9 +84,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &5253535308535612197
 MonoBehaviour:
@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7696743047677841553}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +142,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5101994322502746449}
     m_Modifications:
+    - target: {fileID: -9153849201888777146, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -182,6 +186,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6128776857299454026, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -4947918131250551365, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 398950901538993621, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -189,6 +201,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
       propertyPath: m_Name
       value: Combined_Example5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2282459536620481880, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -202,6 +218,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 471d1a393d9ab714fbd2041d6dd57267, type: 2}
+    - target: {fileID: 8974515554509677942, guid: 20ce8cf323d7bd44fae3cea3aaa04f5d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -267,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4ce8fd0398acf3d4e81920b061797878, type: 3}
       propertyPath: m_Name
       value: Cylinderical_Example4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ce8fd0398acf3d4e81920b061797878, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -334,6 +358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge_Example2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1cd480928b109b54985d2575ccec5d7c, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -400,6 +428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinderical_Example4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ce8fd0398acf3d4e81920b061797878, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,6 +497,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6c7535b77b2c8cc469abf088445ea573, type: 3}
       propertyPath: m_Name
       value: Hangars_Example4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6c7535b77b2c8cc469abf088445ea573, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
