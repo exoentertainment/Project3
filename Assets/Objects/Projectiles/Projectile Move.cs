@@ -26,6 +26,14 @@ public class ProjectileMove : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (1 << other.gameObject.layer == projectileSO.targetLayer)
+        {
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+            {
+
+            }
+        }
         
+        Destroy(gameObject);
     }
 }

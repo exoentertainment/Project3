@@ -4,4 +4,5 @@ using UnityEngine;
 public class ResourceStationScriptableObject : ScriptableObject
 {
     public float cargoShipSpawnTime;
+    public int maxHealth;
 }

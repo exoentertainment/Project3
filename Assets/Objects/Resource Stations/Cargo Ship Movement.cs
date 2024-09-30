@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class CargoShip : MonoBehaviour
+public class CargoShipMovement : MonoBehaviour
 {
     #region -- Serialized Fields --
 
@@ -116,7 +116,7 @@ public class CargoShip : MonoBehaviour
     {
         if (other.gameObject != originStation)
         {
-            Debug.Log("OnCollisionEnter");
+            ResourceManager.instance.IncreaseResources(cargoShipSO.resourceAmount);
             Destroy(gameObject);
         }
     }

@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87e70fcc5f505163eb8f4a690fa839cc, type: 3}
-  m_Name: Basic Projectile
+  m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
+  m_Name: Basic Platform Health SO
   m_EditorClassIdentifier: 
-  moveSpeed: 1000
-  damage: 0
-  lifeTime: 5
-  targetLayers:
-    serializedVersion: 2
-    m_Bits: 256
+  maxHealth: 0
+  explosionPrefab: {fileID: 0}

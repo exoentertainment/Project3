@@ -38,7 +38,7 @@ public class ResourceStation : MonoBehaviour
 
             GameObject cargoShip = Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
             cargoShip.transform.SetParent(transform.parent);
-            cargoShip.GetComponent<CargoShip>().SetOriginStation(this.gameObject);
+            cargoShip.GetComponent<CargoShipMovement>().SetOriginStation(this.gameObject);
             
             lastSpawnTime = Time.time;
         }

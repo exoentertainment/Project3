@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 500
   moveDelay: 3
+  maxHealth: 0
+  resourceAmount: 5
+  explodePrefab: {fileID: 0}

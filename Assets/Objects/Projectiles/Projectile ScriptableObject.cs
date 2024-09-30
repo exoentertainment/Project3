@@ -6,4 +6,5 @@ public class IProjectileScriptableObject : ScriptableObject
     public int moveSpeed;
     public int damage;
     public float lifeTime;
+    public LayerMask targetLayer;
 }
