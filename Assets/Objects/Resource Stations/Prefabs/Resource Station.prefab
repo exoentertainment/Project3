@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587fafa5e86ec01198bb7f1f2df0c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cargoShipPrefab: {fileID: 3734522196602789370, guid: 1de7f1dee9d9c8fecb6e755b26d930d9, type: 3}
+  cargoShipPrefab: {fileID: 5516814952251588023, guid: 0cbfb596ed7adf70387d373c23245887, type: 3}
   cargoShipSpawnPoint: {fileID: 7696743047677841553}
   resourceStationSO: {fileID: 11400000, guid: a20ffdd424ba2918fb552bbe4f8a6c00, type: 2}
 --- !u!1 &1916727308203763180
@@ -128,7 +128,7 @@ Transform:
   m_GameObject: {fileID: 1916727308203763180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 153}
+  m_LocalPosition: {x: 0, y: 0, z: 147.2002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

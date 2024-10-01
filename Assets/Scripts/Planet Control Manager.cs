@@ -43,7 +43,7 @@ public class PlanetControlManager : MonoBehaviour
                    if (hit.collider.gameObject.TryGetComponent<iInteractable>(out iInteractable slot)) 
                    {
                        currentOrbitalSlot = hit.collider.gameObject;
-                       //slot.PlaceWeaponPlatform();
+                       //slot.PlaceBasicWeaponPlatform();
                         slot.Interact();
                    }
                    else

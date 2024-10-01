@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class WeaponPlatformWindow : MonoBehaviour
 {
-    [Header("Prefabs")] 
-    [SerializeField] private GameObject[] weaponPlatformsPrefabs;
+    [Header("Scriptable Objects")] 
+    [SerializeField] private PlatformScriptableObject[] weaponPlatformsSO;
     
     private GameObject weaponPlatform;
 
@@ -20,11 +20,21 @@ public class WeaponPlatformWindow : MonoBehaviour
     }
 
     //Pass the prefab of the basic platform to the platform slot for instantiation
-    public void PlaceWeaponPlatform()
+    public void PlaceBasicWeaponPlatform()
     {
         //check the prefabs scriptable object resource cost against the resource manager
-        weaponPlatform.GetComponent<WeaponPlatformSlot>().PlaceWeaponPlatform(weaponPlatformsPrefabs[(int)PlatformType.Basic]);
-        
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.Basic].resourceCost))
+        {
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.Basic].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.Basic].resourceCost);
+        }
+        else
+        {
+            //play sound
+        }
+
         CloseWindow();
     }
     

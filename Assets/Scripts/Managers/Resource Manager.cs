@@ -24,6 +24,8 @@ public class ResourceManager : MonoBehaviour
     private void Start()
     {
         resourceText.SetText("Available Resources: " + currentResources.ToString());
+        currentResources = 100;
+        resourceText.SetText("Available Resources: " + currentResources.ToString());
     }
 
     //Increase the current amount of resources by the passed parameter

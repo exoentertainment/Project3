@@ -30,7 +30,7 @@ public class ProjectileMove : MonoBehaviour
         {
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
             {
-
+                hit.TakeDamage(projectileSO.damage);
             }
         }
         

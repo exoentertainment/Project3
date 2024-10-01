@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fb7c37b3e27ec99082bc3c7b34e27b6, type: 3}
-  m_Name: Cargo Ship SO
+  m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
+  m_Name: Basic Platform SO
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  moveDelay: 1
-  maxHealth: 0
-  resourceAmount: 5
-  explodePrefab: {fileID: 0}
+  maxHealth: 1
+  resourceCost: 200
+  platformPrefab: {fileID: 2566803272482970043, guid: 21f6e6312359a61aca307461be3b4f05, type: 3}
+  explosionPrefab: {fileID: 0}

@@ -7,7 +7,7 @@ public class PlatformHealth : MonoBehaviour, IDamageable
     #region -- Serialized Fields --
 
     [Header("Scriptable Object")]
-    [SerializeField] PlatformHealthSO healthSO;
+    [SerializeField] PlatformScriptableObject healthSO;
 
     #endregion
     

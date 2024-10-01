@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
-  m_Name: Basic Platform Health SO
+  m_Script: {fileID: 11500000, guid: 718efbe744b5d71b0b4f744de49dbfc4, type: 3}
+  m_Name: Enemy SpawnerSO - light ships
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  explosionPrefab: {fileID: 0}
+  spawnTime: 2
+  enemiesPerSpawn: 1
+  enemyShipsPrefabs: []
