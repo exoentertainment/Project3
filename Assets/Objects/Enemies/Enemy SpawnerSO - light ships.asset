@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 2
   enemiesPerSpawn: 1
-  enemyShipsPrefabs: []
+  enemyShipsPrefabs:
+  - {fileID: 2200022118107289050, guid: 0d4a477da6dbab2db9f6c963ff7aa9f5, type: 3}

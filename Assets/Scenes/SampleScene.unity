@@ -1087,7 +1087,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1852091964}
         m_TargetAssemblyTypeName: WeaponPlatformWindow, Assembly-CSharp
-        m_MethodName: PlaceWeaponPlatform
+        m_MethodName: PlaceBasicWeaponPlatform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2814,18 +2814,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1905565076}
     m_Modifications:
     - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1810.4001
       objectReference: {fileID: 0}
@@ -2835,7 +2823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -860.3651
+      value: -1274.5151
       objectReference: {fileID: 0}
     - target: {fileID: 3791102177653020830, guid: c5fc7a032539f5ed4a5e73941d613740, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2964,7 +2952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7124b6711269d2f995a3ae969a7269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPlatformsSO: []
+  weaponPlatformsSO:
+  - {fileID: 11400000, guid: 9e8d8e329870dae81987784a44a16ca6, type: 2}
 --- !u!1 &1905565075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,7 +2966,7 @@ GameObject:
   - component: {fileID: 1905565077}
   m_Layer: 0
   m_Name: System Plane
-  m_TagString: Untagged
+  m_TagString: System Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

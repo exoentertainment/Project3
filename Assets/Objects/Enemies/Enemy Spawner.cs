@@ -30,8 +30,13 @@ public class EnemySpawner : MonoBehaviour
         if(Time.timeScale == 1)
             if ((Time.time - lastSpawnTime) > spawnerSO.spawnTime)
             {
-                Debug.Log("spawn enemy");
-                
+                for (int x = 0; x < spawnerSO.enemiesPerSpawn; x++)
+                {
+                    GameObject enemy = Instantiate(spawnerSO.enemyShipsPrefabs[0], spawnPoint[x].position,
+                        Quaternion.identity);
+                    enemy.transform.SetParent(transform.parent);
+                }
+
                 lastSpawnTime = Time.time;
             }
     }

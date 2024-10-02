@@ -1,7 +1,13 @@
 using UnityEngine;
 
-[CreateAssetMenu (menuName = "Enemies/Basic Platform")]
+[CreateAssetMenu (menuName = "Enemies/Basic Enemy")]
 public class EnemyScriptableObject : ScriptableObject
 {
-    public int resourceCost;
+    public int maxHealth;
+    public int moveSpeed;
+    public int turnRate;
+    public float standOffDistance;
+    public float coastDelay;
+    public LayerMask targetLayer;
+    public GameObject shipPrefab;
 }

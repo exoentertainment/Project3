@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    [Header("Scriptable Object")] 
+    [SerializeField] private EnemyScriptableObject enemySO;
     //needs eventual scriptable object to hold these serialized fields
-
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float floatDuration;
-    [SerializeField] private float turnRate;
-    [SerializeField] private float standOffDistance;
-    [SerializeField] LayerMask targetLayer;
 
     private bool isFloating = true;
     private GameObject target;
@@ -32,10 +28,10 @@ public class EnemyMovement : MonoBehaviour
 
         while (isFloating)
         {
-            transform.position += transform.forward * (moveSpeed * Time.deltaTime);
+            transform.position += transform.forward * (enemySO.moveSpeed * Time.deltaTime);
             
             floatTime += Time.deltaTime;
-            if (floatTime >= floatDuration)
+            if (floatTime >= enemySO.coastDelay)
             {
                 isFloating = false;
                 FindClosestTarget();
@@ -49,7 +45,7 @@ public class EnemyMovement : MonoBehaviour
     {
         float closestEnemy = Mathf.Infinity;
         
-        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, targetLayer);
+        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, enemySO.targetLayer);
         
         if (potentialTargets.Length > 0)
         {
@@ -77,9 +73,9 @@ public class EnemyMovement : MonoBehaviour
             float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
             float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
             
-            float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ * turnRate * Time.deltaTime);
-            float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX * turnRate * Time.deltaTime);
-            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * turnRate * Time.deltaTime);
+            float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ * enemySO.turnRate * Time.deltaTime);
+            float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX * enemySO.turnRate * Time.deltaTime);
+            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * enemySO.turnRate * Time.deltaTime);
             transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
         }
     }
@@ -94,8 +90,8 @@ public class EnemyMovement : MonoBehaviour
 
         if (!isFloating)
         {
-            if(Vector3.Distance(transform.position, target.transform.position) > standOffDistance)
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+            if(Vector3.Distance(transform.position, target.transform.position) > enemySO.standOffDistance)
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
         }
     }
 }
