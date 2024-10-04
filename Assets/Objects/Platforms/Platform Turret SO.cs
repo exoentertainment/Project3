@@ -4,5 +4,6 @@ using UnityEngine;
 public class IPlatformTurretSO : ScriptableObject
 {
     public float attackSpeed;
+    public float delayPerBarrel;
     public float attackRange;
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHealth: 1
   moveSpeed: 100
   turnRate: 360
-  standOffDistance: 0
+  standOffDistance: 1000
   coastDelay: 2
   targetLayer:
     serializedVersion: 2

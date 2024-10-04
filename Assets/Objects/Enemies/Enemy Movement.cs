@@ -69,14 +69,14 @@ public class EnemyMovement : MonoBehaviour
         {
             Vector3 targetVector = target.transform.position - transform.position;
             targetVector.Normalize();
-            float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
+            // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
+            // float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
             float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
             
-            float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ * enemySO.turnRate * Time.deltaTime);
-            float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX * enemySO.turnRate * Time.deltaTime);
+            // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ * enemySO.turnRate * Time.deltaTime);
+            // float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX * enemySO.turnRate * Time.deltaTime);
             float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * enemySO.turnRate * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
+            transform.rotation = Quaternion.Euler(0, newAngleY, 0);
         }
     }
 

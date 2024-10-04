@@ -7,4 +7,5 @@ public class IProjectileScriptableObject : ScriptableObject
     public int damage;
     public float lifeTime;
     public LayerMask targetLayer;
+    public GameObject dischargeEffectPrefab;
 }

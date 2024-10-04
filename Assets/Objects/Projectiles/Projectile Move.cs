@@ -8,6 +8,7 @@ public class ProjectileMove : MonoBehaviour
 
     private void Start()
     {
+        SpawnDischargeEffect();
         Destroy(gameObject, projectileSO.lifeTime);
     }
 
@@ -24,6 +25,11 @@ public class ProjectileMove : MonoBehaviour
         transform.position += transform.forward * (projectileSO.moveSpeed * Time.deltaTime);
     }
 
+    void SpawnDischargeEffect()
+    {
+        Instantiate(projectileSO.dischargeEffectPrefab, transform.position, transform.rotation);    
+    }
+    
     private void OnCollisionEnter(Collision other)
     {
         if (1 << other.gameObject.layer == projectileSO.targetLayer)

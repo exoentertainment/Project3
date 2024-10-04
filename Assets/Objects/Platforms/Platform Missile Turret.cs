@@ -1,10 +1,10 @@
-using System;
-using System.Collections;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.Serialization;
 
-public class PlatformTurretAttack : MonoBehaviour
+public class PlatformMissileTurret : MonoBehaviour
 {
-    #region -- Serialized Fields --
+        #region -- Serialized Fields --
 
     [Header("Scriptable Object")]
     [SerializeField] IPlatformTurretSO platformTurretSO;
@@ -14,7 +14,7 @@ public class PlatformTurretAttack : MonoBehaviour
 
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
-    [SerializeField] private Transform[] barrelTransform;
+    [FormerlySerializedAs("tubeTransform")] [SerializeField] private Transform missileTubeTransform;
     
     [Header("Variables")] 
     [SerializeField] LayerMask targetLayer;
@@ -74,42 +74,25 @@ public class PlatformTurretAttack : MonoBehaviour
                 StartCoroutine(FireRoutine());
                 
                 lastFireTime = Time.time;
-                // Vector3 targetVector = target.transform.position - transform.position;
-                // targetVector.Normalize();
-                // // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-                // // float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
-                // float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
-                //
-                // // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
-                // // float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX);
-                // float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY);
-                //
-                // foreach (Transform transform in spawnPoints)
-                // {
-                //     GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0, newAngleY, 0));
-                //     projectile.transform.SetParent(transform.parent.parent);
-                // }
-                //
-                // lastFireTime = Time.time;
             }
         }
     }
 
     IEnumerator FireRoutine()
     {
-        for (int x = 0; x < barrelTransform.Length; x++)
+        foreach (Transform spawnPoint in spawnPoints)
         {
-            Vector3 targetVector = target.transform.position - barrelTransform[x].position;
+            Vector3 targetVector = target.transform.position - spawnPoint.position;
             targetVector.Normalize();
-            float rotateAmountZ = Vector3.Cross(targetVector, barrelTransform[x].forward).z;
-            float rotateAmountX = Vector3.Cross(targetVector, barrelTransform[x].forward).x;
-            float rotateAmountY = Vector3.Cross(targetVector, barrelTransform[x].forward).y;
+            float rotateAmountZ = Vector3.Cross(targetVector, spawnPoint.forward).z;
+            float rotateAmountX = Vector3.Cross(targetVector, spawnPoint.forward).x;
+            float rotateAmountY = Vector3.Cross(targetVector, spawnPoint.forward).y;
             
-            float newAngleZ = barrelTransform[x].rotation.eulerAngles.z + (-rotateAmountZ);
-            float newAngleX = barrelTransform[x].rotation.eulerAngles.x + (-rotateAmountX);
-            float newAngleY = barrelTransform[x].rotation.eulerAngles.y + (-rotateAmountY);
+            float newAngleZ = spawnPoint.rotation.eulerAngles.z + (-rotateAmountZ);
+            float newAngleX = spawnPoint.rotation.eulerAngles.x + (-rotateAmountX);
+            float newAngleY = spawnPoint.rotation.eulerAngles.y + (-rotateAmountY);
             
-            GameObject projectile = Instantiate(projectilePrefab, spawnPoints[x].position, Quaternion.identity);
+            GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
             projectile.transform.SetParent(transform.parent.parent);
             projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
             
@@ -141,22 +124,19 @@ public class PlatformTurretAttack : MonoBehaviour
     {
         if (target != null)
         {
-            // Vector3 targetVector = target.transform.position - barrelTransform.position;
+            // Vector3 targetVector = target.transform.position - tubeTransforms.position;
             // targetVector.Normalize();
             // // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            // float rotateAmountX = Vector3.Cross(targetVector, barrelTransform.forward).x;
-            // // float rotateAmountY = Vector3.Cross(targetVector, barrelTransform.forward).y;
+            // float rotateAmountX = Vector3.Cross(targetVector, tubeTransforms.forward).x;
+            // // float rotateAmountY = Vector3.Cross(targetVector, tubeTransforms.forward).y;
             //
             // // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
-            // float newAngleX = barrelTransform.rotation.eulerAngles.x + (-rotateAmountX);
-            // // float newAngleY = barrelTransform.rotation.eulerAngles.y + (-rotateAmountY);
+            // float newAngleX = tubeTransforms.rotation.eulerAngles.x + (-rotateAmountX);
+            // // float newAngleY = tubeTransforms.rotation.eulerAngles.y + (-rotateAmountY);
             //
-            // barrelTransform.rotation = Quaternion.Euler(newAngleX, transform.rotation.eulerAngles.y, 0);
-
-            foreach (Transform barrels in barrelTransform)
-            {
-                barrels.LookAt(target.transform);
-            }
+            // tubeTransforms.rotation = Quaternion.Euler(newAngleX, transform.rotation.eulerAngles.y, 0);
+            
+            missileTubeTransform.LookAt(target.transform);
             
         }
     }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Basic Platform SO
   m_EditorClassIdentifier: 
   maxHealth: 1
-  resourceCost: 200
+  resourceCost: 100
   platformPrefab: {fileID: 2566803272482970043, guid: 21f6e6312359a61aca307461be3b4f05, type: 3}
   explosionPrefab: {fileID: 0}
