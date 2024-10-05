@@ -55,8 +55,9 @@ public class MissileMove : MonoBehaviour
         if (target != null)
         {
             transform.LookAt(target.transform);
-            transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
         }
+        
+        transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
     }
 
     void SpawnDischargeEffect()

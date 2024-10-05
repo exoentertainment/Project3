@@ -94,48 +94,73 @@ public class CameraManager : MonoBehaviour
     
     void PanCameraLeft()
     {
-        Vector3 newPos = cameraTarget.position;
-        newPos.x += panSpeed * Time.deltaTime;
+        // Vector3 newPos = cameraTarget.position;
+        // newPos.x += panSpeed * Time.deltaTime;
             
-        cameraTarget.position = newPos;
+        Vector3 newPos = vcam.transform.position;
+        newPos.x -= panSpeed * Time.deltaTime;
+        
+        vcam.transform.position = newPos;
     }
     
     void PanCameraRight()
     {
-        Vector3 newPos = cameraTarget.position;
-        newPos.x -= panSpeed * Time.deltaTime;
+        // Vector3 newPos = cameraTarget.position;
+        // newPos.x -= panSpeed * Time.deltaTime;
             
-        cameraTarget.position = newPos;
+        Vector3 newPos = vcam.transform.position;
+        newPos.x += panSpeed * Time.deltaTime;
+        
+        vcam.transform.position = newPos;
     }
     
     void PanCameraDown()
     {
-        Vector3 newPos = cameraTarget.position;
-        newPos.z += panSpeed * Time.deltaTime;
-            
-        cameraTarget.position = newPos;
+        // Vector3 newPos = cameraTarget.position;
+        // newPos.z += panSpeed * Time.deltaTime;
+        //     
+        // cameraTarget.position = newPos;
+        
+        Vector3 newPos = vcam.transform.position;
+        newPos.z -= panSpeed * Time.deltaTime;
+        //vcam.transform.Translate(newPos);
+        
+        vcam.transform.position = newPos;
     }
     
     void PanCameraUp()
     {
-        Vector3 newPos = cameraTarget.position;
-        newPos.z -= panSpeed * Time.deltaTime;
-            
-        cameraTarget.position = newPos;
+        // Vector3 newPos = cameraTarget.position;
+        // newPos.z -= panSpeed * Time.deltaTime;
+        //     
+        // cameraTarget.position = newPos;
+        
+        Vector3 newPos = vcam.transform.position;
+        newPos.z += panSpeed * Time.deltaTime;
+        
+        vcam.transform.position = newPos;
     }
 
     void RotateCameraLeft()
     {
-        float newAngle = cameraTarget.eulerAngles.y + (rotateSpeed * Time.deltaTime);
+        // float newAngle = cameraTarget.eulerAngles.y + (rotateSpeed * Time.deltaTime);
+        //
+        // cameraTarget.rotation = Quaternion.Euler(0, newAngle, 0);
         
-        cameraTarget.rotation = Quaternion.Euler(0, newAngle, 0);
+        float newAngle = vcam.transform.eulerAngles.y + (rotateSpeed * Time.deltaTime);
+        
+        vcam.transform.rotation = Quaternion.Euler(vcam.transform.rotation.eulerAngles.x, newAngle, 0);
     }
 
     void RotateCameraRight()
     {
-        float newAngle = cameraTarget.eulerAngles.y - (rotateSpeed * Time.deltaTime);
+        // float newAngle = cameraTarget.eulerAngles.y - (rotateSpeed * Time.deltaTime);
+        //
+        // cameraTarget.rotation = Quaternion.Euler(0, newAngle, 0);
         
-        cameraTarget.rotation = Quaternion.Euler(0, newAngle, 0);
+        float newAngle = vcam.transform.eulerAngles.y - (rotateSpeed * Time.deltaTime);
+        
+        vcam.transform.rotation = Quaternion.Euler(vcam.transform.rotation.eulerAngles.x, newAngle, 0);
     }
 
     void ZoomCamera()
@@ -152,7 +177,9 @@ public class CameraManager : MonoBehaviour
 
     public void MoveCameraToFocus(RaycastHit hit)
     {
-        cameraTarget.position = cameraTarget.position - hit.collider.transform.position;
+        Vector3 camOffset = new Vector3(0, 2000, -2000);
+        //cameraTarget.position = cameraTarget.position - hit.collider.transform.position;
+        vcam.transform.position = hit.collider.transform.position + camOffset;
     }
     
     #endregion
