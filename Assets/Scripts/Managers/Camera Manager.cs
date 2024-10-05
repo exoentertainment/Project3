@@ -97,10 +97,15 @@ public class CameraManager : MonoBehaviour
         // Vector3 newPos = cameraTarget.position;
         // newPos.x += panSpeed * Time.deltaTime;
             
-        Vector3 newPos = vcam.transform.position;
-        newPos.x -= panSpeed * Time.deltaTime;
+        // Vector3 newPos = vcam.transform.position;
+        // newPos.x -= panSpeed * Time.deltaTime;
+        //
+        // vcam.transform.position = newPos;
         
-        vcam.transform.position = newPos;
+        Vector3 direction = vcam.transform.right;
+        direction.y = 0;
+        direction.Normalize();
+        vcam.transform.Translate(direction * (Time.deltaTime * -panSpeed), Space.World);
     }
     
     void PanCameraRight()
@@ -108,10 +113,15 @@ public class CameraManager : MonoBehaviour
         // Vector3 newPos = cameraTarget.position;
         // newPos.x -= panSpeed * Time.deltaTime;
             
-        Vector3 newPos = vcam.transform.position;
-        newPos.x += panSpeed * Time.deltaTime;
+        // Vector3 newPos = vcam.transform.position;
+        // newPos.x += panSpeed * Time.deltaTime;
+        //
+        // vcam.transform.position = newPos;
         
-        vcam.transform.position = newPos;
+        Vector3 direction = vcam.transform.right;
+        direction.y = 0;
+        direction.Normalize();
+        vcam.transform.Translate(direction * (Time.deltaTime * panSpeed), Space.World);
     }
     
     void PanCameraDown()
@@ -121,11 +131,16 @@ public class CameraManager : MonoBehaviour
         //     
         // cameraTarget.position = newPos;
         
-        Vector3 newPos = vcam.transform.position;
-        newPos.z -= panSpeed * Time.deltaTime;
-        //vcam.transform.Translate(newPos);
+        // Vector3 newPos = vcam.transform.position;
+        // newPos.z -= panSpeed * Time.deltaTime;
+        // //vcam.transform.Translate(newPos);
+        //
+        // vcam.transform.position = newPos;
         
-        vcam.transform.position = newPos;
+        Vector3 direction = vcam.transform.forward;
+        direction.y = 0;
+        direction.Normalize();
+        vcam.transform.Translate(direction * (Time.deltaTime * -panSpeed), Space.World);
     }
     
     void PanCameraUp()
@@ -135,10 +150,20 @@ public class CameraManager : MonoBehaviour
         //     
         // cameraTarget.position = newPos;
         
-        Vector3 newPos = vcam.transform.position;
-        newPos.z += panSpeed * Time.deltaTime;
+        // Vector3 newPos = vcam.transform.position;
+        // newPos.z += panSpeed * Time.deltaTime;
+        //
+        // vcam.transform.position = newPos;
         
-        vcam.transform.position = newPos;
+        // Vector3 oldRotation = vcam.transform.eulerAngles;
+        // vcam.transform.rotation = Quaternion.Euler(0, 0, 0);
+        // vcam.transform.position += vcam.transform.forward * (zoomSpeed * Time.deltaTime);
+        // vcam.transform.rotation = Quaternion.Euler(oldRotation.x, oldRotation.y, oldRotation.z);
+        
+        Vector3 direction = vcam.transform.forward;
+        direction.y = 0;
+        direction.Normalize();
+        vcam.transform.Translate(direction * (Time.deltaTime * panSpeed), Space.World);
     }
 
     void RotateCameraLeft()

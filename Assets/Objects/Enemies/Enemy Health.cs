@@ -25,11 +25,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-
         currentHealth -= damage;
         Debug.Log(currentHealth);
-        
-        if(currentHealth <= 0)
-            Destroy(gameObject);
+
+        if (currentHealth <= 0)
+        {
+            Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(transform.root.gameObject);
+        }
     }
 }

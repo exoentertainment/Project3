@@ -10,4 +10,5 @@ public class EnemyScriptableObject : ScriptableObject
     public float coastDelay;
     public LayerMask targetLayer;
     public GameObject shipPrefab;
+    public GameObject explosionPrefab;
 }

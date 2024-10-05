@@ -82,6 +82,9 @@ public class PlatformMissileTurret : MonoBehaviour
     {
         foreach (Transform spawnPoint in spawnPoints)
         {
+            if (target == null)
+                break;
+            
             Vector3 targetVector = target.transform.position - spawnPoint.position;
             targetVector.Normalize();
             float rotateAmountZ = Vector3.Cross(targetVector, spawnPoint.forward).z;
@@ -93,8 +96,8 @@ public class PlatformMissileTurret : MonoBehaviour
             float newAngleY = spawnPoint.rotation.eulerAngles.y + (-rotateAmountY);
             
             GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-            projectile.transform.SetParent(transform.parent.parent);
-            projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
+            //projectile.transform.SetParent(transform.parent.parent);
+            //projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
             
             yield return new WaitForSeconds(platformTurretSO.delayPerBarrel);
         }

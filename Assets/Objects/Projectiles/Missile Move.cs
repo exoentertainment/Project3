@@ -48,13 +48,26 @@ public class MissileMove : MonoBehaviour
                 }
             }
         }
+        
+        Debug.Log(target.transform.position);
     }
     
     void Move()
     {
         if (target != null)
         {
-            transform.LookAt(target.transform);
+            transform.LookAt(target.transform, transform.up);
+            
+            // Vector3 targetVector = target.transform.position - transform.position;
+            // targetVector.Normalize();
+            // Vector3 rotateAmount = Vector3.Cross(targetVector, transform.forward);
+            // //engage right thruster particle system if rotateAmount is negative, and vice versa
+            // //check thruster fuel level, if there's enough then change angle
+            //
+            // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmount.z * (360 * Time.deltaTime));
+            // float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmount.x * (360 * Time.deltaTime));
+            // float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmount.y * (360 * Time.deltaTime));
+            // transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
         }
         
         transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
