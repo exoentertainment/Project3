@@ -19,6 +19,6 @@ MonoBehaviour:
   coastDelay: 2
   targetLayer:
     serializedVersion: 2
-    m_Bits: 704
+    m_Bits: 128
   shipPrefab: {fileID: 2200022118107289050, guid: 0d4a477da6dbab2db9f6c963ff7aa9f5, type: 3}
   explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}

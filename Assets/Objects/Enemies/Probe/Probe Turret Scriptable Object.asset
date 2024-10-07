@@ -9,15 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f742e8deb140546cae3c2a361c13528, type: 3}
-  m_Name: Basic Missile
+  m_Script: {fileID: 11500000, guid: da95b513894eca1b0b6233800699fcb5, type: 3}
+  m_Name: Probe Turret Scriptable Object
   m_EditorClassIdentifier: 
-  moveSpeed: 500
-  damage: 0
+  attackSpeed: 1
+  delayPerBarrel: 0.1
   attackRange: 6000
-  lifeTime: 10
+  barrelRotationSpeed: 180
+  projectilePrefab: {fileID: 177226, guid: 25f2ab6ca58db6c92b4c053b4978e010, type: 3}
   targetLayer:
     serializedVersion: 2
-    m_Bits: 256
-  dischargeEffectPrefab: {fileID: 147176, guid: 0af4eb487d774d328877fba6c59e1c6f, type: 3}
-  explodeEffectPrefab: {fileID: 1043624379182380, guid: 65f8f19ba8d539d29b4bd62a129aedd3, type: 3}
+    m_Bits: 128
