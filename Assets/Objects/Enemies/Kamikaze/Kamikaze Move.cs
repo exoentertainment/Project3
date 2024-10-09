@@ -12,6 +12,7 @@ public class KamikazeMove : MonoBehaviour
     
     private void Start()
     {
+        FindClosestTarget();
         StartCoroutine(FloatShipRoutine());
     }
 
@@ -68,12 +69,8 @@ public class KamikazeMove : MonoBehaviour
         {
             Vector3 targetVector = target.transform.position - transform.position;
             targetVector.Normalize();
-            // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            // float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
             float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
             
-            // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ * enemySO.turnRate * Time.deltaTime);
-            // float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX * enemySO.turnRate * Time.deltaTime);
             float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * enemySO.turnRate * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, newAngleY, 0);
         }
@@ -81,7 +78,7 @@ public class KamikazeMove : MonoBehaviour
 
     void MoveTowardsTarget()
     {
-        if (target == null && !isFloating)
+        if (1 << target.layer != enemySO.targetLayer && !isFloating)
         {
             FindClosestTarget();
             return;
@@ -94,7 +91,6 @@ public class KamikazeMove : MonoBehaviour
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.kamikazeSpeed * Time.deltaTime);
-                Debug.Log("kamikaze speed");
             }
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7190159723551306503}
   - component: {fileID: 7272371475275823739}
   - component: {fileID: 2315233556235247215}
+  - component: {fileID: 6962520372352661905}
   m_Layer: 8
   m_Name: Kamikaze
   m_TagString: Untagged
@@ -115,6 +116,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f79bb8635707c6afc8f60a766f8137be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySO: {fileID: 11400000, guid: 980c9ce6ed28bf3529cece7d12474ad0, type: 2}
+--- !u!114 &6962520372352661905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890436627534675519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9cfc4db524a66128dab2f9b2e878b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: 980c9ce6ed28bf3529cece7d12474ad0, type: 2}

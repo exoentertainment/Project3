@@ -33,6 +33,7 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     void DestroyPlanet()
     {
         StartCoroutine(DestroyPlanetCoroutine());
+        gameObject.layer = LayerMask.NameToLayer("Destroyed Planet");
     }
 
     IEnumerator DestroyPlanetCoroutine()

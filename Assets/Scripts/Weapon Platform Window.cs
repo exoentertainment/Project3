@@ -10,7 +10,9 @@ public class WeaponPlatformWindow : MonoBehaviour
 
     enum PlatformType
     {
-        Basic = 0
+        Basic = 0,
+        DualGun = 1,
+        LightMissile = 2
     }
 
     //Take the passed weapon platform slot and store it if player builds a platform
@@ -29,6 +31,42 @@ public class WeaponPlatformWindow : MonoBehaviour
                 .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.Basic].platformPrefab);
             
             ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.Basic].resourceCost);
+        }
+        else
+        {
+            //play sound
+        }
+
+        CloseWindow();
+    }
+    
+    public void PlaceDualGunWeaponPlatform()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.DualGun].resourceCost))
+        {
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.DualGun].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.DualGun].resourceCost);
+        }
+        else
+        {
+            //play sound
+        }
+
+        CloseWindow();
+    }
+    
+    public void PlaceLightMissileWeaponPlatform()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.LightMissile].resourceCost))
+        {
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.LightMissile].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.LightMissile].resourceCost);
         }
         else
         {

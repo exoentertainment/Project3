@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc6c9415477f1023fae1816dc1daed68, type: 3}
-  m_Name: Basic Turret SO
+  m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
+  m_Name: Light Missile Platform SO
   m_EditorClassIdentifier: 
-  attackSpeed: 1
-  delayPerBarrel: 0.25
-  attackRange: 6000
+  maxHealth: 1
+  resourceCost: 100
+  platformPrefab: {fileID: 3321167674907074181, guid: e28f6faaafb7c98f3b2eb9215ef618be, type: 3}
+  explosionPrefab: {fileID: 0}
