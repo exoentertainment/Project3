@@ -1,33 +1,31 @@
+using System;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class MissileMove : MonoBehaviour
+public class VLSMissile : MonoBehaviour
 {
-    #region -- Serialized Fields --
+    #region -- Serialized Fields
 
-    [FormerlySerializedAs("projectileSO")]
-    [Header("Scriptable Object")] 
-    [SerializeField] private MissileScriptableObject missileSO;
+    [Header("Scriptable Object")]
+    [SerializeField] VLSMissileSO missileSO;
 
     #endregion
 
+    private bool isCoasting = true;
     private GameObject target;
-    
+
     private void Start()
     {
         FindTarget();
-        SpawnDischargeEffect();
-        Destroy(gameObject, missileSO.lifeTime);
+        StartCoroutine(CoastingCountdownRoutine());
     }
 
     private void Update()
     {
-        if (Time.timeScale == 1)
-        {
+        if(Time.timeScale == 1)
             Move();
-        }
     }
-
+    
     void FindTarget()
     {
         float closestEnemy = Mathf.Infinity;
@@ -52,14 +50,32 @@ public class MissileMove : MonoBehaviour
     
     void Move()
     {
-        if (target != null)
+        if (isCoasting)
         {
-            transform.LookAt(target.transform, transform.up);
+            transform.position += transform.forward * (missileSO.coastSpeed * Time.deltaTime);
         }
-        
-        transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
+        else
+        {
+            if (target != null)
+            {
+                transform.LookAt(target.transform, transform.up);
+                transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                FindTarget();
+            }
+        }
     }
 
+    IEnumerator CoastingCountdownRoutine()
+    {
+        yield return new WaitForSeconds(missileSO.coastDuration);
+
+        isCoasting = false;
+        transform.rotation = Quaternion.Euler(90, 0, 0);
+    }
+    
     void SpawnDischargeEffect()
     {
         Instantiate(missileSO.dischargeEffectPrefab, transform.position, transform.rotation);    

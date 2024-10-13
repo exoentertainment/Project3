@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Projectile
   m_EditorClassIdentifier: 
   moveSpeed: 6000
-  damage: 1
+  damage: 0
   lifeTime: 5
   targetLayer:
     serializedVersion: 2

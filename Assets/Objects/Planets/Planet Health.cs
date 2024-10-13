@@ -16,6 +16,17 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     #endregion
 
     private int currentHealth;
+    SphereCollider sphereCollider;
+    MeshRenderer meshRenderer;
+
+    private void Awake()
+    {
+        sphereCollider = GetComponent<SphereCollider>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        
+        Debug.Log(sphereCollider.radius);
+        Debug.Log(meshRenderer.bounds.extents.magnitude);
+    }
 
     private void Start()
     {
@@ -44,7 +55,12 @@ public class PlanetHealth : MonoBehaviour, IDamageable
         {
             timer += Time.deltaTime;
             
-            Instantiate(planetHealthSO.explosionPrefab, explosionPoints[Random.Range(0, explosionPoints.Length)].position, Quaternion.identity);
+            Vector3 pos = transform.position + Random.onUnitSphere * (sphereCollider.radius * transform.lossyScale.x);
+            pos.x += sphereCollider.radius;
+            pos.y += sphereCollider.radius;
+            pos.z += sphereCollider.radius;
+            
+            Instantiate(planetHealthSO.explosionPrefab, pos, Quaternion.identity);
 
             yield return new WaitForSeconds(planetHealthSO.delayPerExplosion);
         }
