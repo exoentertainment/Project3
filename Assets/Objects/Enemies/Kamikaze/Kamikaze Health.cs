@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KamikazeHealth : MonoBehaviour, IDamageable
 {
@@ -7,6 +8,9 @@ public class KamikazeHealth : MonoBehaviour, IDamageable
 
     [Header("Scriptable Object")] 
     [SerializeField] private KamikazeSO enemySO;
+    
+    [Header("Components")]
+    [SerializeField] Slider healthSlider;
 
     #endregion
 
@@ -18,10 +22,15 @@ public class KamikazeHealth : MonoBehaviour, IDamageable
         currentHealth = enemySO.maxHealth;
     }
 
+    private void Update()
+    {
+        healthSlider.transform.LookAt(Camera.main.transform);
+    }
+    
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
+        UpdateHealthBar();
 
         if (currentHealth <= 0)
         {
@@ -29,9 +38,9 @@ public class KamikazeHealth : MonoBehaviour, IDamageable
             Destroy(transform.root.gameObject);
         }
     }
-
-    private void OnDestroy()
+    
+    void UpdateHealthBar()
     {
-        Debug.Log("destroy ship");
+        healthSlider.value = currentHealth/enemySO.maxHealth;
     }
 }

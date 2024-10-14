@@ -12,6 +12,7 @@ public class VLSMissile : MonoBehaviour
     #endregion
 
     private bool isCoasting = true;
+    bool hasCollided = false;
     private GameObject target;
 
     private void Start()
@@ -59,12 +60,13 @@ public class VLSMissile : MonoBehaviour
             if (target != null)
             {
                 transform.LookAt(target.transform, transform.up);
-                transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
             }
             else
             {
                 FindTarget();
             }
+            
+            transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
         }
     }
 
@@ -83,14 +85,17 @@ public class VLSMissile : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (1 << other.gameObject.layer == missileSO.targetLayer)
+        if (1 << other.gameObject.layer == missileSO.targetLayer && !hasCollided)
         {
+            hasCollided = true;
+            
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
             {
                 hit.TakeDamage(missileSO.damage);
+                Debug.Log("missile collision");
             }
         }
-
+        
         Instantiate(missileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

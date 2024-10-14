@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class PlatformHealth : MonoBehaviour, IDamageable
@@ -10,6 +11,9 @@ public class PlatformHealth : MonoBehaviour, IDamageable
 
     [Header("Scriptable Object")]
     [SerializeField] PlatformScriptableObject healthSO;
+    
+    [Header("Components")]
+    [SerializeField] Slider healthSlider;
 
     #endregion
     
@@ -21,9 +25,15 @@ public class PlatformHealth : MonoBehaviour, IDamageable
         currentHealth = healthSO.maxHealth;
     }
 
+    private void Update()
+    {
+        healthSlider.transform.LookAt(Camera.main.transform);
+    }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        UpdateHealthBar();
 
         if (currentHealth <= 0 && !isDestroyed)
         {
@@ -45,5 +55,10 @@ public class PlatformHealth : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(2f);
         
         Destroy(gameObject);
+    }
+
+    void UpdateHealthBar()
+    {
+        healthSlider.value = currentHealth/healthSO.maxHealth;
     }
 }

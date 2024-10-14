@@ -7,7 +7,7 @@ public class PlatformMissileTurret : MonoBehaviour
         #region -- Serialized Fields --
 
     [Header("Scriptable Object")]
-    [SerializeField] IPlatformTurretSO platformTurretSO;
+    [SerializeField] TurretSO platformTurretSO;
 
     [Header("Prefab Object")] [SerializeField]
     GameObject projectilePrefab;

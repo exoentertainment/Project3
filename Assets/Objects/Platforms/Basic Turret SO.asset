@@ -15,3 +15,8 @@ MonoBehaviour:
   attackSpeed: 1
   delayPerBarrel: 0.25
   attackRange: 6000
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  projectilePrefab: {fileID: 177226, guid: 25f2ab6ca58db6c92b4c053b4978e010, type: 3}
+  dischargePrefab: {fileID: 146160, guid: edc1a40a737472052a1f64b67a0ea5b7, type: 3}

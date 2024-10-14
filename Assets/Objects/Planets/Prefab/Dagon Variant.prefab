@@ -526,8 +526,8 @@ GameObject:
   - component: {fileID: 6865806425425155331}
   - component: {fileID: 8250495780922138088}
   - component: {fileID: 4331077012299726485}
-  - component: {fileID: 8339893585847600325}
   - component: {fileID: 9034787852092150273}
+  - component: {fileID: 6430570696264914335}
   m_Layer: 10
   m_Name: Orbital Slot
   m_TagString: Untagged
@@ -586,7 +586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c54e468f4f5b8431971207a2b1f99e1, type: 2}
+  - {fileID: 2100000, guid: f06ec7cec5f1961c9a3fc558ef41f18d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -608,14 +608,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &8339893585847600325
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3760314630125095719}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &9034787852092150273
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -637,6 +629,14 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.50000006
   m_Center: {x: 0, y: -0.00000011920929, z: -0.0000019073486}
+--- !u!33 &6430570696264914335
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3760314630125095719}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &4504446016452740343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1049,8 @@ GameObject:
   - component: {fileID: 539613248002390551}
   - component: {fileID: 8659686874872785468}
   - component: {fileID: 382381610142841584}
-  - component: {fileID: 8795604021616423029}
   - component: {fileID: 6573291494505371492}
+  - component: {fileID: 2112011694377428416}
   m_Layer: 10
   m_Name: Orbital Slot (1)
   m_TagString: Untagged
@@ -1109,7 +1109,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c54e468f4f5b8431971207a2b1f99e1, type: 2}
+  - {fileID: 2100000, guid: f06ec7cec5f1961c9a3fc558ef41f18d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1131,14 +1131,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &8795604021616423029
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8780684886801319667}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!135 &6573291494505371492
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1160,6 +1152,14 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.50000006
   m_Center: {x: 0, y: -0.00000011920929, z: -0.0000019073486}
+--- !u!33 &2112011694377428416
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780684886801319667}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &8903753524810504930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 13521094441718037, guid: 5287ad0034e3b5a43b66e2281c30afae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -139.6947
+      value: -108.9
       objectReference: {fileID: 0}
     - target: {fileID: 13521094441718037, guid: 5287ad0034e3b5a43b66e2281c30afae, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1221,7 +1221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 13521094441718037, guid: 5287ad0034e3b5a43b66e2281c30afae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.5
+      value: -85.3
       objectReference: {fileID: 0}
     - target: {fileID: 13521094441718037, guid: 5287ad0034e3b5a43b66e2281c30afae, type: 3}
       propertyPath: m_LocalRotation.w

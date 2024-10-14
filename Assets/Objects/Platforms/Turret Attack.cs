@@ -1,16 +1,15 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class PlatformTurretAttack : MonoBehaviour
+public class TurretAttack : MonoBehaviour
 {
     #region -- Serialized Fields --
 
+    [FormerlySerializedAs("platformTurretSO")]
     [Header("Scriptable Object")]
-    [SerializeField] IPlatformTurretSO platformTurretSO;
-
-    [Header("Prefab Object")] [SerializeField]
-    GameObject projectilePrefab;
+    [SerializeField] TurretSO turretSO;
 
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
@@ -46,7 +45,7 @@ public class PlatformTurretAttack : MonoBehaviour
         {
             float closestEnemy = Mathf.Infinity;
 
-            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, targetLayer);
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, turretSO.attackRange, targetLayer);
 
             if (potentialTargets.Length > 0)
             {
@@ -69,7 +68,7 @@ public class PlatformTurretAttack : MonoBehaviour
     {
         if (target != null)
         {
-            if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
+            if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
             {
                 if (CheckLineOfSight())
                 {
@@ -95,11 +94,11 @@ public class PlatformTurretAttack : MonoBehaviour
             float newAngleX = barrelTransform[x].rotation.eulerAngles.x + (-rotateAmountX);
             float newAngleY = barrelTransform[x].rotation.eulerAngles.y + (-rotateAmountY);
             
-            GameObject projectile = Instantiate(projectilePrefab, spawnPoints[x].position, Quaternion.identity);
-            projectile.transform.SetParent(transform.parent.parent);
+            Instantiate(turretSO.dischargePrefab, spawnPoints[x].position, Quaternion.identity);
+            GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, Quaternion.identity);
             projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
             
-            yield return new WaitForSeconds(platformTurretSO.delayPerBarrel);
+            yield return new WaitForSeconds(turretSO.delayPerBarrel);
         }
     }
     
@@ -172,6 +171,6 @@ public class PlatformTurretAttack : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.black;
-        Gizmos.DrawWireSphere(transform.position, platformTurretSO.attackRange);
+        Gizmos.DrawWireSphere(transform.position, turretSO.attackRange);
     }
 }
