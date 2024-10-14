@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
@@ -7,6 +8,9 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [Header("Scriptable Object")] 
     [SerializeField] private EnemyScriptableObject enemySO;
 
+    [Header("Components")]
+    [SerializeField] Slider healthSlider;
+    
     #endregion
 
     private float currentHealth;
@@ -16,22 +20,26 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     {
         currentHealth = enemySO.maxHealth;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private void Update()
     {
-        
+        healthSlider.transform.LookAt(Camera.main.transform);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
+        UpdateHealthBar();
 
         if (currentHealth <= 0)
         {
             Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
             Destroy(transform.root.gameObject);
         }
+    }
+    
+    void UpdateHealthBar()
+    {
+        healthSlider.value = currentHealth/enemySO.maxHealth;
     }
 }

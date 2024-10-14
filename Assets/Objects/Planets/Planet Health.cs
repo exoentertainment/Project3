@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class PlanetHealth : MonoBehaviour, IDamageable
@@ -10,8 +11,8 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     [Header("Scriptable Object")]
     [SerializeField] PlanetHealthSO planetHealthSO;
 
-    [Header("Components")] 
-    [SerializeField] private Transform[] explosionPoints;
+    [Header("Components")]
+    [SerializeField] Slider healthSlider;
 
     #endregion
 
@@ -32,13 +33,24 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     {
         currentHealth = planetHealthSO.maxHealth;
     }
+    
+    private void Update()
+    {
+        healthSlider.transform.LookAt(Camera.main.transform);
+    }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        UpdateHealthBar();
         
         if(currentHealth <= 0)
             DestroyPlanet();
+    }
+    
+    void UpdateHealthBar()
+    {
+        healthSlider.value = currentHealth/planetHealthSO.maxHealth;
     }
 
     void DestroyPlanet()
