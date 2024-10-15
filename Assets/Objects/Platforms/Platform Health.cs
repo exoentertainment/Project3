@@ -53,8 +53,8 @@ public class PlatformHealth : MonoBehaviour, IDamageable
         }
         
         yield return new WaitForSeconds(2f);
-        
-        Destroy(gameObject);
+
+        Destroy(transform.root.gameObject);
     }
 
     void UpdateHealthBar()

@@ -322,4 +322,11 @@ public class CameraManager : MonoBehaviour
     }
     
     #endregion
+
+    public bool IsObjectInView(Transform target)
+    {
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(target.position);
+        
+        return (viewPos.x >= 0 && viewPos.y >= 0) && (viewPos.x <= 1 && viewPos.y <= 1) && viewPos.z >= 0;
+    }
 }

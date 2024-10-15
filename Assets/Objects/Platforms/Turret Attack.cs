@@ -14,9 +14,6 @@ public class TurretAttack : MonoBehaviour
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Transform[] barrelTransform;
-    
-    [Header("Variables")] 
-    [SerializeField] LayerMask targetLayer;
 
     #endregion
 
@@ -45,7 +42,7 @@ public class TurretAttack : MonoBehaviour
         {
             float closestEnemy = Mathf.Infinity;
 
-            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, turretSO.attackRange, targetLayer);
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, turretSO.attackRange, turretSO.targetLayer);
 
             if (potentialTargets.Length > 0)
             {
@@ -95,6 +92,10 @@ public class TurretAttack : MonoBehaviour
             float newAngleY = barrelTransform[x].rotation.eulerAngles.y + (-rotateAmountY);
             
             Instantiate(turretSO.dischargePrefab, spawnPoints[x].position, Quaternion.identity);
+            
+            if(CameraManager.instance.IsObjectInView(transform))
+                AudioManager.instance.PlayTurretSound();
+            
             GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, Quaternion.identity);
             projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
             
@@ -154,7 +155,7 @@ public class TurretAttack : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                if (1 << hit.collider.gameObject.layer == targetLayer)
+                if (1 << hit.collider.gameObject.layer == turretSO.targetLayer)
                 {
                     return true;
                 }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3282787009119068305}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1267960844805714831}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6083111542515920434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1660197557314283265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 7391296828555916399}
   - component: {fileID: 3713657845667172150}
   - component: {fileID: 8931517308049007670}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 563950619143788843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8331106128960242044}
   - component: {fileID: 6129207258589913291}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2256886677016202345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -262,7 +262,7 @@ RectTransform:
   - {fileID: 7391296828555916399}
   - {fileID: 1665600694025049024}
   m_Father: {fileID: 8047623892889469532}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434479989788107976}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102734311684585649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7726084082752903810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5781553825118599381}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light Missile Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 792019868484892074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4148091229805386785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 6705985850807170344}
   - component: {fileID: 6134044513328916938}
   - component: {fileID: 7150960042094082175}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049204902436574248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665600694025049024}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4451543297970806443}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5991940513743264556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6796476036669726511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 693314104415539789}
   - component: {fileID: 3997213356385897871}
   - component: {fileID: 7392520223824859612}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2459651262369437879}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2380096091124582375}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,6 +968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge_Example2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1cd480928b109b54985d2575ccec5d7c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1033,6 +1037,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9a3505379829ce4eb80d3fb24ba5ef7, type: 3}
       propertyPath: m_Name
       value: Hangars_Example5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9a3505379829ce4eb80d3fb24ba5ef7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1100,6 +1108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hangars_Example5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9a3505379829ce4eb80d3fb24ba5ef7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1118,6 +1130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5781553825118599381}
     m_Modifications:
+    - target: {fileID: 1109021985, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1109021986, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1138,9 +1154,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1712698347, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1013730936541996, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_Name
       value: VoidWhale_MissileLauncher (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013730936541996, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4798987487470668, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_LocalScale.x
@@ -1251,7 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babbdf48a432c41ddb4b68c396070b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformTurretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
+  platformTurretSO: {fileID: 11400000, guid: 6d817313e78b447d6b2ee1920495f0d1, type: 2}
   projectilePrefab: {fileID: 1212212991423974, guid: 24684e4ff5f4a0962a4d6ba17f735d48, type: 3}
   spawnPoints:
   - {fileID: 102734311684585649}
@@ -1279,6 +1303,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5781553825118599381}
     m_Modifications:
+    - target: {fileID: 1109021985, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1109021986, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1299,9 +1327,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1712698347, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1013730936541996, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_Name
       value: VoidWhale_MissileLauncher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013730936541996, guid: c44739517be5a074291a3505ade30290, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4798987487470668, guid: c44739517be5a074291a3505ade30290, type: 3}
       propertyPath: m_LocalScale.x
@@ -1412,7 +1448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babbdf48a432c41ddb4b68c396070b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformTurretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
+  platformTurretSO: {fileID: 11400000, guid: 6d817313e78b447d6b2ee1920495f0d1, type: 2}
   projectilePrefab: {fileID: 1212212991423974, guid: 24684e4ff5f4a0962a4d6ba17f735d48, type: 3}
   spawnPoints:
   - {fileID: 434479989788107976}
@@ -1488,6 +1524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge_Example2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1cd480928b109b54985d2575ccec5d7c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1554,6 +1594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinderical_Example6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d107548a824679e43a3da5c943615f7e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1566,7 +1610,7 @@ PrefabInstance:
       addedObject: {fileID: 741061084567619138}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d107548a824679e43a3da5c943615f7e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 27270130809043108}
+      addedObject: {fileID: 7682620031743114249}
   m_SourcePrefab: {fileID: 100100000, guid: d107548a824679e43a3da5c943615f7e, type: 3}
 --- !u!1 &8462505510523485718 stripped
 GameObject:
@@ -1621,7 +1665,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &27270130809043108
+--- !u!114 &7682620031743114249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1630,10 +1674,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8462505510523485718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9985bc9d2f2c039f4bff02c20805cc3f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed0804d2dca8f847c8b77776db81b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
+  healthSO: {fileID: 11400000, guid: 9e8d8e329870dae81987784a44a16ca6, type: 2}
+  healthSlider: {fileID: 6129207258589913291}
 --- !u!4 &9095876243692840108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d107548a824679e43a3da5c943615f7e, type: 3}

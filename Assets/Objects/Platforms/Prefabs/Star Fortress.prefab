@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2625963078023833788}
   - component: {fileID: 6907177923558581402}
   - component: {fileID: 7503650761085871148}
-  - component: {fileID: 4028357536006811357}
+  - component: {fileID: 4207534093947378199}
   m_Layer: 7
   m_Name: Star Fortress
   m_TagString: Untagged
@@ -90,7 +90,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 100, y: 205.9418, z: 244.6755}
   m_Center: {x: 0, y: 15.153835, z: 0}
---- !u!114 &4028357536006811357
+--- !u!114 &4207534093947378199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,10 +99,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 319233122070302013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9985bc9d2f2c039f4bff02c20805cc3f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed0804d2dca8f847c8b77776db81b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
+  healthSO: {fileID: 11400000, guid: 9e8d8e329870dae81987784a44a16ca6, type: 2}
+  healthSlider: {fileID: 7226970375765859898}
 --- !u!1 &4393258319024862363
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +128,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4393258319024862363}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -135,7 +136,7 @@ RectTransform:
   - {fileID: 6012939481828896387}
   - {fileID: 1942817559963195018}
   m_Father: {fileID: 81242179011291193}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}

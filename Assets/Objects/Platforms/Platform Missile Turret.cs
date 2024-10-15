@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Serialization;
@@ -22,6 +23,7 @@ public class PlatformMissileTurret : MonoBehaviour
     #endregion
 
     float lastFireTime;
+    private bool isVisible;
     GameObject target;
 
     private void Start()
@@ -96,6 +98,10 @@ public class PlatformMissileTurret : MonoBehaviour
             float newAngleY = spawnPoint.rotation.eulerAngles.y + (-rotateAmountY);
             
             GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+            
+            if(CameraManager.instance.IsObjectInView(transform))
+                AudioManager.instance.PlayLightMissileTurretSound();
+            
             //projectile.transform.SetParent(transform.parent.parent);
             //projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
             

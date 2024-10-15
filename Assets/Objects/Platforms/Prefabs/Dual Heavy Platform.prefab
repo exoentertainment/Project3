@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 513208741502047963}
   - component: {fileID: 4304035707542694732}
   - component: {fileID: 7316927417504537820}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2704299769187355839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2665524455202429265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 1864687697898912388}
   - component: {fileID: 612484492622788951}
   - component: {fileID: 4131773889541215682}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7323564942716063867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2678697213521981761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dual Heavy Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 2268873298483111468}
   - component: {fileID: 6518841057136347415}
   - component: {fileID: 5737421868660236307}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 708210116475037379}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5342174794266526632}
   - component: {fileID: 2757323180406741193}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6162611101258663939}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -450,7 +450,7 @@ RectTransform:
   - {fileID: 513208741502047963}
   - {fileID: 708210116475037379}
   m_Father: {fileID: 3975182193228232392}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6031864035079482100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3660522685165838107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7104817959462850629}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge_Example6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b987c3cb4276c454d99bec5319c4aed1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -668,7 +672,7 @@ PrefabInstance:
       addedObject: {fileID: 1003680030058850453}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b987c3cb4276c454d99bec5319c4aed1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6886867540461695547}
+      addedObject: {fileID: 580925788373717952}
   m_SourcePrefab: {fileID: 100100000, guid: b987c3cb4276c454d99bec5319c4aed1, type: 3}
 --- !u!1 &1551871946176241985 stripped
 GameObject:
@@ -723,7 +727,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &6886867540461695547
+--- !u!114 &580925788373717952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,10 +736,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551871946176241985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9985bc9d2f2c039f4bff02c20805cc3f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed0804d2dca8f847c8b77776db81b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
+  healthSO: {fileID: 11400000, guid: ba688c38c0ddf3a139ce4164e51238bb, type: 2}
+  healthSlider: {fileID: 2757323180406741193}
 --- !u!4 &2216487883249482747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b987c3cb4276c454d99bec5319c4aed1, type: 3}
@@ -796,6 +801,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 238c01da50a64324ba272dc0e92681ef, type: 3}
       propertyPath: m_Name
       value: Cylinderical_Example3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 238c01da50a64324ba272dc0e92681ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -863,6 +872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinderical_Example3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 238c01da50a64324ba272dc0e92681ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -881,13 +894,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2678697213521981761}
     m_Modifications:
+    - target: {fileID: 2465336349647131399, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336349647131513, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336349693477398, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336349900524243, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350027904914, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: m_Name
       value: GalacticOkamoto_Turret1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336350027904914, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2465336350027904915, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -929,6 +958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465336350696743778, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350696743780, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -937,14 +970,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336350726190879, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336350984185058, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350984185060, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336351151400059, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336351151400061, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336351152966378, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8446416393122067663, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
@@ -993,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7efc7aeb4da730ea8042b530340e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
+  turretSO: {fileID: 11400000, guid: fd345d326fd968565913d6d11522eaa4, type: 2}
   spawnPoints:
   - {fileID: 2704299769187355839}
   - {fileID: 2665524455202429265}
@@ -1002,9 +1051,6 @@ MonoBehaviour:
   - {fileID: 7370217325272421007}
   - {fileID: 7370217324820125072}
   - {fileID: 7370217326273798804}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!4 &7370217325941524095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2465336350027904915, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
@@ -1023,13 +1069,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2678697213521981761}
     m_Modifications:
+    - target: {fileID: 2465336349647131399, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336349647131513, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336349693477398, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336349900524243, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350027904914, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: m_Name
       value: GalacticOkamoto_Turret1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336350027904914, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2465336350027904915, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1071,6 +1133,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465336350696743778, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350696743780, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1079,14 +1145,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336350726190879, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465336350984185058, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336350984185060, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336351151400059, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2465336351151400061, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cc28d4ac343657d4f8a1e7eb9128686e, type: 2}
+    - target: {fileID: 2465336351152966378, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8446416393122067663, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
@@ -1130,7 +1212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7efc7aeb4da730ea8042b530340e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretSO: {fileID: 11400000, guid: a6655fd5319f7eb18b6ece7ddd310e12, type: 2}
+  turretSO: {fileID: 11400000, guid: fd345d326fd968565913d6d11522eaa4, type: 2}
   spawnPoints:
   - {fileID: 6031864035079482100}
   - {fileID: 3660522685165838107}
@@ -1139,9 +1221,6 @@ MonoBehaviour:
   - {fileID: 8672175627934773221}
   - {fileID: 8672175628554184954}
   - {fileID: 8672175626836926462}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!4 &8672175627530173205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2465336350027904915, guid: 0fe624ca7580c3f42aa61ced93e72e91, type: 3}
