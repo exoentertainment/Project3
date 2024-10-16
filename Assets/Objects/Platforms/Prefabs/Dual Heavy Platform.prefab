@@ -741,6 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthSO: {fileID: 11400000, guid: ba688c38c0ddf3a139ce4164e51238bb, type: 2}
   healthSlider: {fileID: 2757323180406741193}
+  rootTransform: {fileID: 2678697213521981761}
 --- !u!4 &2216487883249482747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b987c3cb4276c454d99bec5319c4aed1, type: 3}

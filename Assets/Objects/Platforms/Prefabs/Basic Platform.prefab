@@ -191,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthSO: {fileID: 11400000, guid: 9e8d8e329870dae81987784a44a16ca6, type: 2}
   healthSlider: {fileID: 6825410705473191615}
+  rootTransform: {fileID: 571799497702189200}
 --- !u!1 &3214545051587707769
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,7 +36,6 @@ public class ProjectileMove : MonoBehaviour
         {
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
             {
-                Debug.Log(other.gameObject.name);
                 hit.TakeDamage(projectileSO.damage);
             }
         }

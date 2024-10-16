@@ -8,7 +8,6 @@ public class CameraManager : MonoBehaviour
     #region --Serialized Fields --
     
     [Header("Camera Target")]
-    [SerializeField] Transform cameraTarget;
     [SerializeField] private CinemachineCamera vcam;
 
     [Header("Variables")] 
@@ -200,10 +199,9 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    public void MoveCameraToFocus(RaycastHit hit)
+    void MoveCameraToFocus(RaycastHit hit)
     {
         Vector3 camOffset = new Vector3(0, 2000, -2000);
-        //cameraTarget.position = cameraTarget.position - hit.collider.transform.position;
         vcam.transform.position = hit.collider.transform.position + camOffset;
     }
     
@@ -216,6 +214,7 @@ public class CameraManager : MonoBehaviour
         if (context.performed)
         {
             isPanningLeft = true;
+            RemoveTrackingObject();
         }
         else if (context.canceled)
         {
@@ -228,6 +227,7 @@ public class CameraManager : MonoBehaviour
         if (context.performed)
         {
             isPanningRight = true;
+            RemoveTrackingObject();
         }
         else if (context.canceled)
         {
@@ -240,6 +240,7 @@ public class CameraManager : MonoBehaviour
         if (context.performed)
         {
             isPanningUp = true;
+            RemoveTrackingObject();
         }
         else if (context.canceled)
         {
@@ -252,6 +253,7 @@ public class CameraManager : MonoBehaviour
         if (context.performed)
         {
             isPanningDown = true;
+            RemoveTrackingObject();
         }
         else if (context.canceled)
         {
@@ -315,6 +317,8 @@ public class CameraManager : MonoBehaviour
                     {
                         MoveCameraToFocus(hit);
                         currentFocus = hit.collider.gameObject;
+                        vcam.transform.position = hit.collider.transform.position;
+                        vcam.Follow = hit.collider.transform;
                     }
                 }
             }
@@ -328,5 +332,14 @@ public class CameraManager : MonoBehaviour
         Vector3 viewPos = Camera.main.WorldToViewportPoint(target.position);
         
         return (viewPos.x >= 0 && viewPos.y >= 0) && (viewPos.x <= 1 && viewPos.y <= 1) && viewPos.z >= 0;
+    }
+
+    void RemoveTrackingObject()
+    {
+        if (vcam.Follow != null)
+        {
+            vcam.Follow = null;
+            currentFocus = null;
+        }
     }
 }

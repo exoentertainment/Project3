@@ -24,7 +24,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350572367666929969}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32,7 +32,7 @@ RectTransform:
   - {fileID: 2363956213027331274}
   - {fileID: 9071912563945095260}
   m_Father: {fileID: 7608591165227852589}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -190,7 +190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSO: {fileID: 11400000, guid: ba688c38c0ddf3a139ce4164e51238bb, type: 2}
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 6944781274634942354}
+  rootTransform: {fileID: 2413363654030295815}
 --- !u!1 &1118368066194365307
 GameObject:
   m_ObjectHideFlags: 0

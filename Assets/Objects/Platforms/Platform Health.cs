@@ -14,6 +14,7 @@ public class PlatformHealth : MonoBehaviour, IDamageable
     
     [Header("Components")]
     [SerializeField] Slider healthSlider;
+    [SerializeField] private Transform rootTransform;
 
     #endregion
     
@@ -54,7 +55,7 @@ public class PlatformHealth : MonoBehaviour, IDamageable
         
         yield return new WaitForSeconds(2f);
 
-        Destroy(transform.root.gameObject);
+        Destroy(rootTransform.gameObject);
     }
 
     void UpdateHealthBar()
