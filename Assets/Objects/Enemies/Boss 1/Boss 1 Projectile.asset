@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e70fcc5f505163eb8f4a690fa839cc, type: 3}
+  m_Name: Boss 1 Projectile
+  m_EditorClassIdentifier: 
+  moveSpeed: 500
+  damage: 5
+  lifeTime: 5
+  blastRadius: 5
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 4224
+  dischargeEffectPrefab: {fileID: 166282, guid: b421dd97bfd0f2344ad3c89775d99a80, type: 3}
+  projectilePrefab: {fileID: 120216, guid: 14ddf27526284704c8be711603ee35e9, type: 3}
+  explodeEffectPrefab: {fileID: 0}

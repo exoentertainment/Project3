@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef026b17b4f3573dd95e7c079045abb7, type: 3}
+  m_Name: Platform Clips
+  m_EditorClassIdentifier: 
+  basicTurret: {fileID: 11400000, guid: c20c4c50458711873b026a750eacf885, type: 2}
+  lightMissileTurret: {fileID: 11400000, guid: 51d6ed18e39582058a9b9c8bde5429bb, type: 2}
+  rotaryTurret: {fileID: 0}
+  cruiseMissileTurret: {fileID: 11400000, guid: 18a71ed27ea2c8463b9b3a81d81a561a, type: 2}
+  platformExplosion: {fileID: 11400000, guid: 8f8a8ca7ef20a744fa864df9497525f2, type: 2}

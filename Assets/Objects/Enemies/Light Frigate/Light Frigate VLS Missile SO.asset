@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039eb61c79a290cf49e380d6e4e865bb, type: 3}
+  m_Name: Light Frigate VLS Missile SO
+  m_EditorClassIdentifier: 
+  moveSpeed: 100
+  coastDuration: 0.3
+  coastSpeed: 50
+  damage: 1
+  attackRange: 600
+  lifeTime: 5
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  projectilePrefab: {fileID: 1298173687816790, guid: 754822edba253e9dcabd5afcda276591, type: 3}
+  dischargeEffectPrefab: {fileID: 147176, guid: 0af4eb487d774d328877fba6c59e1c6f, type: 3}
+  explodeEffectPrefab: {fileID: 1043624379182380, guid: 65f8f19ba8d539d29b4bd62a129aedd3, type: 3}

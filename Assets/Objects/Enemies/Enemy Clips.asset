@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066a3a8fdda9a99b5b065c3a0915ba45, type: 3}
+  m_Name: Enemy Clips
+  m_EditorClassIdentifier: 
+  basicTurret: {fileID: 11400000, guid: 81e71fb27b33f2776843593e44c26972, type: 2}
+  lightMissileTurret: {fileID: 0}
+  rotaryTurret: {fileID: 11400000, guid: f52b8c4e844a4d75e9a6ceee412bfd54, type: 2}
+  smallExplosion: {fileID: 11400000, guid: f1eab4dccbca37acfa0f74a3ac15852e, type: 2}
+  boss1SpecialWeapon: {fileID: 11400000, guid: fcccf2bc54721ef4b814b14776b32f57, type: 2}
+  boss1SpecialWeaponCharging: {fileID: 11400000, guid: 40024cea947ccfb42929d5e54ba0b6ae, type: 2}
