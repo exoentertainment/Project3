@@ -8,7 +8,6 @@ public class IProjectileScriptableObject : ScriptableObject
     public float lifeTime;
     public float blastRadius;
     public LayerMask targetLayer;
-    public GameObject dischargeEffectPrefab;
     public GameObject projectilePrefab;
     public GameObject explodeEffectPrefab;
 }
