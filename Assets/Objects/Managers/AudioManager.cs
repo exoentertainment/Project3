@@ -82,6 +82,11 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound(platformClips.cruiseMissileTurret);
     }
+    
+    public void PlayPlasmaTurretSound()
+    {
+        PlaySound(platformClips.plasmaTurret);
+    }
 
     #endregion
 

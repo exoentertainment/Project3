@@ -7,5 +7,6 @@ public class PlatformClipsSO : ScriptableObject
     public AudioClipSO lightMissileTurret;
     public AudioClipSO rotaryTurret;
     public AudioClipSO cruiseMissileTurret;
+    public AudioClipSO plasmaTurret;
     public AudioClipSO platformExplosion;
 }
