@@ -17,4 +17,5 @@ MonoBehaviour:
   rotaryTurret: {fileID: 0}
   cruiseMissileTurret: {fileID: 11400000, guid: 18a71ed27ea2c8463b9b3a81d81a561a, type: 2}
   plasmaTurret: {fileID: 11400000, guid: 30a876bbc6706734c8b4361230b54ca9, type: 2}
+  plasmaMissileTurret: {fileID: 11400000, guid: 57480368c9bf2f2459571ce24082e21d, type: 2}
   platformExplosion: {fileID: 11400000, guid: 8f8a8ca7ef20a744fa864df9497525f2, type: 2}

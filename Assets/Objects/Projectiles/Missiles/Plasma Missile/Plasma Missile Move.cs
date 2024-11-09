@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class LightMissileMove : MonoBehaviour
+public class PlasmaMissileMove : MonoBehaviour
 {
     #region -- Serialized Fields --
-
-    [FormerlySerializedAs("projectileSO")]
+    
     [Header("Scriptable Object")] 
     [SerializeField] private MissileScriptableObject missileSO;
 
@@ -15,8 +13,10 @@ public class LightMissileMove : MonoBehaviour
     
     private void Start()
     {
+        if(CameraManager.instance.IsObjectInView(transform))
+            AudioManager.instance.PlayPlasmaMissileTurretSound();
+        
         FindTarget();
-        SpawnDischargeEffect();
         Destroy(gameObject, missileSO.lifeTime);
     }
 
@@ -62,34 +62,5 @@ public class LightMissileMove : MonoBehaviour
         }
         
         transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
-    }
-
-    void SpawnDischargeEffect()
-    {
-        if(missileSO.dischargeEffectPrefab != null)
-            Instantiate(missileSO.dischargeEffectPrefab, transform.position, transform.rotation);    
-    }
-    
-    private void OnCollisionEnter(Collision other)
-    {
-        if (1 << other.gameObject.layer == missileSO.targetLayer)
-        {
-            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
-            {
-                hit.TakeDamage(missileSO.damage);
-            }
-        }
-
-        if(CameraManager.instance.IsObjectInView(transform))
-            AudioManager.instance.PlaySmallExplosion();
-            
-        Instantiate(missileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-    }
-    
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, missileSO.attackRange);
     }
 }

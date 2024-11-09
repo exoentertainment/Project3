@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Serialization;
 
-public class PlatformMissileTurret : MonoBehaviour
+public class PlasmaMissileTurret : MonoBehaviour
 {
     #region -- Serialized Fields --
 
@@ -12,7 +10,7 @@ public class PlatformMissileTurret : MonoBehaviour
 
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
-    [FormerlySerializedAs("tubeTransform")] [SerializeField] private Transform missileTubeTransform;
+    [SerializeField] private Transform missileTubeTransform;
     
     [Header("Variables")] 
     [SerializeField] LayerMask targetLayer;
@@ -79,8 +77,8 @@ public class PlatformMissileTurret : MonoBehaviour
 
     IEnumerator FireRoutine()
     {
-        // if(CameraManager.instance.IsObjectInView(transform))
-        //     AudioManager.instance.PlayLightMissileTurretSound();
+        if(CameraManager.instance.IsObjectInView(transform))
+            AudioManager.instance.PlayLightMissileTurretSound();
         
         foreach (Transform spawnPoint in spawnPoints)
         {
