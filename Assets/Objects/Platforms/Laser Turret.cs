@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 
@@ -38,6 +39,7 @@ public class LaserTurret : MonoBehaviour
     {
         if (target == null || Vector3.Distance(transform.position, target.transform.position) > turretSO.attackRange)
         {
+            Debug.Log("searching for target");
             lastFireTime = Time.time;
             laserComponent.SetActive(false);
             
@@ -66,7 +68,7 @@ public class LaserTurret : MonoBehaviour
     {
         if (target != null)
         {
-            if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
+            if ((Time.time - lastFireTime) >= turretSO.attackSpeed && !laserComponent.activeSelf)
             {
                 laserComponent.SetActive(true);
             }

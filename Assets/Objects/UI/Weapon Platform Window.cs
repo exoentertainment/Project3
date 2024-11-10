@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class WeaponPlatformWindow : MonoBehaviour
 {
@@ -30,10 +31,10 @@ public class WeaponPlatformWindow : MonoBehaviour
 
     void SetButtonTexts()
     {
-        basicGunText.text = "Basic Gun: " + weaponPlatformsSO[(int)PlatformType.Basic].resourceCost + " resources";
-        dualGunText.text = "Dual Gun: " + weaponPlatformsSO[(int)PlatformType.DualGun].resourceCost + " resources";
-        lightMissileText.text = "Light Missile: " + weaponPlatformsSO[(int)PlatformType.LightMissile].resourceCost + " resources";
-        cruiseMissileText.text = "Cruise Missile: " + weaponPlatformsSO[(int)PlatformType.CruiseMissile].resourceCost + " resources";
+        basicGunText.text = "Basic Gun";
+        dualGunText.text = "Dual Gun";
+        lightMissileText.text = "Light Missile";
+        cruiseMissileText.text = "Cruise Missile";
     }
     
     //Take the passed weapon platform slot and store it if player builds a platform

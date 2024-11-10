@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class LaserAttack : MonoBehaviour
@@ -30,6 +31,8 @@ public class LaserAttack : MonoBehaviour
 	
 	[SerializeField] LaserProjectileSO laserProjectileSO;
 
+	private float activeTime;
+	
     void Start()
     {
 		SpawnBeam();
@@ -127,8 +130,18 @@ public class LaserAttack : MonoBehaviour
 	{
 		if (hit.collider.TryGetComponent<IDamageable>(out IDamageable target))
 		{
-			Debug.Log("laser hit");
-			target.TakeDamage(laserProjectileSO.damage);
+			float bonusDamage = (Time.time - activeTime) * (laserProjectileSO.damageBonus * Time.deltaTime);
+			target.TakeDamage((laserProjectileSO.damage * Time.deltaTime) + bonusDamage);
 		}
+	}
+
+	private void OnEnable()
+	{
+		activeTime = Time.time;
+	}
+	
+	private void OnDisable()
+	{
+		Debug.Log("laser off");
 	}
 }

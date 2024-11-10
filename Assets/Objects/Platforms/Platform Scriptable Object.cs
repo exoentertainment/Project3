@@ -8,4 +8,5 @@ public class PlatformScriptableObject : ScriptableObject
     public GameObject platformPrefab;
     public GameObject explosionPrefab;
     public float delayBetweenExplosions;
+    public string platformDescription;
 }
