@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
-  m_Name: Cruise Missile Platform SO
+  m_Name: Plasma Platform SO
   m_EditorClassIdentifier: 
   maxHealth: 100
-  resourceCost: 400
-  platformPrefab: {fileID: 363980613958592321, guid: 498ac7eeb7ec63bc4a395386e57e0273, type: 3}
+  resourceCost: 600
+  platformPrefab: {fileID: 9090074938592026848, guid: c69911a7a3a10ad4daff63bde83a0414, type: 3}
   explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}
   delayBetweenExplosions: 0.2
+  platformDescription: Plasma Platform - shoots 4 medium damage, medium range shells
+    at a medium rate of fire. The shells do area effect damage over a small area.

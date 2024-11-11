@@ -1055,37 +1055,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 509412963879245065, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 574227821999699244, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3325194052997282038, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_Name
       value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6612698976084673313, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252335970185095773, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_text
-      value: 'Cost: 1000'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252335970185095773, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_fontSize
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252335970185095773, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252335970185095773, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1199,10 +1171,6 @@ PrefabInstance:
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name
       value: Managers
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8466446382279278019, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: bossCamera

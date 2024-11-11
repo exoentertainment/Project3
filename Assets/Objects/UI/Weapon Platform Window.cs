@@ -23,19 +23,6 @@ public class WeaponPlatformWindow : MonoBehaviour
         LightMissile = 2,
         CruiseMissile = 3
     }
-
-    private void Start()
-    {
-        SetButtonTexts();
-    }
-
-    void SetButtonTexts()
-    {
-        basicGunText.text = "Basic Gun";
-        dualGunText.text = "Dual Gun";
-        lightMissileText.text = "Light Missile";
-        cruiseMissileText.text = "Cruise Missile";
-    }
     
     //Take the passed weapon platform slot and store it if player builds a platform
     public void AssignWeaponPlatformSlot(GameObject slot)
