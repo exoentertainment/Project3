@@ -16,7 +16,7 @@ public class LaserAttack : MonoBehaviour
 
     [Header("Beam Options")]
     public bool beamCollides = true; //Beam stops at colliders
-    public float beamLength = 100; //Ingame beam length
+    public float beamLength; //Ingame beam length
     public float beamEndOffset = 0f; //How far from the raycast hit point the end effect is positioned
     public float textureScrollSpeed = 0f; //How fast the texture scrolls along the beam, can be negative or positive.
     public float textureLengthScale = 1f;   //Set this to the horizontal length of your texture relative to the vertical. Example: if texture is 200 pixels in height and 600 in length, set this to 3
@@ -48,7 +48,7 @@ public class LaserAttack : MonoBehaviour
 			Vector3 end = transform.position + (transform.forward * beamLength);
 			RaycastHit hit;
 			
-			if (beamCollides && Physics.Raycast(transform.position, transform.forward, out hit, laserProjectileSO.targetLayer))
+			if (beamCollides && Physics.Raycast(transform.position, transform.forward, out hit, beamLength,laserProjectileSO.targetLayer))
 			{
 				end = hit.point - (transform.forward * beamEndOffset);
 				end = Vector3.Distance(transform.position, end) > beamLength 

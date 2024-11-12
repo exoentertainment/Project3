@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
-  m_Name: Dual Turret Platform SO
+  m_Name: Multi Turret Platform SO
   m_EditorClassIdentifier: 
   maxHealth: 100
   resourceCost: 200

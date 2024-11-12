@@ -22,20 +22,20 @@ public class ResourceManager : MonoBehaviour
 
     private void Start()
     {
-        resourceText.SetText("Available Resources: " + currentResources.ToString());
+        resourceText.SetText(currentResources.ToString());
     }
 
     //Increase the current amount of resources by the passed parameter
     public void IncreaseResources(int value)
     {
         currentResources += value;
-        resourceText.SetText("Available Resources: " + currentResources.ToString());
+        resourceText.SetText(currentResources.ToString());
     }
 
     public void DecreaseResources(int value)
     {
         currentResources -= value;
-        resourceText.SetText("Available Resources: " + currentResources.ToString());
+        resourceText.SetText(currentResources.ToString());
     }
     
     //Check if the current amount of resources is at least the same as the passed parameter

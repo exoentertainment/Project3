@@ -32,7 +32,13 @@ namespace UAI{
 
             return text;
         }
- 
+
+        
+        private static int maxTokens_GPT3_5 = 4096;
+        private static int maxTokens_GPT3_5_16k = 16384;
+        private static int maxTokens_GPT3_5_turbo_1106 = 16384;
+        private static int maxTokens_GPT4_8k = 8192;
+        private static int maxTokens_GPT4_Turbo_preview = 128000;
 
 #if UNITY_EDITOR
         public static void drawSettings(){ 
@@ -57,20 +63,19 @@ namespace UAI{
         }
 
 #endif
-        public static int getMaxTokenFromModel(string model){ 
-            //{ "gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4" };
-            if(model == "gpt-4o"){
-                return 128000;
-            }else if(model == "gpt-4o-mini"){
-                return 128000;
-            }else if(model == "gpt-4-turbo"){
-                return 128000;
-            }else if(model == "gpt-3.5-turbo"){
-                return 16385;
+        public static int getMaxTokenFromModel(string model){
+            if(model == "gpt-3.5-turbo" ){
+                return maxTokens_GPT3_5;
+            }else if(model == "gpt-3.5-turbo-16k"){
+                return maxTokens_GPT3_5_16k;
+            }else if(model == "gpt-3.5-turbo-1106"){
+                return maxTokens_GPT3_5_turbo_1106;
             }else if(model == "gpt-4"){
-                return 8192;
+                return maxTokens_GPT4_8k;
+            }else if(model == "gpt-4-1106-preview"){
+                return maxTokens_GPT4_Turbo_preview;
             }else{
-                return 4096;
+                return maxTokens_GPT3_5;
             }
         }
     }

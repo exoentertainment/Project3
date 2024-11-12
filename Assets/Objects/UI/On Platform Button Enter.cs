@@ -26,7 +26,7 @@ public class OnPlatformButtonEnter : MonoBehaviour, IPointerEnterHandler, IPoint
 
     void SetResourceText()
     {
-        resourceText.text = "Cost: " + platformScriptableObject.resourceCost.ToString();
+        resourceText.text = platformScriptableObject.resourceCost.ToString();
     }
 
     void SetDescriptionText()
