@@ -36,7 +36,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
             if(CameraManager.instance.IsObjectInView(transform))
                 AudioManager.instance.PlayEnemySmallExplosion();
                 
-            ResourceManager.instance.IncreaseResources(enemySO.resourceReward);
+            ResourceManager.instance?.IncreaseResources(enemySO.resourceReward);
             Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
             Destroy(transform.root.gameObject);
         }

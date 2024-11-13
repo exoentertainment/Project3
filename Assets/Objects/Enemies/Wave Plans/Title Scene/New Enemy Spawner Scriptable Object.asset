@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718efbe744b5d71b0b4f744de49dbfc4, type: 3}
   m_Name: New Enemy Spawner Scriptable Object
   m_EditorClassIdentifier: 
-  numSpawns: 0
-  timeBetweenSpawns: 0
-  enemyShipsPrefabs: []
+  numSpawns: 100
+  timeBetweenSpawns: 5
+  enemyShipsPrefabs:
+  - {fileID: 2200022118107289050, guid: 0d4a477da6dbab2db9f6c963ff7aa9f5, type: 3}
+  - {fileID: 7890436627534675519, guid: b804a4c7c2862e0c3976ae616428c593, type: 3}
+  - {fileID: 8883143437959656932, guid: 59f9b2b08e1e16471ac6b6893f7a8850, type: 3}

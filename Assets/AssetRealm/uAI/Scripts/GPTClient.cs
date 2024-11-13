@@ -27,7 +27,7 @@ namespace UAI{
             _instance = this; 
         }
 
-        public static string[] models = new string[] { "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-3.5-turbo-1106",  "gpt-4", "gpt-4-1106-preview" };
+        public static string[] models = new string[] { "gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4" };
         //hashmap model and cost
         public static Dictionary<string, float> modelCosts = new Dictionary<string, float>( );
         public static int modelIndex = 0;
@@ -61,7 +61,6 @@ namespace UAI{
         
         public static UnityWebRequest currentRequest;
         string reponseText = ""; 
-        int lastAmount = 0;
 
         public void SendRequest(string promptSend,   int index = 0)
         { 
@@ -82,10 +81,13 @@ namespace UAI{
             requestBody["messages"].Add(promptNode);
 
             requestBody["temperature"] = temperature;
-            // requestBody["max_tokens"] = maxTokens;
+
+            // if(maxTokens > 0)
+            //     requestBody["max_tokens"] = maxTokens;
+
             requestBody["n"] = n;
             requestBody["stream"] = true;
-            requestBody["stop"] = "";
+            // requestBody["stop"] = "";
     
             string requestBodyString = requestBody.ToString();
 
@@ -115,7 +117,7 @@ namespace UAI{
             requestBody["n"] = n;
             requestBody["stream"] = true;
 
-            requestBody["stop"] = "";
+            // requestBody["stop"] = "";
 
             requestBody["temperature"] = temperature;
 
@@ -132,11 +134,12 @@ namespace UAI{
                 return;
 
             string currentContent = currentRequest.downloadHandler.text;  
+            // Debug.Log("currentContent: " + currentContent);
             List<string> alllines = new List<string>(currentContent.Split('\n')); 
                 
             alllines = alllines.FindAll(s => !string.IsNullOrEmpty(s)); 
 
-            if(alllines.Count == 0 || lastAmount == alllines.Count) return; 
+            if(alllines.Count == 0) return; 
 
             string newText = "";
             foreach (var line in alllines){
@@ -144,13 +147,22 @@ namespace UAI{
                 cleanedLine = cleanedLine.Replace("\"object\"", "\"objectName\"");
                 cleanedLine = cleanedLine.Replace("data:", "").Trim(); 
 
-                if (!string.IsNullOrEmpty(cleanedLine) && cleanedLine != "[DONE]"){  
 
+                // Debug.Log("c line: " + cleanedLine);
+
+                if (!string.IsNullOrEmpty(cleanedLine) && cleanedLine != "[DONE]"){  
+                        // Debug.Log("line: " + cleanedLine);
                         JSONNode jsonNode = JSON.Parse(cleanedLine);
 
                         GPTResponseStream oaiResponse = GetOAIObject(jsonNode);
- 
-                        //newText += oaiResponse.choices[0].delta.content;  
+
+                        if(oaiResponse.choices != null && oaiResponse.choices.Length > 0){
+                            newText += oaiResponse.choices[0].delta.content;  
+                        }else{
+                            newText += "";  
+                            // Debug.LogWarning("Something went wrong. Make sure you have entered a valid API key and your account has enough credits.");
+                            // break;
+                        } 
                 } 
             }  
             string newContent = oldContent != ""? newText.Replace(oldContent, ""): newText;
@@ -176,6 +188,8 @@ namespace UAI{
         }
         public IEnumerator SendRequestQ(string requestBodyString,  int index = 0)
         {   
+            // Debug.Log("Sending request to OpenAI API...");
+            // Debug.Log("Request body: " + requestBodyString);
             #if UNITY_EDITOR 
                 // if(apiKey == "")
                 loadSavedConfiguration(); 
@@ -198,7 +212,6 @@ namespace UAI{
             currentRequest.SendWebRequest();
              
              reponseText = ""; 
-             lastAmount = 0;
 
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.update += CheckRequestProgress; 
@@ -208,10 +221,10 @@ namespace UAI{
             {
                 CheckRequestProgress();
                 yield return new WaitForSeconds(0.1f);
-            } 
-
-            CheckRequestProgress();
+            }  
 #endif
+            yield return new WaitForSeconds(0.2f);
+            CheckRequestProgress();
 
             yield return null;
 
@@ -234,6 +247,11 @@ namespace UAI{
             oaiResponse.created = jsonNode["created"];
             oaiResponse.model = jsonNode["model"];
 
+            if (jsonNode["choices"] == null)
+            { 
+                // Debug.LogError("response: " + jsonNode.ToString());
+                return oaiResponse;
+            }
             JSONArray jsonChoices = jsonNode["choices"].AsArray;
             oaiResponse.choices = new GPTResponseStream.Choice[jsonChoices.Count];
 

@@ -11,7 +11,7 @@ namespace UAI{
 
         
         public static float _temperature = 0.7f;
-        public static int _maxTokens = 3000;
+        public static int _maxTokens = 0;
         public static int _n = 1;
 
         public static string _apiEndpoint = "";
@@ -23,7 +23,7 @@ namespace UAI{
         public static void ShowWindow()
         {
             SettingsWindow window = GetWindow<SettingsWindow>("AI Assistant Settings"); 
-            window.minSize = new Vector2(400, 250);
+            window.minSize = new Vector2(400, 350);
         }
 
         private void OnEnable() {
@@ -31,7 +31,7 @@ namespace UAI{
 
             _temperature = EditorPrefs.GetFloat("GPTTemperature", 0.7f);
             _apiEndpoint = EditorPrefs.GetString("UAIEndpoint", GPTClient.defaultOpenAIURL);
-            _maxTokens = EditorPrefs.GetInt("GPTMaxTokens", 3000);
+            _maxTokens = EditorPrefs.GetInt("GPTMaxTokens", 0);
             _n = EditorPrefs.GetInt("GPTN", 1);
             _defaultSavePath = EditorPrefs.GetString("GPTDefaultSavePath", "Assets/");
             _askForSavePath = EditorPrefs.GetBool("GPTAskForSavePath", false);
@@ -126,7 +126,7 @@ namespace UAI{
             if(_temperature > 1)
                 _temperature = 1;
  
-            // _maxTokens = EditorGUILayout.IntSlider("Max Tokens:", _maxTokens, 1, HelperFunctions.getMaxTokenFromModel (GPTClient.models[_selectedModelIndex]));
+            // _maxTokens = EditorGUILayout.IntSlider("Max Tokens:", _maxTokens, 0, HelperFunctions.getMaxTokenFromModel (GPTClient.models[_selectedModelIndex]));
              
             // _n = EditorGUILayout.IntField("N:", _n);
             GUILayout.Space(10);

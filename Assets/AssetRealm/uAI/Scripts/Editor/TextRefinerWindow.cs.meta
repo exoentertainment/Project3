@@ -13,6 +13,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 248269
   packageName: uAI - AI Assistant
-  packageVersion: 1.3.3
+  packageVersion: 1.4.0
   assetPath: Assets/AssetRealm/uAI/Scripts/Editor/TextRefinerWindow.cs
-  uploadId: 633741
+  uploadId: 690380

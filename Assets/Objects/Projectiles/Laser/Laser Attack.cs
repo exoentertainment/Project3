@@ -139,9 +139,4 @@ public class LaserAttack : MonoBehaviour
 	{
 		activeTime = Time.time;
 	}
-	
-	private void OnDisable()
-	{
-		Debug.Log("laser off");
-	}
 }

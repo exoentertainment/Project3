@@ -30,9 +30,13 @@ public class TurretAttack : MonoBehaviour
         if (Time.timeScale == 1)
         {
             SearchForTarget();
-            RotateTurret();
-            RotateBarrel();
-            Fire();
+
+            if (target != null)
+            {
+                RotateTurret();
+                RotateBarrel();
+                Fire();
+            }
         }
     }
 
@@ -63,14 +67,11 @@ public class TurretAttack : MonoBehaviour
 
     void Fire()
     {
-        if (target != null)
+        if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
         {
-            if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
-            {
-                StartCoroutine(FireRoutine());
+            StartCoroutine(FireRoutine());
 
-                lastFireTime = Time.time;
-            }
+            lastFireTime = Time.time;
         }
     }
 
@@ -80,21 +81,15 @@ public class TurretAttack : MonoBehaviour
         {
             Vector3 targetVector = target.transform.position - barrelTransform[x].position;
             targetVector.Normalize();
-            float rotateAmountZ = Vector3.Cross(targetVector, barrelTransform[x].forward).z;
-            float rotateAmountX = Vector3.Cross(targetVector, barrelTransform[x].forward).x;
-            float rotateAmountY = Vector3.Cross(targetVector, barrelTransform[x].forward).y;
-            
-            float newAngleZ = barrelTransform[x].rotation.eulerAngles.z + (-rotateAmountZ);
-            float newAngleX = barrelTransform[x].rotation.eulerAngles.x + (-rotateAmountX);
-            float newAngleY = barrelTransform[x].rotation.eulerAngles.y + (-rotateAmountY);
+
+            Quaternion targetRotation = Quaternion.LookRotation(targetVector);
             
             Instantiate(turretSO.dischargePrefab, spawnPoints[x].position, Quaternion.identity);
             
             if(CameraManager.instance.IsObjectInView(transform))
                 AudioManager.instance.PlayTurretSound();
             
-            GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, Quaternion.identity);
-            projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
+            Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, targetRotation);
             
             yield return new WaitForSeconds(turretSO.delayPerBarrel);
         }
@@ -102,45 +97,19 @@ public class TurretAttack : MonoBehaviour
     
     void RotateTurret()
     {
-        if (target != null)
-        {
-            Vector3 targetVector = target.transform.position - transform.position;
-            targetVector.Normalize();
-            // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            // float rotateAmountX = Vector3.Cross(targetVector, transform.forward).x;
-            float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
+        Vector3 targetVector = target.transform.position - transform.position;
+        targetVector.Normalize();
+
+        Quaternion targetRotation = Quaternion.LookRotation(targetVector);
             
-            // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
-            // float newAngleX = transform.rotation.eulerAngles.x + (-rotateAmountX);
-            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY);
-            
-            transform.rotation = Quaternion.Euler(0, newAngleY, 0);
-            
-            //transform.LookAt(target.transform);
-        }
+        transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
     }
 
     void RotateBarrel()
     {
-        if (target != null)
+        foreach (Transform barrels in barrelTransform)
         {
-            // Vector3 targetVector = target.transform.position - barrelTransform.position;
-            // targetVector.Normalize();
-            // // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            // float rotateAmountX = Vector3.Cross(targetVector, barrelTransform.forward).x;
-            // // float rotateAmountY = Vector3.Cross(targetVector, barrelTransform.forward).y;
-            //
-            // // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
-            // float newAngleX = barrelTransform.rotation.eulerAngles.x + (-rotateAmountX);
-            // // float newAngleY = barrelTransform.rotation.eulerAngles.y + (-rotateAmountY);
-            //
-            // barrelTransform.rotation = Quaternion.Euler(newAngleX, transform.rotation.eulerAngles.y, 0);
-
-            foreach (Transform barrels in barrelTransform)
-            {
-                barrels.LookAt(target.transform);
-            }
-            
+            barrels.LookAt(target.transform);
         }
     }
 

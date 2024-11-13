@@ -23,8 +23,7 @@ public class RandomPlatformSpawner : MonoBehaviour
     {
         foreach (Transform slot in platformSlots)
         {
-            GameObject platform = Instantiate(platforms[Random.Range(0, platforms.Length)].platformPrefab, slot.position, Quaternion.identity);
-            platform.transform.SetParent(slot.transform);
+            Instantiate(platforms[Random.Range(0, platforms.Length)].platformPrefab, slot.position, Quaternion.identity, slot);
         }
     }
 }
