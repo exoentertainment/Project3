@@ -14588,7 +14588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1aa59c1e17d46849aecb4159bb44bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSO: {fileID: 11400000, guid: e87d87dbeef58354ba2d1c3ce853b5b1, type: 2}
+  missileSO: {fileID: 11400000, guid: 104a537cc2c224841b2ee174ca768052, type: 2}
 --- !u!114 &2772653377705478336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14601,5 +14601,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c11ee9eeac37c4498d0f7b14d5d8d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSO: {fileID: 11400000, guid: e87d87dbeef58354ba2d1c3ce853b5b1, type: 2}
-  blastRadius: 25
+  missileSO: {fileID: 11400000, guid: 104a537cc2c224841b2ee174ca768052, type: 2}

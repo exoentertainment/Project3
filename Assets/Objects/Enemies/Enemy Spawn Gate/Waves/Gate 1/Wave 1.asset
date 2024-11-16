@@ -15,4 +15,4 @@ MonoBehaviour:
   numSpawns: 15
   timeBetweenSpawns: 2
   enemyShipsPrefabs:
-  - {fileID: 2200022118107289050, guid: 0d4a477da6dbab2db9f6c963ff7aa9f5, type: 3}
+  - {fileID: 8702785273099874958, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}

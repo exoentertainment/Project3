@@ -11,7 +11,7 @@ public class PlasmaProjectileAttack : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            CheckNearbyArea();
+            //CheckNearbyArea();
         }
     }
     
@@ -31,7 +31,7 @@ public class PlasmaProjectileAttack : MonoBehaviour
             }
         }
     }
-
+    
     void DealDamage(IDamageable target)
     {
         target.TakeDamage(projectileSO.damage);
@@ -46,6 +46,7 @@ public class PlasmaProjectileAttack : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        CheckNearbyArea();
         Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

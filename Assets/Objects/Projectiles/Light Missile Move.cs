@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = Unity.Mathematics.Random;
 
 public class LightMissileMove : MonoBehaviour
 {
@@ -12,11 +14,14 @@ public class LightMissileMove : MonoBehaviour
     #endregion
 
     private GameObject target;
+    [SerializeField] private float changeSpiralTime = 3;
+    private float lastChange;
     
     private void Start()
     {
         FindTarget();
         SpawnDischargeEffect();
+        lastChange = Time.time;
         Destroy(gameObject, missileSO.lifeTime);
     }
 
@@ -52,6 +57,8 @@ public class LightMissileMove : MonoBehaviour
     
     void Move()
     {
+        transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
+        
         if (target != null)
         {
             transform.LookAt(target.transform, transform.up);
@@ -61,7 +68,18 @@ public class LightMissileMove : MonoBehaviour
             FindTarget();
         }
         
-        transform.position += transform.forward * (missileSO.moveSpeed * Time.deltaTime);
+        float noiseyness = 1; //tweak this to adjust how random the motion is
+
+        //calculate random number using x and y position
+        float rand = Mathf.PerlinNoise(transform.position.x*noiseyness ,transform.position.y*noiseyness );
+
+        //if you're in 3d, you'll need to do it again to take into account the z position
+        rand = Mathf.PerlinNoise(rand,transform.position.z*noiseyness );
+        
+        //randomize the last variable
+        float rand_angle = Mathf.Lerp(rand, UnityEngine.Random.Range(0f,-30f), UnityEngine.Random.Range(0f,30f));
+        
+        transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.right);
     }
 
     void SpawnDischargeEffect()

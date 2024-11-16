@@ -3,14 +3,11 @@ using UnityEngine;
 public class PlasmaMissileAttack : MonoBehaviour
 {
     [Header("Scriptable Object")] 
-    [SerializeField] private MissileScriptableObject missileSO;
-    
-    [Header("Variables")]
-    [SerializeField] float blastRadius;
+    [SerializeField] private PlasmaMissileSO missileSO;
     
     private void OnCollisionEnter(Collision other)
     {
-        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, blastRadius, missileSO.targetLayer);
+        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, missileSO.blastRadius, missileSO.targetLayer);
         float closestEnemy = Mathf.Infinity;
 
         if (potentialTargets.Length > 0)
@@ -36,6 +33,6 @@ public class PlasmaMissileAttack : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, blastRadius);
+        Gizmos.DrawWireSphere(transform.position, missileSO.blastRadius);
     }
 }

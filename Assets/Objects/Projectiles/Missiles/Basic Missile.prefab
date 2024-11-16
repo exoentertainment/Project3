@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missileSO: {fileID: 11400000, guid: 1700437f768ad95aaa966de527ddeb1d, type: 2}
+  rotateSpeed: 90
+  changeSpiralTime: 0.5
 --- !u!1001 &715481144372986090
 PrefabInstance:
   m_ObjectHideFlags: 0

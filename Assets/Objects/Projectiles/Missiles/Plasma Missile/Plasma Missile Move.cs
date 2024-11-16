@@ -5,7 +5,7 @@ public class PlasmaMissileMove : MonoBehaviour
     #region -- Serialized Fields --
     
     [Header("Scriptable Object")] 
-    [SerializeField] private MissileScriptableObject missileSO;
+    [SerializeField] private PlasmaMissileSO missileSO;
 
     #endregion
 

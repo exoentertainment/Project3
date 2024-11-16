@@ -17,6 +17,7 @@ public class KamikazeAttack : MonoBehaviour
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
             {
                 hit.TakeDamage(shipSO.damage);
+                Instantiate(shipSO.explosionPrefab, other.contacts[0].point, Quaternion.identity);
                 Destroy(gameObject);
             }
         }

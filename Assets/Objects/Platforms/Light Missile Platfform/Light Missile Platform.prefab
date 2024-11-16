@@ -442,7 +442,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8047623892889469532}
@@ -1604,7 +1604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 6d817313e78b447d6b2ee1920495f0d1, type: 2}
-  projectilePrefab: {fileID: 1212212991423974, guid: 24684e4ff5f4a0962a4d6ba17f735d48, type: 3}
   spawnPoints:
   - {fileID: 102734311684585649}
   - {fileID: 1660197557314283265}
@@ -1773,7 +1772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 6d817313e78b447d6b2ee1920495f0d1, type: 2}
-  projectilePrefab: {fileID: 1212212991423974, guid: 24684e4ff5f4a0962a4d6ba17f735d48, type: 3}
   spawnPoints:
   - {fileID: 434479989788107976}
   - {fileID: 7726084082752903810}
