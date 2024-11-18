@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = Unity.Mathematics.Random;
@@ -10,18 +11,15 @@ public class LightMissileMove : MonoBehaviour
     [FormerlySerializedAs("projectileSO")]
     [Header("Scriptable Object")] 
     [SerializeField] private MissileScriptableObject missileSO;
-
+    
     #endregion
 
     private GameObject target;
-    [SerializeField] private float changeSpiralTime = 3;
-    private float lastChange;
     
     private void Start()
     {
         FindTarget();
         SpawnDischargeEffect();
-        lastChange = Time.time;
         Destroy(gameObject, missileSO.lifeTime);
     }
 
@@ -32,7 +30,7 @@ public class LightMissileMove : MonoBehaviour
             Move();
         }
     }
-
+    
     void FindTarget()
     {
         float closestEnemy = Mathf.Infinity;
@@ -61,7 +59,7 @@ public class LightMissileMove : MonoBehaviour
         
         if (target != null)
         {
-            transform.LookAt(target.transform, transform.up);
+                transform.LookAt(target.transform, transform.up);
         }
         else
         {
@@ -69,17 +67,27 @@ public class LightMissileMove : MonoBehaviour
         }
         
         float noiseyness = 1; //tweak this to adjust how random the motion is
-
+        
         //calculate random number using x and y position
         float rand = Mathf.PerlinNoise(transform.position.x*noiseyness ,transform.position.y*noiseyness );
-
+        
         //if you're in 3d, you'll need to do it again to take into account the z position
         rand = Mathf.PerlinNoise(rand,transform.position.z*noiseyness );
         
         //randomize the last variable
-        float rand_angle = Mathf.Lerp(rand, UnityEngine.Random.Range(0f,-30f), UnityEngine.Random.Range(0f,30f));
+        float rand_angle = Mathf.Lerp(UnityEngine.Random.Range(-rand, rand) * UnityEngine.Random.Range(1, 10), -30, 10);
         
-        transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.right);
+        transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.right * UnityEngine.Random.Range(-1f, 1f));
+        
+        //calculate random number using x and y position
+        rand = Mathf.PerlinNoise(transform.position.x*noiseyness ,transform.position.y*noiseyness );
+        
+        //if you're in 3d, you'll need to do it again to take into account the z position
+        rand = Mathf.PerlinNoise(rand,transform.position.z*noiseyness );
+        
+        //randomize the last variable
+        rand_angle = Mathf.Lerp(UnityEngine.Random.Range(-rand, rand) * UnityEngine.Random.Range(1, 10), 5, 1);
+        transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.up * UnityEngine.Random.Range(-1f, 1f));
     }
 
     void SpawnDischargeEffect()

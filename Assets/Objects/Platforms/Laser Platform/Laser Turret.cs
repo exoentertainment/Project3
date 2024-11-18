@@ -65,6 +65,12 @@ public class LaserTurret : MonoBehaviour
 
     void Fire()
     {
+        if (target.layer != LayerMask.NameToLayer("Celestial Body"))
+        {
+            target = null;
+            Debug.Log("planet destroyed");
+        }
+
         if (target != null)
         {
             if ((Time.time - lastFireTime) >= turretSO.attackSpeed && !laserComponent.activeSelf)
@@ -98,18 +104,6 @@ public class LaserTurret : MonoBehaviour
     {
         if (target != null)
         {
-            // Vector3 targetVector = target.transform.position - barrelTransform.position;
-            // targetVector.Normalize();
-            // // float rotateAmountZ = Vector3.Cross(targetVector, transform.forward).z;
-            // float rotateAmountX = Vector3.Cross(targetVector, barrelTransform.forward).x;
-            // // float rotateAmountY = Vector3.Cross(targetVector, barrelTransform.forward).y;
-            //
-            // // float newAngleZ = transform.rotation.eulerAngles.z + (-rotateAmountZ);
-            // float newAngleX = barrelTransform.rotation.eulerAngles.x + (-rotateAmountX);
-            // // float newAngleY = barrelTransform.rotation.eulerAngles.y + (-rotateAmountY);
-            //
-            // barrelTransform.rotation = Quaternion.Euler(newAngleX, transform.rotation.eulerAngles.y, 0);
-
             foreach (Transform barrels in barrelTransform)
             {
                 barrels.LookAt(target.transform);

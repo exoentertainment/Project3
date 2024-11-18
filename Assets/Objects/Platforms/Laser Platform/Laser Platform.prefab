@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 76.234604, y: 44.24037, z: -58.59997}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7367961006813357859}
@@ -7868,9 +7868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5924c698ded4b428490fc749199b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamLineRendererPrefab: {fileID: 113598, guid: 9bc40fcd7e707f149b47aa3fbb1773df, type: 3}
-  beamStartPrefab: {fileID: 108584, guid: 9b0245240330cec41893d8611880df8d, type: 3}
-  beamEndPrefab: {fileID: 131904, guid: 16d8536db6f4c8e469e7c0929758624d, type: 3}
+  beamLineRendererPrefab: {fileID: 113598, guid: af80f7359c4a0ca47bb8420ba96b43a3, type: 3}
+  beamStartPrefab: {fileID: 185238, guid: f0b2491b37d680c4faf61434d41576e2, type: 3}
+  beamEndPrefab: {fileID: 149788, guid: 63feab4b741974c46831a53513dbb6d1, type: 3}
   beamCollides: 1
   beamLength: 600
   beamEndOffset: 0

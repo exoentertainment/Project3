@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Serialization;
 
-public class PlatformMissileTurret : MonoBehaviour
+public class StationaryMissileLauncher : MonoBehaviour
 {
     #region -- Serialized Fields --
 
@@ -12,15 +12,11 @@ public class PlatformMissileTurret : MonoBehaviour
 
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
-    [FormerlySerializedAs("tubeTransform")] [SerializeField] private Transform missileTubeTransform;
-    
-    [Header("Variables")] 
-    [SerializeField] LayerMask targetLayer;
 
     #endregion
 
     float lastFireTime;
-    GameObject target;
+    GameObject target = null;
 
     private void Start()
     {
@@ -31,9 +27,7 @@ public class PlatformMissileTurret : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            SearchForTarget();
-            RotateTurret();
-            RotateBarrel();
+            //SearchForTarget();
             Fire();
         }
     }
@@ -44,7 +38,7 @@ public class PlatformMissileTurret : MonoBehaviour
         {
             float closestEnemy = Mathf.Infinity;
 
-            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, targetLayer);
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, platformTurretSO.targetLayer);
 
             if (potentialTargets.Length > 0)
             {
@@ -74,6 +68,10 @@ public class PlatformMissileTurret : MonoBehaviour
                 lastFireTime = Time.time;
             }
         }
+        else
+        {
+            SearchForTarget();
+        }
     }
 
     IEnumerator FireRoutine()
@@ -89,30 +87,6 @@ public class PlatformMissileTurret : MonoBehaviour
             Instantiate(platformTurretSO.projectilePrefab, spawnPoint.position, transform.rotation);
             
             yield return new WaitForSeconds(platformTurretSO.delayPerBarrel);
-        }
-    }
-    
-    void RotateTurret()
-    {
-        if (target != null)
-        {
-            Vector3 targetVector = target.transform.position - transform.position;
-            targetVector.Normalize();
-
-            float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
-            
-            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY);
-            
-            transform.rotation = Quaternion.Euler(0, newAngleY, 0);
-        }
-    }
-
-    void RotateBarrel()
-    {
-        if (target != null)
-        {
-            missileTubeTransform.LookAt(target.transform);
-            
         }
     }
     
