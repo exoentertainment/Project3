@@ -75,7 +75,7 @@ public class LightMissileMove : MonoBehaviour
         rand = Mathf.PerlinNoise(rand,transform.position.z*noiseyness );
         
         //randomize the last variable
-        float rand_angle = Mathf.Lerp(UnityEngine.Random.Range(-rand, rand) * UnityEngine.Random.Range(1, 10), -30, 10);
+        float rand_angle = Mathf.Lerp(rand * UnityEngine.Random.Range(1, 3), -5, 1);
         
         transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.right * UnityEngine.Random.Range(-1f, 1f));
         
@@ -86,7 +86,7 @@ public class LightMissileMove : MonoBehaviour
         rand = Mathf.PerlinNoise(rand,transform.position.z*noiseyness );
         
         //randomize the last variable
-        rand_angle = Mathf.Lerp(UnityEngine.Random.Range(-rand, rand) * UnityEngine.Random.Range(1, 10), 5, 1);
+        rand_angle = Mathf.Lerp(-rand * UnityEngine.Random.Range(1, 3), 5, 1);
         transform.rotation *= Quaternion.AngleAxis(rand_angle, transform.up * UnityEngine.Random.Range(-1f, 1f));
     }
 
