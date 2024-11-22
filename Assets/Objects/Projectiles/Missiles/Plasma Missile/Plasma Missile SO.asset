@@ -19,5 +19,5 @@ MonoBehaviour:
   lifeTime: 5
   targetLayer:
     serializedVersion: 2
-    m_Bits: 65792
+    m_Bits: 196864
   explodeEffectPrefab: {fileID: 7890783640856150600, guid: a251175c9f94f5f479cefd796119e0dd, type: 3}

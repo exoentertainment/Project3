@@ -39,17 +39,18 @@ public class LightMissileMove : MonoBehaviour
 
         if (potentialTargets.Length > 0)
         {
-            for (int x = 0; x < potentialTargets.Length; x++)
-            {
-                float distanceToEnemy =
-                    Vector3.Distance(potentialTargets[x].transform.position, transform.position);
-
-                if (distanceToEnemy < closestEnemy)
-                {
-                    closestEnemy = distanceToEnemy;
-                    target = potentialTargets[x].gameObject;
-                }
-            }
+            target = potentialTargets[UnityEngine.Random.Range(0, potentialTargets.Length)].gameObject;
+            // for (int x = 0; x < potentialTargets.Length; x++)
+            // {
+            //     float distanceToEnemy =
+            //         Vector3.Distance(potentialTargets[x].transform.position, transform.position);
+            //
+            //     if (distanceToEnemy < closestEnemy)
+            //     {
+            //         closestEnemy = distanceToEnemy;
+            //         target = potentialTargets[x].gameObject;
+            //     }
+            // }
         }
     }
     

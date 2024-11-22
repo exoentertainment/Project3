@@ -18,6 +18,6 @@ MonoBehaviour:
   blastRadius: 1
   targetLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 196864
   projectilePrefab: {fileID: 148176, guid: 3e5637713aa8abe45810793e179b0124, type: 3}
   explodeEffectPrefab: {fileID: 106912, guid: f3b52bd968795e444b484405be161f9d, type: 3}

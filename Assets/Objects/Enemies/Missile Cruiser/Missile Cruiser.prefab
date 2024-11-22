@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4707726251035448636}
   - component: {fileID: 2903874247959084229}
   - component: {fileID: 3373991846720507763}
+  - component: {fileID: 6504599671182093761}
   m_Layer: 8
   m_Name: Missile Cruiser
   m_TagString: Untagged
@@ -118,6 +119,282 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: 654ec87e189ae20468b14dbfe8e2419a, type: 2}
   healthSlider: {fileID: 2014192065097008671}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4888175709400916994}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4877060545776925503}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2510847849228141342}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1758719153976748707}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  deathFeedback: {fileID: 6504599671182093761}
+--- !u!114 &6504599671182093761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945394395542170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  AutoInitialization: 1
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  ForceTimescaleMode: 0
+  ForcedTimescaleMode: 1
+  DurationMultiplier: 1
+  TimescaleMultiplier: 1
+  RandomizeDuration: 0
+  RandomDurationMultiplier: {x: 0.5, y: 1.5}
+  DisplayFullDurationDetails: 0
+  PlayerTimescaleMode: 1
+  OnlyPlayIfWithinRange: 0
+  RangeCenter: {fileID: 0}
+  RangeDistance: 5
+  UseRangeFalloff: 0
+  RangeFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  RemapRangeFalloff: {x: 0, y: 1}
+  IgnoreRangeEvents: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlay: 1
+  CanPlayWhileAlreadyPlaying: 1
+  ChanceToPlay: 100
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRestoreInitialValues:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSkipToTheEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    OnInitializationComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnable:
+      m_PersistentCalls:
+        m_Calls: []
+    OnDisable:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
+  FeedbacksList:
+  - rid: 2594558902195191891
+  KeepPlayModeChanges: 0
+  PerformanceMode: 0
+  StopFeedbacksOnDisable: 0
+  PlayCount: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2594558902195191891
+      type: {class: MMF_CinemachineImpulse, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Tools}
+      data:
+        Active: 1
+        UniqueID: 946900009
+        Label: Cinemachine Impulse
+        ChannelMode: 0
+        Channel: 0
+        MMChannelDefinition: {fileID: 0}
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          PlayCount: 17
+          LimitPlayCount: 0
+          MaxPlayCount: 3
+          SetPlayCountToZeroOnReset: 0
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        AutomatedTargetAcquisition:
+          Mode: 0
+          ChildIndex: 0
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        UseRange: 0
+        RangeDistance: 5
+        UseRangeFalloff: 0
+        RangeFalloff:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        RemapRangeFalloff: {x: 0, y: 1}
+        AutomaticShakerSetupButton:
+          ButtonText: Automatic Shaker Setup
+        Owner: {fileID: 6504599671182093761}
+        DebugActive: 0
+        m_ImpulseDefinition:
+          ImpulseChannel: 1
+          ImpulseShape: 0
+          CustomImpulseShape:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          ImpulseDuration: 0.2
+          ImpulseType: 3
+          DissipationRate: 0
+          RawSignal: {fileID: 11400000, guid: bcf6524ce6451f34cb7106d0c00da9a5, type: 2}
+          AmplitudeGain: 1
+          FrequencyGain: 1
+          RepeatMode: 0
+          Randomize: 1
+          TimeEnvelope:
+            AttackShape:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            DecayShape:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+            AttackTime: 0
+            SustainTime: 0.2
+            DecayTime: 0.7
+            ScaleWithImpact: 1
+            HoldForever: 0
+          ImpactRadius: 1000
+          DirectionMode: 0
+          DissipationMode: 2
+          DissipationDistance: 1000
+          PropagationSpeed: 10000
+        Velocity: {x: 5, y: 5, z: 5}
+        ClearImpulseOnStop: 0
+        DrawGizmos: 0
 --- !u!1 &49251956362930260
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8434828549330740657}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6555079419939279542}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6438385204204610465}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8123679851450128056}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4818689491917706347}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +585,7 @@ GameObject:
   - component: {fileID: 8241865677271033068}
   - component: {fileID: 6655949760958863513}
   - component: {fileID: 950438775231195209}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3778041948381853902}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6364335001169512016}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6239537953598281023}
   - component: {fileID: 2014192065097008671}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +811,7 @@ GameObject:
   - component: {fileID: 1367075844351925250}
   - component: {fileID: 1133800933679704789}
   - component: {fileID: 9039079469132229698}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916986696860773571}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3750085438013856756}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5831395915570288091}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8977258858220283379}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +1008,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6372834383257356524}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +1039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2932656643296540019}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +1070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1895614138230145844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +1101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2977177878032066543}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +1132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7130666976582853533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +1163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4344795458193564421}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +1194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98357932364799388}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +1225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1076255849751089087}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +1256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2808537569290626179}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,7 +1287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2546280054143056083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434765614714904762}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093597600187350499}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1108,7 +1385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6212612993885858634}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,7 +1416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593612916419477167}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,7 +1447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7702519077054805032}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1201,7 +1478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2717552814875092993}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524807081761552303}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1287,7 +1564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7653849406164434681}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7089138327487031870}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2696483719773859347}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1380,7 +1657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4192653822168386698}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1411,7 +1688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6908046706381348240}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1120837467742665392}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 735849940178116567}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1642143108535382473}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4549191444084618351}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2229694724451373764}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1877,7 @@ GameObject:
   - component: {fileID: 4762027543491035506}
   - component: {fileID: 7945185792505199572}
   - component: {fileID: 3171010874017810454}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Engine Trail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,7 +2112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4029883535896856035}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1866,7 +2143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5114457339230532900}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1897,7 +2174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046861035581354383}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1928,7 +2205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8605955499548325856}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1959,7 +2236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3473249905927200050}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +2267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450643441469980748}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +2298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8372402946627865950}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5635792813026097751}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2083,7 +2360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3177642365834402144}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2394,7 @@ GameObject:
   - component: {fileID: 1376711923290811017}
   - component: {fileID: 8961921813592205307}
   - component: {fileID: 8083383258878968273}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2216,7 +2493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7800780008819412398}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2247,7 +2524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6025642731322697804}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2278,7 +2555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 863205161530608257}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2309,7 +2586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3439743759941051592}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Spawn Point (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2345,7 +2622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
@@ -2421,7 +2698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
@@ -2598,7 +2875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
@@ -2674,7 +2951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4126939784349192, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_RootOrder
@@ -2863,7 +3140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
@@ -2951,7 +3228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4126939784349192, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_RootOrder
@@ -3039,7 +3316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710142648395384, guid: 26d97a73e3b29514c995ad6d5bfca507, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4761998332539118, guid: 26d97a73e3b29514c995ad6d5bfca507, type: 3}
       propertyPath: m_RootOrder
@@ -3127,15 +3404,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1400306017268590, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1498555161330578, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1764439727721120, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4958547076727106, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3191,19 +3468,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726792257514396530, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3732513716814205203, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499028917169531966, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705900393776324461, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3349,15 +3626,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1400306017268590, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1498555161330578, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1764439727721120, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4958547076727106, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3413,19 +3690,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726792257514396530, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3732513716814205203, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499028917169531966, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705900393776324461, guid: 8c4e46ae604d2fa4c8b11a01aa2390d8, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3571,7 +3848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
@@ -3647,7 +3924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1547673598524236, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4901445836642474, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_RootOrder
@@ -3736,7 +4013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
@@ -3824,7 +4101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576351251056074, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4063666867509146, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_LocalScale.x
@@ -3880,11 +4157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911265596666086705, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6230415851320784348, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3912,7 +4189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386573200391856, guid: d782e1e8c0845d843a85b82b74ba7c5f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4218316098367814, guid: d782e1e8c0845d843a85b82b74ba7c5f, type: 3}
       propertyPath: m_RootOrder
@@ -3989,7 +4266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576351251056074, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4063666867509146, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_LocalScale.x
@@ -4045,11 +4322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911265596666086705, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6230415851320784348, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4077,7 +4354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
@@ -4153,7 +4430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576351251056074, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4063666867509146, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_LocalScale.x
@@ -4209,11 +4486,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911265596666086705, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6230415851320784348, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4241,7 +4518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1710142648395384, guid: 26d97a73e3b29514c995ad6d5bfca507, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4761998332539118, guid: 26d97a73e3b29514c995ad6d5bfca507, type: 3}
       propertyPath: m_RootOrder
@@ -4329,7 +4606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
@@ -4405,7 +4682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576351251056074, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4063666867509146, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_LocalScale.x
@@ -4461,11 +4738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911265596666086705, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6230415851320784348, guid: 634b36384ff20a844948f0c3afc94186, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4493,7 +4770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
@@ -4569,7 +4846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder

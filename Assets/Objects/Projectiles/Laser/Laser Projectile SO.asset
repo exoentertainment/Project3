@@ -16,4 +16,4 @@ MonoBehaviour:
   damageBonus: 1
   targetLayer:
     serializedVersion: 2
-    m_Bits: 65792
+    m_Bits: 196864

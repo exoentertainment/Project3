@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e08b6e2ddc428587b65d127a21b98e9, type: 3}
-  m_Name: Light Frigate
+  m_Name: Repair Frigate
   m_EditorClassIdentifier: 
-  maxHealth: 2
+  maxHealth: 30
   moveSpeed: 100
   turnRate: 360
   resourceReward: 250
-  standOffDistance: 400
+  standOffDistance: 250
   coastDelay: 5
   targetLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   shipPrefab: {fileID: 0}
   explosionPrefab: {fileID: 1169761733123858, guid: 072ffd0cb178cfc4192123d603eb58f4, type: 3}

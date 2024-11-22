@@ -77,37 +77,23 @@ public class TurretAttack : MonoBehaviour
 
     IEnumerator FireRoutine()
     {
-        // for (int x = 0; x < barrelTransform.Length; x++)
-        // {
-        //     Vector3 targetVector = target.transform.position - barrelTransform[x].position;
-        //     targetVector.Normalize();
-        //
-        //     Quaternion targetRotation = Quaternion.LookRotation(targetVector);
-        //     
-        //     Instantiate(turretSO.dischargePrefab, spawnPoints[x].position, Quaternion.identity);
-        //     
-        //     if(CameraManager.instance.IsObjectInView(transform))
-        //         AudioManager.instance.PlayTurretSound();
-        //     
-        //     Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, targetRotation);
-        //     
-        //     yield return new WaitForSeconds(turretSO.delayPerBarrel);
-        // }
-        
         foreach (Transform spawnPoint in spawnPoints)
         {
-            Vector3 targetVector = target.transform.position - spawnPoint.position;
-            targetVector.Normalize();
-            
-            Quaternion targetRotation = Quaternion.LookRotation(targetVector);
-            
-            Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
-            
-            if(CameraManager.instance.IsObjectInView(transform))
-                AudioManager.instance.PlayTurretSound();
-            
-            Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
-            
+            if (target != null)
+            {
+                Vector3 targetVector = target.transform.position - spawnPoint.position;
+                targetVector.Normalize();
+
+                Quaternion targetRotation = Quaternion.LookRotation(targetVector);
+
+                Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
+
+                if (CameraManager.instance.IsObjectInView(transform))
+                    AudioManager.instance.PlayTurretSound();
+
+                Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
+            }
+
             yield return new WaitForSeconds(turretSO.delayPerBarrel);
         }
     }

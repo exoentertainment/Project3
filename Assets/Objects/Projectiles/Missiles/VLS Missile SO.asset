@@ -20,7 +20,7 @@ MonoBehaviour:
   lifeTime: 5
   targetLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 196864
   projectilePrefab: {fileID: 1298173687816790, guid: dfdadefab2977b14f9b9101af1a99301, type: 3}
   dischargeEffectPrefab: {fileID: 147176, guid: 0af4eb487d774d328877fba6c59e1c6f, type: 3}
   explodeEffectPrefab: {fileID: 134280, guid: 51eb44659a934764b8b6887c581292f2, type: 3}
