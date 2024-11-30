@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f742e8deb140546cae3c2a361c13528, type: 3}
   m_Name: Missile Cruiser Missile
   m_EditorClassIdentifier: 
-  moveSpeed: 250
+  moveSpeed: 25
   damage: 1.5
   attackRange: 500
   lifeTime: 10

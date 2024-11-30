@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf5e91c0597870a9bc58739e302ebc5, type: 3}
   m_Name: New Planet Health SO
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 150
   explosionDuration: 5
   delayPerExplosion: 0.25
   explosionPrefab: {fileID: 1694630618085734, guid: 03f76dfb397e1c57caaa1a4abc23f071, type: 3}

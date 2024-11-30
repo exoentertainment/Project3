@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7377380307996063207}
   - component: {fileID: 7377380307994965799}
   - component: {fileID: 6500878965575329985}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1_LOD4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 7377380307996063209}
   - component: {fileID: 7377380307994965801}
   - component: {fileID: 7447644748531789857}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 7377380307996063211}
   - component: {fileID: 7377380307994965803}
   - component: {fileID: 4792723550561937233}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 7377380307996063213}
   - component: {fileID: 7377380307994965805}
   - component: {fileID: 5287774751788520104}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 7377380307996063215}
   - component: {fileID: 7377380307994965807}
   - component: {fileID: 5813240462311284523}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: -2459592322406553945}
   - component: {fileID: -498399170097568605}
   - component: {fileID: -4857790525741579123}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Asteroid1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7377380307997390285}
@@ -711,5 +711,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0

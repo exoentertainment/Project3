@@ -88,17 +88,20 @@ public class Asteroid : MonoBehaviour, IDamageable
     
     private void OnCollisionEnter(Collision other)
     {
-        Instantiate(asteroidSO.explosionPrefab, other.GetContact(0).point, Quaternion.identity);
-        
-        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+        if (!other.gameObject.CompareTag("Asteroid Grabber"))
         {
-            hit.TakeDamage(asteroidSO.damage);
-        }
-        
-        if(CameraManager.instance.IsObjectInView(gameObject.transform))
-            AudioManager.instance.PlayLargeExplosion();
+            Instantiate(asteroidSO.explosionPrefab, other.GetContact(0).point, Quaternion.identity);
             
-        Destroy(gameObject);
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+            {
+                hit.TakeDamage(asteroidSO.damage);
+            }
+            
+            if(CameraManager.instance.IsObjectInView(gameObject.transform))
+                AudioManager.instance.PlayLargeExplosion();
+                
+            Destroy(transform.root.gameObject);
+        }
     }
 
     public void TakeDamage(float damage)

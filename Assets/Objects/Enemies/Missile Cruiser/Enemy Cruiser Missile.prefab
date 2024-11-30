@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.993606e-15, y: -0.0000005364418, z: 10.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7439779810205534417}
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missileSO: {fileID: 11400000, guid: 58388a8155f6bb9448c0738820f4b2df, type: 2}
+  rotationTime: 0.5
 --- !u!1001 &715481144372986090
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   moveSpeed: 100
   turnRate: 360
   resourceReward: 100
-  standOffDistance: 40
+  standOffDistance: 250
   coastDelay: 2
   targetLayer:
     serializedVersion: 2

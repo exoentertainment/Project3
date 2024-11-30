@@ -8,6 +8,7 @@ TagManager:
   - Weapon Platform Window
   - System Plane
   - Boss
+  - Asteroid Grabber
   layers:
   - Default
   - TransparentFX

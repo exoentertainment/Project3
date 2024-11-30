@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.9, y: 0, z: 15}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4444514830242115754}
@@ -426,6 +426,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableTimer: 5
+--- !u!1 &395851084988662477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 395071082976858489}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 390678507585313739}
+  - component: {fileID: 9096474214445883024}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &390678507585313739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 395071082976858489}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395851084988662477}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: -0.7071068, z: -0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: -3.43011, y: 4, z: -14.100006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6398547190824228569}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445033162282032484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1193,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1405361351591582376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2404555742643535010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 2403648748103806742}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2399031892953785764}
+  - component: {fileID: 4935755701017354175}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2399031892953785764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 2403648748103806742}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404555742643535010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: -0.7071068, z: -0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: -3.4301074, y: 4, z: -24.200012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8100190629561484524}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2489658467694489207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1465,39 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1405361351591582376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3097280333868301188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3097926194430699568}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3093516042106217090}
+  - component: {fileID: 4406924429906723308}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3093516042106217090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3097926194430699568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3097280333868301188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: -0.7071068, z: -0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: -3.4301097, y: 4, z: -20.799988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1405361351591582376}
+  m_Father: {fileID: 4148587295275878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3177142226768782796
 GameObject:
@@ -1740,6 +1839,39 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &3278969596797394316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3280016916529581624}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3284422682536920202}
+  - component: {fileID: 3659211827352404548}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3284422682536920202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3280016916529581624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278969596797394316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: -0.7071068, z: -0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: -3.43011, y: 4, z: -17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3163364567295841562}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3419596300974712354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2044,39 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &3482107383402347936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3483293858968153620}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3478835316159505574}
+  - component: {fileID: 3214179374203296099}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3478835316159505574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 3483293858968153620}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482107383402347936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: 0.7071068, z: 0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: 3.430122, y: 4, z: -24.200012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4601863716959904562}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3605565243490643894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,6 +2893,39 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1550613473984038029}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5410260907374512183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 5409052783021333379}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5404526123265478961}
+  - component: {fileID: 1553663795123850481}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5404526123265478961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 5409052783021333379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5410260907374512183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: 0.7071068, z: 0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: 3.4301217, y: 4, z: -14.100006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1278828224013905328}
+  m_Father: {fileID: 4148587295275878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5411067870764657370
 GameObject:
@@ -4312,6 +4510,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1405361351591582376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7949489600135270847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 7950975211591369227}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7946569462764456121}
+  - component: {fileID: 7041811072130009421}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7946569462764456121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 7950975211591369227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7949489600135270847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: 0.7071068, z: 0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: 3.4301217, y: 4, z: -17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8492329951628238760}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8163579372894616838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,6 +5341,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2043577185865660915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9045833516426889813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 9046758379092711905}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9051357662649897811}
+  - component: {fileID: 115084608650969489}
+  m_Layer: 0
+  m_Name: 'GalacticLeopard_MissilesLauncher (Missing Prefab with guid: 15b2e1e9328987c45849b18d931ee192)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9051357662649897811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
+  m_PrefabInstance: {fileID: 9046758379092711905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9045833516426889813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000001545431, y: 0.7071068, z: 0.00000001545431, w: 0.7071068}
+  m_LocalPosition: {x: 3.430122, y: 4, z: -20.799988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2155987138501781614}
+  m_Father: {fileID: 4148587295275878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9087683938723486698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5742,16 +6006,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 9096474214445883024}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &390678507585313739 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 395071082976858489}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &395851084988662477 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 395071082976858489}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &9096474214445883024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6577,16 +6831,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4935755701017354175}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &2399031892953785764 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 2403648748103806742}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2404555742643535010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 2403648748103806742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &4935755701017354175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6902,16 +7146,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4406924429906723308}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &3093516042106217090 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3097926194430699568}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3097280333868301188 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3097926194430699568}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &4406924429906723308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7260,11 +7494,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3659211827352404548}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!1 &3278969596797394316 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3280016916529581624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &3659211827352404548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7292,11 +7521,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &3284422682536920202 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3280016916529581624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3483293858968153620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7373,16 +7597,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3214179374203296099}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &3478835316159505574 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3483293858968153620}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3482107383402347936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 3483293858968153620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &3214179374203296099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8062,16 +8276,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1553663795123850481}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &5404526123265478961 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 5409052783021333379}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5410260907374512183 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 5409052783021333379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1553663795123850481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9536,16 +9740,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7041811072130009421}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!4 &7946569462764456121 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 7950975211591369227}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7949489600135270847 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 7950975211591369227}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &7041811072130009421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10128,11 +10322,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 115084608650969489}
   m_SourcePrefab: {fileID: 100100000, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
---- !u!1 &9045833516426889813 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631092774704052, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 9046758379092711905}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &115084608650969489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10160,8 +10349,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &9051357662649897811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4621277098527410, guid: 15b2e1e9328987c45849b18d931ee192, type: 3}
-  m_PrefabInstance: {fileID: 9046758379092711905}
-  m_PrefabAsset: {fileID: 0}

@@ -16,7 +16,7 @@ MonoBehaviour:
   minRotationSpeed: 0
   maxRotationSpeed: 0
   health: 5
-  damage: 20
+  damage: 100
   lifespan: 120
   targetLayers:
     serializedVersion: 2

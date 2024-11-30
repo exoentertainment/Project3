@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,12 +8,12 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private EnemyScriptableObject enemySO;
     //needs eventual scriptable object to hold these serialized fields
 
-    private bool isFloating = true;
+    private bool isFloating = false;
     private GameObject target;
     
     private void Start()
     {
-        StartCoroutine(FloatShipRoutine());
+        //StartCoroutine(FloatShipRoutine());
     }
 
     private void Update()
@@ -86,8 +86,11 @@ public class EnemyMovement : MonoBehaviour
 
         if (!isFloating)
         {
-            if(Vector3.Distance(transform.position, target.transform.position) > enemySO.standOffDistance)
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, target.transform.position) > enemySO.standOffDistance)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position,
+                    enemySO.moveSpeed * Time.deltaTime);
+            }
         }
     }
     

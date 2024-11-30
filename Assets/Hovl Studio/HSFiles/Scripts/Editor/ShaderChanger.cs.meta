@@ -11,8 +11,8 @@ MonoImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 157764
-  packageName: Support package for Hovl Studio assets
-  packageVersion: 3.14
+  productId: 122863
+  packageName: HQ Realistic explosions
+  packageVersion: 2.1.0
   assetPath: Assets/Hovl Studio/HSFiles/Scripts/Editor/ShaderChanger.cs
-  uploadId: 707410
+  uploadId: 707412
