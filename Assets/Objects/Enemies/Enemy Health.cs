@@ -51,8 +51,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             ResourceManager.instance?.IncreaseResources(enemySO.resourceReward);
             Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
             
-            BoxCollider boxCollider = GetComponent<BoxCollider>();
-            Destroy(boxCollider);
+            CameraManager.instance.RemoveTrackingObject();
             
             deathFeedback?.PlayFeedbacks();
             

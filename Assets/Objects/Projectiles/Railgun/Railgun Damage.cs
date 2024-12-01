@@ -10,7 +10,7 @@ public class RailgunDamage : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            CheckNearbyArea();
+            //CheckNearbyArea();
         }
     }
     
@@ -45,11 +45,26 @@ public class RailgunDamage : MonoBehaviour
             
             if (target.TryGetComponent<IDamageable>(out IDamageable hit))
             {
+                Debug.Log("damage");
                 hit.TakeDamage(projectileSO.damage);
                 Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }
+    }
+    
+    private void OnCollisionEnter(Collision other)
+    {
+        Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
+        
+        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+        {
+            hit.TakeDamage(projectileSO.damage);
+            Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+        
+        Destroy(gameObject);
     }
     
     private void OnDrawGizmosSelected()

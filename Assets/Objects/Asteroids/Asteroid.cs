@@ -88,7 +88,7 @@ public class Asteroid : MonoBehaviour, IDamageable
     
     private void OnCollisionEnter(Collision other)
     {
-        if (!other.gameObject.CompareTag("Asteroid Grabber"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
         {
             Instantiate(asteroidSO.explosionPrefab, other.GetContact(0).point, Quaternion.identity);
             

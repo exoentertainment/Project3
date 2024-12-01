@@ -16,7 +16,7 @@ MonoBehaviour:
   coastDuration: 1
   coastSpeed: 50
   damage: 5
-  attackRange: 600
+  attackRange: 800
   lifeTime: 5
   targetLayer:
     serializedVersion: 2

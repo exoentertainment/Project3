@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 2
   delayPerBarrel: 0.1
-  attackRange: 300
+  attackRange: 250
   barrelRotationSpeed: 180
   projectilePrefab: {fileID: 177226, guid: 16c0777436238fa8ea16d8a791bb9870, type: 3}
   targetLayer:

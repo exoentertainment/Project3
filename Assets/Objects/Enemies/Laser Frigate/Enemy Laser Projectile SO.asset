@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6637e684f913ebe4295e5f5d2ab36cea, type: 3}
   m_Name: Enemy Laser Projectile SO
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
   damageBonus: 1
   targetLayer:
     serializedVersion: 2

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,6 +16,8 @@ public class TurretAttack : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Transform[] barrelTransform;
 
+    [SerializeField] MMFeedbacks firingFeedback;
+    
     #endregion
 
     float lastFireTime;
@@ -89,7 +92,10 @@ public class TurretAttack : MonoBehaviour
                 Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
 
                 if (CameraManager.instance.IsObjectInView(transform))
+                {
                     AudioManager.instance.PlayTurretSound();
+                    firingFeedback?.PlayFeedbacks();
+                }
 
                 Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
             }

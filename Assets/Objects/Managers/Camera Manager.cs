@@ -154,10 +154,20 @@ public class CameraManager : MonoBehaviour
         {
             if(defaultCamera.transform.position.y + defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) > defaultYPos) 
                 defaultCamera.transform.position += defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            else
+                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, defaultYPos, defaultCamera.transform.position.z);
+            
+            // if(defaultCamera.transform.position.y < defaultYPos)
+            //     defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, defaultYPos, defaultCamera.transform.position.z);
         }
         if (scrollDirection < 0)
         {
-            defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            //defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            
+            if(defaultCamera.transform.position.y - defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) < zoomMax) 
+                defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            else
+                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomMax, defaultCamera.transform.position.z);
         }
     }
     
@@ -337,7 +347,7 @@ public class CameraManager : MonoBehaviour
         return (viewPos.x >= 0 && viewPos.y >= 0) && (viewPos.x <= 1 && viewPos.y <= 1) && viewPos.z >= 0;
     }
 
-    void RemoveTrackingObject()
+    public void RemoveTrackingObject()
     {
         if (defaultCamera.gameObject.activeSelf)
         {

@@ -15,7 +15,7 @@ MonoBehaviour:
   moveSpeed: 25
   minRotationSpeed: 0
   maxRotationSpeed: 0
-  health: 5
+  health: 50
   damage: 100
   lifespan: 120
   targetLayers:
