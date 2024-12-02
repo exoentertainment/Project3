@@ -65,12 +65,6 @@ public class LaserTurret : MonoBehaviour
 
     void Fire()
     {
-        if (target.layer != LayerMask.NameToLayer("Celestial Body"))
-        {
-            target = null;
-            Debug.Log("planet destroyed");
-        }
-
         if (target != null)
         {
             if ((Time.time - lastFireTime) >= turretSO.attackSpeed && !laserComponent.activeSelf)

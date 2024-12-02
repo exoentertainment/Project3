@@ -23,9 +23,9 @@ public class EnemySpawner : MonoBehaviour
     
     #endregion
     
-    int currentWave = 0;
+    int currentWave;
     float defaultLightIntensity;
-
+    
     private void Start()
     {
         SpawnEnemy();
@@ -52,11 +52,17 @@ public class EnemySpawner : MonoBehaviour
                     int randomSpawnPoint = Random.Range(0, spawnPoint.Length);
                     int enemySpawn = Random.Range(0, spawnWavesSO[currentWave].enemyShipsPrefabs.Length);
                     
-                    Instantiate(
-                        spawnWavesSO[currentWave].enemyShipsPrefabs[enemySpawn], spawnPoint[randomSpawnPoint].position,
-                        Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,
-                            transform.rotation.z));
+                    GameObject enemy = Instantiate(
+                            spawnWavesSO[currentWave].enemyShipsPrefabs[enemySpawn],
+                            spawnPoint[randomSpawnPoint].position,
+                            Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,
+                                transform.rotation.z));
 
+                       if (numWaves == 1 && i == (spawnWavesSO[currentWave].numSpawns - 1))
+                       { 
+                           GameManager.instance.AssignLastEnemy(enemy);
+                       }
+                       
                     StartCoroutine(IncreaseLightIntensityRoutine());
                     yield return new WaitForSeconds(spawnWavesSO[currentWave].timeBetweenSpawns);
                 }

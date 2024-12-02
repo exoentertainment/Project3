@@ -15,7 +15,7 @@ MonoBehaviour:
   moveSpeed: 25
   damage: 4
   blastRadius: 50
-  attackRange: 800
+  attackRange: 1000
   lifeTime: 5
   targetLayer:
     serializedVersion: 2

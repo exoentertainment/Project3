@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: VLS Missile SO
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  coastDuration: 0.5
+  coastDuration: 0.1
   coastSpeed: 50
   damage: 1.5
-  attackRange: 800
+  attackRange: 1000
   lifeTime: 5
   targetLayer:
     serializedVersion: 2

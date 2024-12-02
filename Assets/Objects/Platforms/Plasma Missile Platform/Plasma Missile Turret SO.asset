@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 5
   delayPerBarrel: 1
-  attackRange: 800
+  attackRange: 1000
   targetLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 65792
   projectilePrefab: {fileID: 180508, guid: 2b4007b054f4c634991ff3e570c4018a, type: 3}
   dischargePrefab: {fileID: 0}
