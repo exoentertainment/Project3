@@ -4776,11 +4776,11 @@ GameObject:
   - component: {fileID: 19910066}
   - component: {fileID: 19854330}
   - component: {fileID: -8287591983379590672}
-  - component: {fileID: 1604927993216971902}
   - component: {fileID: -6778462667613567412}
   - component: {fileID: 5172032087215827865}
   - component: {fileID: 5166529603717454799}
   - component: {fileID: 8302812672963103971}
+  - component: {fileID: 725614833045468785}
   m_Layer: 11
   m_Name: Railgun Projectile
   m_TagString: Untagged
@@ -9557,27 +9557,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSO: {fileID: 11400000, guid: 10a30eb8cf04129d6b7b4ffbe26829df, type: 2}
---- !u!65 &1604927993216971902
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177226}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0424001, y: 1.0424001, z: 1.8081148}
-  m_Center: {x: 0, y: 0, z: -0.35714313}
 --- !u!54 &-6778462667613567412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9706,3 +9685,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSO: {fileID: 11400000, guid: 10a30eb8cf04129d6b7b4ffbe26829df, type: 2}
+--- !u!135 &725614833045468785
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.2612
+  m_Center: {x: 0, y: 0, z: -0.75}

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734120cd7f2c752588a3cb850e51c1a6, type: 3}
   m_Name: KamikazeSO
   m_EditorClassIdentifier: 
-  maxHealth: 15
+  maxHealth: 5
   moveSpeed: 25
   kamikazeSpeed: 200
   turnRate: 360
   coastDelay: 2
   accelerationDistance: 50
   damage: 1
-  resourceReward: 150
+  resourceReward: 15
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
   shipPrefab: {fileID: 0}
-  explosionPrefab: {fileID: 1694630618085734, guid: 03f76dfb397e1c57caaa1a4abc23f071, type: 3}
+  explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}

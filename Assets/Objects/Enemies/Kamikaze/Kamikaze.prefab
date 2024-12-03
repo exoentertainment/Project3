@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7893560372623328911}
   - component: {fileID: 1153007088031294526}
   - component: {fileID: 3698330713335437584}
-  - component: {fileID: 1566406024265641771}
   - component: {fileID: 3487293404214085480}
+  - component: {fileID: 6218786751133355399}
   m_Layer: 8
   m_Name: Kamikaze
   m_TagString: Untagged
@@ -109,8 +109,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &1566406024265641771
-BoxCollider:
+--- !u!114 &3487293404214085480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192508902719806313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320dfcf6b888239709e33c03ca5f7ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipSO: {fileID: 11400000, guid: 980c9ce6ed28bf3529cece7d12474ad0, type: 2}
+--- !u!135 &6218786751133355399
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -128,21 +141,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 3, z: 13}
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3487293404214085480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192508902719806313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320dfcf6b888239709e33c03ca5f7ad5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipSO: {fileID: 11400000, guid: 980c9ce6ed28bf3529cece7d12474ad0, type: 2}
 --- !u!1 &1619624814585444493
 GameObject:
   m_ObjectHideFlags: 0

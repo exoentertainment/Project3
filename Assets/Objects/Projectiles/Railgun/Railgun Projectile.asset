@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87e70fcc5f505163eb8f4a690fa839cc, type: 3}
   m_Name: Railgun Projectile
   m_EditorClassIdentifier: 
-  moveSpeed: 120
+  moveSpeed: 500
   damage: 1
-  lifeTime: 5
+  lifeTime: 2
   blastRadius: 5
   targetLayer:
     serializedVersion: 2

@@ -9,11 +9,6 @@ public class WeaponPlatformWindow : MonoBehaviour
     [SerializeField] private PlatformScriptableObject[] weaponPlatformsSO;
 
     [Header("Components")] 
-    [SerializeField] private TMP_Text basicGunText;
-    [SerializeField] private TMP_Text dualGunText;
-    [SerializeField] private TMP_Text lightMissileText;
-    [SerializeField] private TMP_Text cruiseMissileText;
-    
     private GameObject weaponPlatform;
 
     enum PlatformType
@@ -21,7 +16,11 @@ public class WeaponPlatformWindow : MonoBehaviour
         Basic = 0,
         DualGun = 1,
         LightMissile = 2,
-        CruiseMissile = 3
+        CruiseMissile = 3,
+        PlasmaGun = 4,
+        PlasmaMissile = 5,
+        LaserGun = 6,
+        HeavyPlatform = 7
     }
     
     //Take the passed weapon platform slot and store it if player builds a platform
@@ -108,6 +107,69 @@ public class WeaponPlatformWindow : MonoBehaviour
                 .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.CruiseMissile].platformPrefab);
             
             ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.CruiseMissile].resourceCost);
+            
+            CloseWindow(false);
+        }
+        else
+        {
+            AudioManager.instance.PlayUIError();
+        }
+    }
+    
+    public void PlacePlasmaGunWeaponPlatform()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.PlasmaGun].resourceCost))
+        {
+            if(weaponPlatform.transform.childCount > 0)
+                CheckExistingPlatform(weaponPlatformsSO[(int)PlatformType.PlasmaGun].resourceCost/2);
+            
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.PlasmaGun].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.PlasmaGun].resourceCost);
+            
+            CloseWindow(false);
+        }
+        else
+        {
+            AudioManager.instance.PlayUIError();
+        }
+    }
+    
+    public void PlacePlasmaMissileWeaponPlatform()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.PlasmaMissile].resourceCost))
+        {
+            if(weaponPlatform.transform.childCount > 0)
+                CheckExistingPlatform(weaponPlatformsSO[(int)PlatformType.PlasmaMissile].resourceCost/2);
+            
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.PlasmaMissile].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.PlasmaMissile].resourceCost);
+            
+            CloseWindow(false);
+        }
+        else
+        {
+            AudioManager.instance.PlayUIError();
+        }
+    }
+    
+    public void PlaceLaserWeaponPlatform()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.LaserGun].resourceCost))
+        {
+            if(weaponPlatform.transform.childCount > 0)
+                CheckExistingPlatform(weaponPlatformsSO[(int)PlatformType.LaserGun].resourceCost/2);
+            
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.LaserGun].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.LaserGun].resourceCost);
             
             CloseWindow(false);
         }

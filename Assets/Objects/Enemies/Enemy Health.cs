@@ -56,7 +56,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             deathFeedback?.PlayFeedbacks();
             
             StartCoroutine(ExplodeShip());
-            Destroy(transform.root.gameObject, 3f);
+            Destroy(transform.root.gameObject, 1f);
         }
     }
 
@@ -75,7 +75,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             rb.AddExplosionForce(300, part.position, 50);
             Instantiate(enemySO.explosionPrefab, part.position, Quaternion.identity);
 
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(.1f);
         }
     }
     

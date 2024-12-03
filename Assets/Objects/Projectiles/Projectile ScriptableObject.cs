@@ -4,7 +4,7 @@ using UnityEngine;
 public class IProjectileScriptableObject : ScriptableObject
 {
     public int moveSpeed;
-    public int damage;
+    public float damage;
     public float lifeTime;
     public float blastRadius;
     public LayerMask targetLayer;

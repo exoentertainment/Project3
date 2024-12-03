@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Enemy Basic Projectile
   m_EditorClassIdentifier: 
   moveSpeed: 500
-  damage: 1
-  lifeTime: 5
+  damage: 0.2
+  lifeTime: 2
   blastRadius: 0
   targetLayer:
     serializedVersion: 2
-    m_Bits: 8320
-  dischargeEffectPrefab: {fileID: 146160, guid: 9e990a01552c805499d75883678aecf8, type: 3}
+    m_Bits: 12416
   projectilePrefab: {fileID: 0}
-  explodeEffectPrefab: {fileID: 0}
+  explodeEffectPrefab: {fileID: 122526, guid: d326d8320cc17ef4886ba0852a55affd, type: 3}

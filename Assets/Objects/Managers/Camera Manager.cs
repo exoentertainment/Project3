@@ -21,7 +21,8 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private float panSpeed;
     [SerializeField] private float rotateSpeed;
     [SerializeField] float zoomSpeed;
-    [SerializeField] float zoomMax;
+    [FormerlySerializedAs("zoomMax")] [SerializeField] float zoomOutMax;
+    [SerializeField] float zoomInMax;
     
     #endregion
 
@@ -152,10 +153,10 @@ public class CameraManager : MonoBehaviour
     {
         if (scrollDirection > 0)
         {
-            if(defaultCamera.transform.position.y + defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) > defaultYPos) 
+            if(defaultCamera.transform.position.y + defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) > zoomInMax) 
                 defaultCamera.transform.position += defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
             else
-                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, defaultYPos, defaultCamera.transform.position.z);
+                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomInMax, defaultCamera.transform.position.z);
             
             // if(defaultCamera.transform.position.y < defaultYPos)
             //     defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, defaultYPos, defaultCamera.transform.position.z);
@@ -164,10 +165,10 @@ public class CameraManager : MonoBehaviour
         {
             //defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
             
-            if(defaultCamera.transform.position.y - defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) < zoomMax) 
+            if(defaultCamera.transform.position.y - defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) < zoomOutMax) 
                 defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
             else
-                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomMax, defaultCamera.transform.position.z);
+                defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomOutMax, defaultCamera.transform.position.z);
         }
     }
     

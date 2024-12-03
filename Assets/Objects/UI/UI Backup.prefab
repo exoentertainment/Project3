@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7371965184839934315}
         m_TargetAssemblyTypeName: WeaponPlatformWindow, Assembly-CSharp
-        m_MethodName: PlaceLaserWeaponPlatform
+        m_MethodName: PlaceDualGunWeaponPlatform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6638383810555868705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -466,9 +466,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba688c38c0ddf3a139ce4164e51238bb, type: 2}
   - {fileID: 11400000, guid: c9190243e983c22efb52079e2e29e722, type: 2}
   - {fileID: 11400000, guid: 49fa6d9d4b1126f758475e2d831a227c, type: 2}
-  - {fileID: 11400000, guid: c1077cc5bb34cda47a051bdbc9675bcf, type: 2}
-  - {fileID: 11400000, guid: 0e37fe4705fef984f9e60877580e547d, type: 2}
-  - {fileID: 11400000, guid: ce07c6abb619a7147b1c0351dba5059e, type: 2}
+  basicGunText: {fileID: 1922026199329559998}
+  dualGunText: {fileID: 5482693321666306404}
+  lightMissileText: {fileID: 6463965177652728303}
+  cruiseMissileText: {fileID: 2692942634062277548}
 --- !u!1 &1170677867745068910
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +617,6 @@ GameObject:
   - component: {fileID: 7361489373091967856}
   - component: {fileID: 8247351779628524060}
   - component: {fileID: 7415314387417119931}
-  - component: {fileID: 5013437344150805715}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -681,62 +681,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5013437344150805715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352093122920045318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 7415314387417119931}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8514257885174631466}
-        m_TargetAssemblyTypeName: LevelClearedButton, Assembly-CSharp
-        m_MethodName: LoadNextLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1550876025119979229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,7 +1304,7 @@ GameObject:
   - component: {fileID: 4263177686501057959}
   - component: {fileID: 3369419369106375433}
   m_Layer: 5
-  m_Name: UI
+  m_Name: UI Backup
   m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1843,7 +1787,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7371965184839934315}
         m_TargetAssemblyTypeName: WeaponPlatformWindow, Assembly-CSharp
-        m_MethodName: PlacePlasmaMissileWeaponPlatform
+        m_MethodName: PlaceCruiseMissileWeaponPlatform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2401,7 +2345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7371965184839934315}
         m_TargetAssemblyTypeName: WeaponPlatformWindow, Assembly-CSharp
-        m_MethodName: PlacePlasmaGunWeaponPlatform
+        m_MethodName: PlaceDualGunWeaponPlatform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2438,14 +2382,13 @@ GameObject:
   - component: {fileID: 3258518843721200603}
   - component: {fileID: 2742441273989966671}
   - component: {fileID: 7563604860649001378}
-  - component: {fileID: 8514257885174631466}
   m_Layer: 5
   m_Name: Next Level Button
   m_TagString: Weapon Platform Window
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3258518843721200603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2505,18 +2448,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8514257885174631466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6573013455699226199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8740c37cdaaf5664c83a8580112b9e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6757263716808882189
 GameObject:
   m_ObjectHideFlags: 0

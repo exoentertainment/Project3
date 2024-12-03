@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f742e8deb140546cae3c2a361c13528, type: 3}
   m_Name: Basic Missile
   m_EditorClassIdentifier: 
-  moveSpeed: 25
   minMoveSpeed: 25
   maxMoveSpeed: 50
   damage: 0.5
   attackRange: 250
-  lifeTime: 10
+  lifeTime: 5
   targetLayer:
     serializedVersion: 2
     m_Bits: 196864

@@ -49,11 +49,12 @@ MonoBehaviour:
   bossCamera: {fileID: 0}
   cameraLayerMask:
     serializedVersion: 2
-    m_Bits: 5056
+    m_Bits: 4992
   panSpeed: 100
   rotateSpeed: 100
   zoomSpeed: 1000
-  zoomMax: 1500
+  zoomOutMax: 1500
+  zoomInMax: 10
 --- !u!1 &1704008311287345907
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicTrack: 0
+  LoadNextLevelWindow: {fileID: 0}
+  lastEnemy: {fileID: 0}
 --- !u!1 &4198978129197386699
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class LightMissileMove : MonoBehaviour
     [SerializeField] private MissileScriptableObject missileSO;
 
     [SerializeField] private float rotationTime;
+    
     #endregion
 
     private GameObject target;
@@ -108,12 +109,9 @@ public class LightMissileMove : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (1 << other.gameObject.layer == missileSO.targetLayer)
+        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
         {
-            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
-            {
-                hit.TakeDamage(missileSO.damage);
-            }
+            hit.TakeDamage(missileSO.damage);
         }
 
         if(CameraManager.instance.IsObjectInView(transform))
