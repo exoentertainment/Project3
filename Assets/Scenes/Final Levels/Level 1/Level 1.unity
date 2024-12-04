@@ -953,6 +953,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -1446,6 +1450,10 @@ PrefabInstance:
       propertyPath: resourceText
       value: 
       objectReference: {fileID: 993556281}
+    - target: {fileID: 5628751379938865685, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: currentResources
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -1589,7 +1597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size

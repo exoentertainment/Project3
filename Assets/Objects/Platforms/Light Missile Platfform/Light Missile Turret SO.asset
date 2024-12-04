@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: 5
   delayPerBarrel: 0.5
-  attackRange: 250
+  attackRange: 350
   targetLayer:
     serializedVersion: 2
     m_Bits: 256

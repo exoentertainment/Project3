@@ -61,6 +61,7 @@ public class EnemySpawner : MonoBehaviour
                        if (numWaves == 1 && i == (spawnWavesSO[currentWave].numSpawns - 1))
                        { 
                            GameManager.instance.AssignLastEnemy(enemy);
+                           Debug.Log("last enemy spawned");
                        }
                        
                     StartCoroutine(IncreaseLightIntensityRoutine());

@@ -32,7 +32,8 @@ public class TurretAttack : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            SearchForTarget();
+            if(target == null)
+                SearchForTarget();
 
             if (target != null)
             {
@@ -58,7 +59,7 @@ public class TurretAttack : MonoBehaviour
                     float distanceToEnemy =
                         Vector3.Distance(potentialTargets[x].transform.position, transform.position);
 
-                    if (distanceToEnemy < closestEnemy)
+                    if (distanceToEnemy < closestEnemy && !CheckLineOfSight(potentialTargets[x].gameObject))
                     {
                         closestEnemy = distanceToEnemy;
                         target = potentialTargets[x].gameObject;
@@ -72,9 +73,16 @@ public class TurretAttack : MonoBehaviour
     {
         if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
         {
-            StartCoroutine(FireRoutine());
+            if (!CheckLineOfSight(target))
+            {
+                StartCoroutine(FireRoutine());
 
-            lastFireTime = Time.time;
+                lastFireTime = Time.time;
+            }
+            else
+            {
+                target = null;
+            }
         }
     }
 
@@ -122,25 +130,25 @@ public class TurretAttack : MonoBehaviour
         }
     }
 
-    bool CheckLineOfSight()
+    bool CheckLineOfSight(GameObject target)
     {
-        Ray ray = new Ray(transform.position, target.transform.position - transform.position);
-        
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+        if (target != null)
         {
-            if (hit.collider != null)
+            Ray ray = new Ray(transform.position, target.transform.position - transform.position);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
             {
-                if (1 << hit.collider.gameObject.layer == turretSO.targetLayer)
+                if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
                 {
                     return true;
                 }
             }
+            else
+            {
+                return false;
+            }
         }
-        else
-        {
-            return false;
-        }
-        
+
         return false;
     }
     

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b096789aeddc164628132184299aec35, type: 3}
-  m_Name: Rotary Turret
+  m_Name: Level Cleared
   m_EditorClassIdentifier: 
   audioType: 0
   audioMixer: {fileID: 4797775633348784603, guid: 6d0618246f8a8b4efa83dc95fad28c35, type: 2}
-  clip: {fileID: 8300000, guid: b5a31d1532c133325be92cdd14fd620a, type: 3}
-  volume: 0.2
+  clip: {fileID: 8300000, guid: df65e863f016088499c368983af5ffa2, type: 3}
+  volume: 1
   pitch: 1
   loop: 0

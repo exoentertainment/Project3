@@ -19,6 +19,8 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
     
     [Header("Feedbacks")]
     [SerializeField] MMFeedbacks deathFeedback;
+
+    [SerializeField] private bool isFragments;
     
     #endregion
 
@@ -55,7 +57,9 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             
             deathFeedback?.PlayFeedbacks();
             
-            StartCoroutine(ExplodeShip());
+            if(isFragments)
+                StartCoroutine(ExplodeShip());
+            
             Destroy(transform.root.gameObject, 1f);
         }
     }

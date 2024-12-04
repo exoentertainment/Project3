@@ -59,5 +59,6 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevelButton()
     {
         LoadNextLevelWindow.SetActive(true);
+        AudioManager.instance.PlayLevelCleared();
     }
 }

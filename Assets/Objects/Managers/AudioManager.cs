@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private WeaponSFXClips weaponSfxClips;
     [SerializeField] UIAudioClips uiAudioClips;
     [SerializeField] MusicClipsSO musicClips;
+    [SerializeField] VFXClipsSO vfxClips;
     
     #endregion
 
@@ -143,6 +144,11 @@ public class AudioManager : MonoBehaviour
     public void PlayPlatformExplosion()
     {
         PlaySound(platformClips.platformExplosion);
+    }
+
+    public void PlayLevelCleared()
+    {
+        PlaySound(vfxClips.levelCleared);
     }
 
     #endregion

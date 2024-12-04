@@ -69,17 +69,20 @@ public class PlatformMissileTurret : MonoBehaviour
         {
             if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
             {
-                StartCoroutine(FireRoutine());
-                
-                lastFireTime = Time.time;
+                if (!CheckLineOfSight())
+                {
+                    StartCoroutine(FireRoutine());
+
+                    lastFireTime = Time.time;
+                }
             }
         }
     }
 
     IEnumerator FireRoutine()
     {
-        // if(CameraManager.instance.IsObjectInView(transform))
-        //     AudioManager.instance.PlayLightMissileTurretSound();
+        if(CameraManager.instance.IsObjectInView(transform))
+            AudioManager.instance.PlayLightMissileTurretSound();
         
         foreach (Transform spawnPoint in spawnPoints)
         {
@@ -114,6 +117,25 @@ public class PlatformMissileTurret : MonoBehaviour
             missileTubeTransform.LookAt(target.transform);
             
         }
+    }
+    
+    bool CheckLineOfSight()
+    {
+        Ray ray = new Ray(transform.position, target.transform.position - transform.position);
+        
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+        {
+            if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
+            {
+                return true;
+            }
+        }
+        else
+        {
+            return false;
+        }
+        
+        return false;
     }
     
     private void OnDrawGizmosSelected()

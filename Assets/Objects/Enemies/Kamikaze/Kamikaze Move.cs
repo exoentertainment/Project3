@@ -86,12 +86,14 @@ public class KamikazeMove : MonoBehaviour
 
         if (!isFloating && 1 << target.layer == enemySO.targetLayer)
         {
-            if(Vector3.Distance(transform.position, target.transform.position) > enemySO.accelerationDistance)
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
-            else
-            {
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.kamikazeSpeed * Time.deltaTime);
-            }
+            // if(Vector3.Distance(transform.position, target.transform.position) > enemySO.accelerationDistance)
+            //     transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
+            // else
+            // {
+            //     transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.kamikazeSpeed * Time.deltaTime);
+            // }
+            
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
         }
     }
     

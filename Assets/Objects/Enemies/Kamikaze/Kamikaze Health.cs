@@ -41,6 +41,7 @@ public class KamikazeHealth : MonoBehaviour, IDamageable
             ResourceManager.instance?.IncreaseResources(enemySO.resourceReward);
             
             Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
+            CameraManager.instance.RemoveTrackingObject();
             Destroy(transform.root.gameObject);
         }
     }
