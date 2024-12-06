@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: VFX Clips
   m_EditorClassIdentifier: 
   levelCleared: {fileID: 11400000, guid: 970d2dac54781d145a0a9857b0a22763, type: 2}
+  gameOver: {fileID: 11400000, guid: b5af1be8b4edbb14c8d2cf1b3ae7a9ae, type: 2}

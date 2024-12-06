@@ -109,9 +109,12 @@ public class LightMissileMove : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+        if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
         {
-            hit.TakeDamage(missileSO.damage);
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+            {
+                hit.TakeDamage(missileSO.damage);
+            }
         }
 
         if(CameraManager.instance.IsObjectInView(transform))

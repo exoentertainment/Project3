@@ -86,7 +86,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (!isFloating)
         {
-            if (Vector3.Distance(transform.position, target.transform.position) > enemySO.standOffDistance)
+            if (Vector3.Distance(transform.position, target.transform.position) >= enemySO.standOffDistance)
             {
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position,
                     enemySO.moveSpeed * Time.deltaTime);

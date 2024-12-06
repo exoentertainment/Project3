@@ -85,10 +85,18 @@ public class VLSMissile : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (1 << other.gameObject.layer == missileSO.targetLayer && !hasCollided)
+        // if (1 << other.gameObject.layer == missileSO.targetLayer && !hasCollided)
+        // {
+        //     hasCollided = true;
+        //     
+        //     if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+        //     {
+        //         hit.TakeDamage(missileSO.damage);
+        //     }
+        // }
+        
+        if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
         {
-            hasCollided = true;
-            
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
             {
                 hit.TakeDamage(missileSO.damage);

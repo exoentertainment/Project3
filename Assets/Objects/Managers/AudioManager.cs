@@ -150,6 +150,11 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound(vfxClips.levelCleared);
     }
+    
+    public void PlayGameOver()
+    {
+        PlaySound(vfxClips.gameOver);
+    }
 
     #endregion
     

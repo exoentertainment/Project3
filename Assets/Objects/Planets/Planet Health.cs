@@ -31,6 +31,7 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     private void Start()
     {
         currentHealth = planetHealthSO.maxHealth;
+        GameManager.instance.AddPlanet();
     }
     
     private void Update()
@@ -78,6 +79,7 @@ public class PlanetHealth : MonoBehaviour, IDamageable
         }
         
         GetComponent<MeshRenderer>().material = deadMaterial;
+        GameManager.instance.RemovePlanet();
         //Destroy(gameObject);
     }
 }

@@ -56,14 +56,16 @@ public class RailgunDamage : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
-        
-        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+
+        if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
         {
-            hit.TakeDamage(projectileSO.damage);
-            Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+            {
+                hit.TakeDamage(projectileSO.damage);
+                Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
+            }
         }
-        
+
         Destroy(gameObject);
     }
     

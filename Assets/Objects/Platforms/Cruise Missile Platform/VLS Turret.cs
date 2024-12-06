@@ -37,7 +37,7 @@ public class VLSTurret : MonoBehaviour
         {
             float closestEnemy = Mathf.Infinity;
 
-            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, missileSO.targetLayer);
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, missileSO.attackRange, missileSO.targetLayer);
 
             if (potentialTargets.Length > 0)
             {
@@ -89,6 +89,6 @@ public class VLSTurret : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, platformTurretSO.attackRange);
+        Gizmos.DrawWireSphere(transform.position, missileSO.attackRange);
     }
 }

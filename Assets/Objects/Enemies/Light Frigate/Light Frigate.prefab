@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1072734232408277759}
   - component: {fileID: 6640970359727986510}
   - component: {fileID: 5968828266990585125}
-  - component: {fileID: 309498416986424978}
   - component: {fileID: 7166049016880409094}
+  - component: {fileID: 5951193481706561711}
   m_Layer: 8
   m_Name: Light Frigate
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 40.2}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8867018945812830304}
@@ -121,27 +121,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathFeedback: {fileID: 0}
---- !u!65 &309498416986424978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407803044532099141}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 10, y: 3, z: 12}
-  m_Center: {x: 0, y: 0, z: 0}
+  isFragments: 0
 --- !u!54 &7166049016880409094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -169,6 +149,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!135 &5951193481706561711
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407803044532099141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1618385051498780339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   - {fileID: 5595024078802289655}
   barrelTransform:
   - {fileID: 1819843087164782712}
+  firingFeedback: {fileID: 0}
 --- !u!1001 &2357437869060750775
 PrefabInstance:
   m_ObjectHideFlags: 0

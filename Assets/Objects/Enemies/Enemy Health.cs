@@ -60,7 +60,10 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             if(isFragments)
                 StartCoroutine(ExplodeShip());
             
-            Destroy(transform.root.gameObject, 1f);
+            if(isFragments)
+                Destroy(transform.root.gameObject, 1f);
+            else
+                Destroy(gameObject);
         }
     }
 

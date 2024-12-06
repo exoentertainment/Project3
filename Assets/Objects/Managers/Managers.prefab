@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceText: {fileID: 0}
-  currentResources: 300
+  currentResources: 200
 --- !u!1 &7307168633310663561
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +288,7 @@ MonoBehaviour:
   weaponSfxClips: {fileID: 11400000, guid: 0a5d2e3de9aec89d5a24cbc2ba462e2f, type: 2}
   uiAudioClips: {fileID: 11400000, guid: 17cc60eea5b65f167801e1ef7c623d2a, type: 2}
   musicClips: {fileID: 11400000, guid: d627e83fd540ded4db0e906c688cf336, type: 2}
+  vfxClips: {fileID: 11400000, guid: 57978cc6ed6be8245a9da507d27713b9, type: 2}
 --- !u!82 &1251017260828233224
 AudioSource:
   m_ObjectHideFlags: 0

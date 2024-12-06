@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,8 +8,10 @@ public class GameManager : MonoBehaviour
 
     [Header("Variables")] 
     [SerializeField] private int musicTrack;
-
+    
     [SerializeField] private GameObject LoadNextLevelWindow;
+    [SerializeField] private GameObject GameOverWindow;
+    [SerializeField] private GameObject DemoOverWindow;
 
     #endregion
 
@@ -17,7 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject lastEnemy;
     private bool isLastEnemySet;
     private bool isNextLevelButtonDisplayed;
-
+    bool isGameOver;
+    private int NumPlanets;
+    
     private void Start()
     {
         PlayMusic();
@@ -36,6 +41,27 @@ public class GameManager : MonoBehaviour
         CheckStatusLastEnemy();
     }
 
+    public void AddPlanet()
+    {
+        NumPlanets++;
+    }
+
+    public void RemovePlanet()
+    {
+        NumPlanets--;
+
+        if (NumPlanets == 0 && !isGameOver)
+        {
+            isGameOver = true;
+            AudioManager.instance.PlayGameOver();
+        }
+    }
+
+    void LoadGameOverWindow()
+    {
+        GameOverWindow.SetActive(true);
+    }
+    
     void PlayMusic()
     {
         AudioManager.instance.PlayMusic(musicTrack);
@@ -51,8 +77,15 @@ public class GameManager : MonoBehaviour
     {
         if (lastEnemy == null && isLastEnemySet && !isNextLevelButtonDisplayed)
         {
-            isNextLevelButtonDisplayed = true;
-            LoadNextLevelButton();
+            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+            {
+                DemoOverWindow.SetActive(true);
+            }
+            else
+            {
+                isNextLevelButtonDisplayed = true;
+                LoadNextLevelButton();
+            }
         }
     }
     
