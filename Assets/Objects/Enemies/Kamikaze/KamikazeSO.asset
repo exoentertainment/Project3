@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734120cd7f2c752588a3cb850e51c1a6, type: 3}
   m_Name: KamikazeSO
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  moveSpeed: 25
+  maxHealth: 6
+  moveSpeed: 40
   kamikazeSpeed: 200
   turnRate: 360
   coastDelay: 2

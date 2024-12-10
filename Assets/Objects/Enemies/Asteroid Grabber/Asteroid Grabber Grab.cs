@@ -1,4 +1,5 @@
 using System;
+using MoreMountains.Tools;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,7 +16,7 @@ public class AsteroidGrabberGrab : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Asteroid"))
         {
             other.gameObject.transform.SetParent(transform.parent);
-            other.gameObject.GetComponent<Asteroid>().enabled = false;
+            other.gameObject.GetComponent<MMAutoRotate>().enabled = false;
             OnGrab?.Invoke();
         }
     }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Light Missile Platform SO
   m_EditorClassIdentifier: 
   maxHealth: 50
-  resourceCost: 250
+  resourceCost: 300
   platformPrefab: {fileID: 3321167674907074181, guid: e28f6faaafb7c98f3b2eb9215ef618be, type: 3}
   explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}
   delayBetweenExplosions: 0.2

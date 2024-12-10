@@ -30,7 +30,6 @@ public class KamikazeHealth : MonoBehaviour, IDamageable
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
         UpdateHealthBar();
 
         if (currentHealth <= 0)

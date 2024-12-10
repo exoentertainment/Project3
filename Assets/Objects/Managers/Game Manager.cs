@@ -77,15 +77,8 @@ public class GameManager : MonoBehaviour
     {
         if (lastEnemy == null && isLastEnemySet && !isNextLevelButtonDisplayed)
         {
-            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
-            {
-                DemoOverWindow.SetActive(true);
-            }
-            else
-            {
-                isNextLevelButtonDisplayed = true;
-                LoadNextLevelButton();
-            }
+            isNextLevelButtonDisplayed = true;
+            LoadNextLevelButton();
         }
     }
     

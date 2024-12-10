@@ -584,7 +584,7 @@ MonoBehaviour:
   repairAmount: 1
   repairTime: 1
   repairThreshhold: 0.9
-  repairDistance: 250
+  repairDistance: 50
   targetLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -100,10 +100,4 @@ public class RepairFrigateMovement : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position, enemySO.moveSpeed * Time.deltaTime);
         }
     }
-    
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, enemySO.standOffDistance);
-    }
 }

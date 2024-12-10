@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 147.17}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1830495491945619107}
@@ -78,7 +78,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 65, y: 15, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
@@ -151,6 +151,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathFeedback: {fileID: 6870682517479827785}
+  isFragments: 0
 --- !u!114 &6870682517479827785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2087,6 +2088,7 @@ MonoBehaviour:
   - {fileID: 988364571876538225}
   barrelTransform:
   - {fileID: 137478329182437315}
+  firingFeedback: {fileID: 0}
 --- !u!4 &137478329182437315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4156462496396978, guid: 6fda0b3a1ab2c534bb0c21af4b7db965, type: 3}
@@ -2471,6 +2473,7 @@ MonoBehaviour:
   - {fileID: 6036394671894284372}
   barrelTransform:
   - {fileID: 1217116233698160730}
+  firingFeedback: {fileID: 0}
 --- !u!4 &1223422661761623386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4693738049299378, guid: 6fda0b3a1ab2c534bb0c21af4b7db965, type: 3}

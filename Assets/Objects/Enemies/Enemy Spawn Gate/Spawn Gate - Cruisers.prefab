@@ -82,6 +82,7 @@ GameObject:
   - component: {fileID: 7898976355915750688}
   - component: {fileID: -8777093832906975620}
   - component: {fileID: 3167469470118076489}
+  - component: {fileID: 416880523236111117}
   m_Layer: 0
   m_Name: Spawn Gate - Cruisers
   m_TagString: Untagged
@@ -268,6 +269,37 @@ MonoBehaviour:
   - {fileID: 5902370391010674208, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
   - {fileID: 854534716827521646, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
   spawnLight: {fileID: 7898976355915750688}
+--- !u!114 &416880523236111117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971870873573984902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f009572b4d918346b24337ef83f88c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rotating: 0
+  RotationSpace: 1
+  UpdateMode: 2
+  RotationSpeed: {x: 100, y: 0, z: 0}
+  Orbiting: 1
+  AdditiveOrbitRotation: 0
+  OrbitCenterTransform: {fileID: 0}
+  OrbitCenterOffset: {x: 0, y: 0, z: 0}
+  OrbitRotationAxis: {x: 0, y: 1, z: 0}
+  OrbitRotationSpeed: 10
+  OrbitRadius: 1500
+  OrbitCorrectionSpeed: 10
+  DrawGizmos: 1
+  OrbitPlaneColor: {r: 54, g: 169, b: 225, a: 0.02}
+  OrbitLineColor: {r: 225, g: 225, b: 225, a: 0.1}
+  _orbitCenter: {x: 0, y: 0, z: 0}
+  _worldRotationAxis: {x: 0, y: 1, z: 0}
+  _snappedPosition: {x: -977, y: 0, z: 1298}
+  _radius: {x: -902.06683, y: 0, z: 1198.4471}
 --- !u!1 &5364719320893087782
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class AsteroidGrabberMovement : MonoBehaviour
     
     private void Start()
     {
-        //StartCoroutine(FloatShipRoutine());
+        StartCoroutine(FloatShipRoutine());
     }
 
     private void Update()
