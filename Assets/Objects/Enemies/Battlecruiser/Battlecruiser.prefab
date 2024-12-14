@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8956425580344488152}
@@ -300,6 +300,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathFeedback: {fileID: -6379059002140403706}
+  isFragments: 0
 --- !u!114 &-6379059002140403706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8704,6 +8705,7 @@ MonoBehaviour:
   - {fileID: 8663681908540518815}
   barrelTransform:
   - {fileID: 3975964501611782687}
+  firingFeedback: {fileID: 0}
 --- !u!4 &3975964501611782687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4156462496396978, guid: 6fda0b3a1ab2c534bb0c21af4b7db965, type: 3}
@@ -9655,6 +9657,7 @@ MonoBehaviour:
   - {fileID: 8637625183760980399}
   barrelTransform:
   - {fileID: 4586636638860513769}
+  firingFeedback: {fileID: 0}
 --- !u!4 &4591816817060922601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4693738049299378, guid: 6fda0b3a1ab2c534bb0c21af4b7db965, type: 3}
@@ -13769,6 +13772,7 @@ MonoBehaviour:
   - {fileID: 317175859330215728}
   barrelTransform:
   - {fileID: 7946074175708468932}
+  firingFeedback: {fileID: 0}
 --- !u!4 &7951185359252243396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4693738049299378, guid: 6fda0b3a1ab2c534bb0c21af4b7db965, type: 3}
@@ -14633,6 +14637,7 @@ MonoBehaviour:
   - {fileID: 4189200674748610097}
   barrelTransform:
   - {fileID: 8824237171816027878}
+  firingFeedback: {fileID: 0}
 --- !u!1001 &8923516404235797898
 PrefabInstance:
   m_ObjectHideFlags: 0

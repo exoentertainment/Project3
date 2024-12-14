@@ -20,7 +20,7 @@ public class WeaponPlatformWindow : MonoBehaviour
         PlasmaGun = 4,
         PlasmaMissile = 5,
         LaserGun = 6,
-        HeavyPlatform = 7
+        StarFort = 7
     }
     
     //Take the passed weapon platform slot and store it if player builds a platform
@@ -50,7 +50,6 @@ public class WeaponPlatformWindow : MonoBehaviour
         {
             AudioManager.instance.PlayUIError();
         }
-
     }
     
     public void PlaceDualGunWeaponPlatform()
@@ -170,6 +169,27 @@ public class WeaponPlatformWindow : MonoBehaviour
                 .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.LaserGun].platformPrefab);
             
             ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.LaserGun].resourceCost);
+            
+            CloseWindow(false);
+        }
+        else
+        {
+            AudioManager.instance.PlayUIError();
+        }
+    }
+    
+    public void PlaceStarFort()
+    {
+        //check the prefabs scriptable object resource cost against the resource manager
+        if (ResourceManager.instance.CheckForResources(weaponPlatformsSO[(int)PlatformType.StarFort].resourceCost))
+        {
+            if(weaponPlatform.transform.childCount > 0)
+                CheckExistingPlatform(weaponPlatformsSO[(int)PlatformType.StarFort].resourceCost/2);
+            
+            weaponPlatform.GetComponent<WeaponPlatformSlot>()
+                .PlaceWeaponPlatform(weaponPlatformsSO[(int)PlatformType.StarFort].platformPrefab);
+            
+            ResourceManager.instance.DecreaseResources(weaponPlatformsSO[(int)PlatformType.StarFort].resourceCost);
             
             CloseWindow(false);
         }

@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Collections;
+using Random = UnityEngine.Random;
 
 public class Boss1Health : MonoBehaviour, IDamageable
 {
@@ -51,7 +53,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
         {
             isDead = true;
             CameraManager.instance.ZoomOnBoss(transform);
-            PushSegmentAway();
+            //PushSegmentAway();
             DestroyShip();
         }
     }
@@ -76,5 +78,10 @@ public class Boss1Health : MonoBehaviour, IDamageable
         {
             child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(150, 300), transform.position, 500);
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.LoadNextLevelButton();
     }
 }

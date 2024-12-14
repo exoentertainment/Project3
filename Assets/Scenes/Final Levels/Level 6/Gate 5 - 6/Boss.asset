@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 718efbe744b5d71b0b4f744de49dbfc4, type: 3}
-  m_Name: Wave 3
+  m_Name: Boss
   m_EditorClassIdentifier: 
-  numSpawns: 10
+  numSpawns: 1
   timeBetweenSpawns: 2
   enemyShipsPrefabs:
-  - {fileID: 407803044532099141, guid: f35cb0efdf96eeb4c9e5bf7287c06bd3, type: 3}
-  - {fileID: 407803044532099141, guid: f35cb0efdf96eeb4c9e5bf7287c06bd3, type: 3}
-  - {fileID: 1192508902719806313, guid: c4912b03a03ca84438fa1ebfd4ae8ab9, type: 3}
+  - {fileID: 1770532045006972, guid: 7ac090bc7e513ca468d856c46da60d8a, type: 3}
