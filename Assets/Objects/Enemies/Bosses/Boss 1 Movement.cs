@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Serialization;
 
 public class Boss1Movement : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Boss1Movement : MonoBehaviour
     [SerializeField] private float planetKillingDistance;
     [SerializeField] float coastDelay;
     [SerializeField] LayerMask targetLayer;
-    [SerializeField] private LayerMask planet;
+    [FormerlySerializedAs("planet")] [SerializeField] private LayerMask planetLayer;
 
     #endregion
     
@@ -22,7 +23,7 @@ public class Boss1Movement : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FloatShipRoutine());
-        CameraManager.instance.ZoomOnBoss(this.transform);
+        CameraManager.instance.ZoomOnBoss(transform);
     }
 
     private void Update()
@@ -76,12 +77,7 @@ public class Boss1Movement : MonoBehaviour
     {
         if (target != null && !isFloating)
         {
-            Vector3 targetVector = target.transform.position - transform.position;
-            targetVector.Normalize();
-            float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
-            
-            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * turnRate * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, newAngleY, 0);
+            transform.LookAt(target.transform);
         }
     }
 
@@ -95,8 +91,7 @@ public class Boss1Movement : MonoBehaviour
 
         if (!isFloating)
         {
-            if(Vector3.Distance(transform.position, target.transform.position) > standOffDistance)
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
         }
     }
 
@@ -106,7 +101,7 @@ public class Boss1Movement : MonoBehaviour
         
         float closestEnemy = Mathf.Infinity;
         
-        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, planet);
+        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, planetLayer);
         
         if (potentialTargets.Length > 0)
         {

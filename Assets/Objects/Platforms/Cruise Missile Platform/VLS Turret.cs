@@ -7,7 +7,6 @@ public class VLSTurret : MonoBehaviour
 
     [Header("Scriptable Object")]
     [SerializeField] TurretSO platformTurretSO;
-    [SerializeField] VLSMissileSO missileSO;
 
     [Header("Components")] 
     [SerializeField] private Transform[] spawnPoints;
@@ -37,7 +36,7 @@ public class VLSTurret : MonoBehaviour
         {
             float closestEnemy = Mathf.Infinity;
 
-            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, missileSO.attackRange, missileSO.targetLayer);
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, platformTurretSO.targetLayer);
 
             if (potentialTargets.Length > 0)
             {
@@ -79,8 +78,8 @@ public class VLSTurret : MonoBehaviour
             if(CameraManager.instance.IsObjectInView(transform))
                 AudioManager.instance.PlayCruiseMissileTurretSound();
             
-            Instantiate(missileSO.dischargeEffectPrefab, spawnPoint.position, transform.rotation);    
-            GameObject projectile = Instantiate(missileSO.projectilePrefab, spawnPoint.position, Quaternion.Euler(-90, 0, 0));
+            // Instantiate(platformTurretSO.dischargePrefab, spawnPoint.position, transform.rotation);    
+            GameObject projectile = Instantiate(platformTurretSO.projectilePrefab, spawnPoint.position, Quaternion.Euler(-90, 0, 0));
             
             yield return new WaitForSeconds(platformTurretSO.delayPerBarrel);
         }
@@ -89,6 +88,6 @@ public class VLSTurret : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, missileSO.attackRange);
+        Gizmos.DrawWireSphere(transform.position, platformTurretSO.attackRange);
     }
 }

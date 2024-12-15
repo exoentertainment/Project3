@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
     
     private void Start()
     {
-        //StartCoroutine(FloatShipRoutine());
+        StartCoroutine(FloatShipRoutine());
     }
 
     private void Update()
@@ -67,12 +67,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (target != null && !isFloating)
         {
-            Vector3 targetVector = target.transform.position - transform.position;
-            targetVector.Normalize();
-            float rotateAmountY = Vector3.Cross(targetVector, transform.forward).y;
-            
-            float newAngleY = transform.rotation.eulerAngles.y + (-rotateAmountY * enemySO.turnRate * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, newAngleY, 0);
+            transform.LookAt(target.transform);
         }
     }
 
@@ -83,13 +78,12 @@ public class EnemyMovement : MonoBehaviour
             FindClosestTarget();
             return;
         }
-
+        
         if (!isFloating)
         {
             if (Vector3.Distance(transform.position, target.transform.position) >= enemySO.standOffDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, target.transform.position,
-                    enemySO.moveSpeed * Time.deltaTime);
+                transform.position += transform.forward * enemySO.moveSpeed * Time.deltaTime;
             }
         }
     }
