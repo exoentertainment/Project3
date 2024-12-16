@@ -248,14 +248,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  turnRate: 0
   standOffDistance: 0
   planetKillingDistance: 0
   coastDelay: 0
   targetLayer:
     serializedVersion: 2
     m_Bits: 4224
-  planet:
+  planetLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &228010384499427032
@@ -7434,6 +7433,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19823960, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19823960, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 19853078, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
       propertyPath: ShapeModule.enabled
       value: 1
@@ -7456,6 +7463,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19853078, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
       propertyPath: RotationModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19854020, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19854020, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []

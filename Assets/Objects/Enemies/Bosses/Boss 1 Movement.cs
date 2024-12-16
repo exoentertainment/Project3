@@ -8,7 +8,6 @@ public class Boss1Movement : MonoBehaviour
 
     [Header("Variables")] 
     [SerializeField] int moveSpeed;
-    [SerializeField] int turnRate;
     [SerializeField] float standOffDistance;
     [SerializeField] private float planetKillingDistance;
     [SerializeField] float coastDelay;

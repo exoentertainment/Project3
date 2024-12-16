@@ -25,12 +25,18 @@ public class EnemySpawner : MonoBehaviour
     
     int currentWave;
     float defaultLightIntensity;
-    
-    private void Start()
+
+    private void Awake()
     {
         SpawnEnemy();
         defaultLightIntensity = spawnLight.intensity;
     }
+
+    // private void Start()
+    // {
+    //     SpawnEnemy();
+    //     defaultLightIntensity = spawnLight.intensity;
+    // }
     
     void SpawnEnemy()
     {
@@ -57,12 +63,8 @@ public class EnemySpawner : MonoBehaviour
                             spawnPoint[randomSpawnPoint].position,
                             Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,
                                 transform.rotation.z));
-
-                       if (numWaves == 1 && i == (spawnWavesSO[currentWave].numSpawns - 1))
-                       { 
-                           GameManager.instance.AssignLastEnemy(enemy);
-                           Debug.Log("last enemy spawned");
-                       }
+                    
+                    enemyuilog.instance.UpdateLog("probe");
                        
                     StartCoroutine(IncreaseLightIntensityRoutine());
                     yield return new WaitForSeconds(spawnWavesSO[currentWave].timeBetweenSpawns);

@@ -36,6 +36,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
     {
         currentHealth = maxHealth;
         onSpawn?.Invoke();
+        onDeath.AddListener(GameManager.instance.LoadNextLevelButton);
     }
 
     public void TakeDamage(float damage)
@@ -49,7 +50,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
             onLowHealth?.Invoke();
         }
 
-        if (currentHealth <= 0 && isDead)
+        if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
             CameraManager.instance.ZoomOnBoss(transform);

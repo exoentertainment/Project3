@@ -96,7 +96,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 196, y: 200, z: 68.1}
+  FollowOffset: {x: 0, y: 50, z: 55}
 --- !u!95 &3017357730136663863
 Animator:
   serializedVersion: 7

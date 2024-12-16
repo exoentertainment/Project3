@@ -15,6 +15,6 @@ public class TurnObjectOffTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(disableTimer);
         
-        gameObject.SetActive(false);
+        GameManager.instance.LoadNextLevelButton();
     }
 }

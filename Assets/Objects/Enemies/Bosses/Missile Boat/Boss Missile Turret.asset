@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6c9415477f1023fae1816dc1daed68, type: 3}
   m_Name: Boss Missile Turret
   m_EditorClassIdentifier: 
-  attackSpeed: 0
-  delayPerBarrel: 0
-  attackRange: 0
+  attackSpeed: 5
+  delayPerBarrel: 0.5
+  attackRange: 250
   targetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4224
   projectilePrefab: {fileID: 1212212991423974, guid: 8ee3566b5f85034458ee627f3b119dc7, type: 3}
   dischargePrefab: {fileID: 0}

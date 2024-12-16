@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325a8ff123f6a141fb34f1cfc674ce1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSO: {fileID: 11400000, guid: 1d79f3960b8606bc18c66620e072ec56, type: 2}
+  missileSO: {fileID: 11400000, guid: 98d3e7e820f2ece48a878875ad4934d9, type: 2}
 --- !u!65 &990197505552754265
 BoxCollider:
   m_ObjectHideFlags: 0

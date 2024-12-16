@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -84,6 +85,13 @@ public class GameManager : MonoBehaviour
     
     public void LoadNextLevelButton()
     {
+        StartCoroutine(LoadNextLevelRoutine());
+    }
+
+    IEnumerator LoadNextLevelRoutine()
+    {
+        yield return new WaitForSeconds(5);
+        
         LoadNextLevelWindow.SetActive(true);
         AudioManager.instance.PlayLevelCleared();
     }

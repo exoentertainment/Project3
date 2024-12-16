@@ -18,8 +18,9 @@ public class LightMissileMove : MonoBehaviour
 
     private GameObject target;
     float lastRotationTime;
-    int swerveDirection = 1;
+    float swerveDirection = 1;
     private float moveSpeed;
+    private Vector3 targetOffset;
     
     private void Start()
     {
@@ -48,6 +49,9 @@ public class LightMissileMove : MonoBehaviour
         {
             target = potentialTargets[UnityEngine.Random.Range(0, potentialTargets.Length)].gameObject;
         }
+        
+        if(target != null)
+            targetOffset = new Vector3(Random.Range(-3f, 3f), Random.Range(-1f, 1f), Random.Range(-3f, 3f)) + target.transform.position;
     }
     
     void Move()
@@ -59,22 +63,20 @@ public class LightMissileMove : MonoBehaviour
             if (CheckLineOfSight(target))
                 FindTarget();
             
-            transform.LookAt(target.transform, transform.up);
+            transform.LookAt(targetOffset, transform.up);
         }
         else
         {
             FindTarget();
         }
         
-        float noiseyness = 1; //tweak this to adjust how random the motion is
-        
-        transform.Translate(transform.up * swerveDirection * 1 * Time.deltaTime);
-        transform.Translate(transform.right * swerveDirection * 1 * Time.deltaTime);
+        transform.Translate(transform.up * swerveDirection * Time.deltaTime);
+        transform.Translate(transform.right * swerveDirection * Time.deltaTime);
 
         if ((Time.time - lastRotationTime) > rotationTime)
         {
             lastRotationTime = Time.time;
-            swerveDirection *= -1;
+            swerveDirection *= -1.1f;
         }
     }
     

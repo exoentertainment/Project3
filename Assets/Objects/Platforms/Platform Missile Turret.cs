@@ -69,12 +69,9 @@ public class PlatformMissileTurret : MonoBehaviour
         {
             if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
             {
-                if (!CheckLineOfSight())
-                {
-                    StartCoroutine(FireRoutine());
+                StartCoroutine(FireRoutine());
 
-                    lastFireTime = Time.time;
-                }
+                lastFireTime = Time.time;
             }
         }
     }
@@ -128,6 +125,10 @@ public class PlatformMissileTurret : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
             {
                 return true;
+            }
+            else
+            {
+                return false;
             }
         }
         else
