@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class LaserAttack : MonoBehaviour
 {
-
     [Header("Prefabs")]
     public GameObject beamLineRendererPrefab; //Put a prefab with a line renderer onto here.
     public GameObject beamStartPrefab; //This is a prefab that is put at the start of the beam.

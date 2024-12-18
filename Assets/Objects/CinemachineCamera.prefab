@@ -92,11 +92,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrackerSettings:
     BindingMode: 4
-    PositionDamping: {x: 0, y: 1, z: 1}
+    PositionDamping: {x: 10, y: 10, z: 10}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 0, y: 50, z: 55}
+  FollowOffset: {x: 0, y: 100, z: 100}
 --- !u!95 &3017357730136663863
 Animator:
   serializedVersion: 7

@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private GameObject LoadNextLevelWindow;
     [SerializeField] private GameObject GameOverWindow;
-    [SerializeField] private GameObject DemoOverWindow;
 
     #endregion
 
@@ -35,11 +34,6 @@ public class GameManager : MonoBehaviour
         }
     
         instance = this;
-    }
-
-    private void Update()
-    {
-        CheckStatusLastEnemy();
     }
 
     public void AddPlanet()
@@ -66,21 +60,6 @@ public class GameManager : MonoBehaviour
     void PlayMusic()
     {
         AudioManager.instance.PlayMusic(musicTrack);
-    }
-
-    public void AssignLastEnemy(GameObject enemy)
-    {
-        lastEnemy = enemy;
-        isLastEnemySet = true;
-    }
-    
-    void CheckStatusLastEnemy()
-    {
-        if (lastEnemy == null && isLastEnemySet && !isNextLevelButtonDisplayed)
-        {
-            isNextLevelButtonDisplayed = true;
-            LoadNextLevelButton();
-        }
     }
     
     public void LoadNextLevelButton()

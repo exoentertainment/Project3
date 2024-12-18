@@ -53,7 +53,14 @@ public class PlatformHealth : MonoBehaviour, IDamageable
             isDestroyed = true;
             OnDeath?.Invoke();
             
-            StartCoroutine(DestroyPlatformRoutine());
+            if(CameraManager.instance.IsObjectInView(gameObject.transform))
+                AudioManager.instance.PlayPlatformExplosion();
+                
+            deathFeedback?.PlayFeedbacks();
+            Instantiate(healthSO.explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            
+            //StartCoroutine(DestroyPlatformRoutine());
         }
     }
 

@@ -1,7 +1,9 @@
+using System;
 using MoreMountains.Tools;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class AsteroidBeltObject : MonoBehaviour
+public class AsteroidBeltObject : MonoBehaviour, IDamageable
 {
     #region -- Serialized Fields
     
@@ -19,9 +21,13 @@ public class AsteroidBeltObject : MonoBehaviour
     [SerializeField] MMAutoRotate autoRotate;
 
     #endregion
+
+    private float currentHealth;
     
     void Start()
     {
+        currentHealth = asteroidSO.health;
+        
         SetMaterial();
         SetYOffset();
         SetOrbitSpeed();
@@ -57,5 +63,20 @@ public class AsteroidBeltObject : MonoBehaviour
             Vector3 randomDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f));
             rigidBody.AddTorque(randomDirection * 10);
         }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable target))
+        {
+            target.TakeDamage(asteroidSO.damage);
+            Instantiate(asteroidSO.explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
     }
 }

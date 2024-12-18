@@ -64,7 +64,7 @@ public class EnemySpawner : MonoBehaviour
                             Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,
                                 transform.rotation.z));
                     
-                    enemyuilog.instance.UpdateLog("probe");
+                    //enemyuilog.instance.UpdateLog(numWaves.ToString());
                        
                     StartCoroutine(IncreaseLightIntensityRoutine());
                     yield return new WaitForSeconds(spawnWavesSO[currentWave].timeBetweenSpawns);

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KamikazeSO
   m_EditorClassIdentifier: 
   maxHealth: 6
-  moveSpeed: 40
+  moveSpeed: 75
   kamikazeSpeed: 200
   turnRate: 360
   coastDelay: 2

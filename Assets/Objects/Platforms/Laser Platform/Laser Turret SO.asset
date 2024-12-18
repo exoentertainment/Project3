@@ -17,6 +17,6 @@ MonoBehaviour:
   attackRange: 700
   targetLayer:
     serializedVersion: 2
-    m_Bits: 65792
+    m_Bits: 327936
   projectilePrefab: {fileID: 148176, guid: 3e5637713aa8abe45810793e179b0124, type: 3}
   dischargePrefab: {fileID: 0}

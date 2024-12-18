@@ -53,7 +53,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            CameraManager.instance.ZoomOnBoss(transform);
+            //CameraManager.instance.ZoomOnBoss(transform);
             //PushSegmentAway();
             DestroyShip();
         }
@@ -70,7 +70,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
             AudioManager.instance.PlayEnemySmallExplosion();
             
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 1);
     }
     
     void PushSegmentAway()

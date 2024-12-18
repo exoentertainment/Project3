@@ -234,7 +234,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}
+  explosionPrefab: {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
 --- !u!114 &7544437325520733185
 MonoBehaviour:
   m_ObjectHideFlags: 0

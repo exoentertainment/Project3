@@ -88,7 +88,7 @@ public class Boss1Movement : MonoBehaviour
             return;
         }
 
-        if (!isFloating)
+        if (!isFloating && Vector3.Distance(transform.position, target.transform.position) > standOffDistance)
         {
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
         }

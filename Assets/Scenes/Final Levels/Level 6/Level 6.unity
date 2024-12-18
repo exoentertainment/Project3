@@ -940,22 +940,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1505987119}
     m_Modifications:
-    - target: {fileID: 1534572167677511515, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
-      propertyPath: FollowOffset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534572167677511515, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
-      propertyPath: FollowOffset.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534572167677511515, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
-      propertyPath: FollowOffset.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3432244494447225002, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
-      propertyPath: Target.TrackingTarget
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1064
@@ -999,10 +983,6 @@ PrefabInstance:
     - target: {fileID: 6963312433772536715, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_Name
       value: Planet View Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 6963312433772536715, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8992,6 +8972,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -10089,7 +10073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -17482,7 +17466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -21703,6 +21687,10 @@ PrefabInstance:
     - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size

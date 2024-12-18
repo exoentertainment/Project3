@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030cbc9ef274fec4fb922a8b18912808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
+  moveSpeed: 50
   standOffDistance: 275
   planetKillingDistance: 0
   coastDelay: 5
@@ -260,7 +260,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
 --- !u!54 &-6422969574216632396
 Rigidbody:
   m_ObjectHideFlags: 0
