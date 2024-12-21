@@ -45,8 +45,6 @@ public class TractorBeam : MonoBehaviour
         FindClosestAsteroid();
         FindNearbyPlatform();
         
-        SpawnBeam();
-        ExtendTractorBeam();
         originalWidth = lineWidth;
         customWidth = originalWidth * widthMultiplier;
     }
@@ -120,8 +118,13 @@ public class TractorBeam : MonoBehaviour
                     }
                 }
             }
-            
-            RemoveAsteroidComponents();
+
+            if (targetAsteroid != null)
+            {
+                SpawnBeam();
+                ExtendTractorBeam();
+                RemoveAsteroidComponents();
+            }
         }
     }
 
@@ -170,7 +173,9 @@ public class TractorBeam : MonoBehaviour
     {
         if (targetAsteroid == null)
         {
-            line.SetPosition(1, transform.position);
+            if(beam != null)
+                Destroy(beam);
+            
             FindClosestAsteroid();
         }
     }
@@ -209,6 +214,7 @@ public class TractorBeam : MonoBehaviour
     {
         if (beam && targetAsteroid != null) 
         {
+            Debug.Log(targetAsteroid.name);
             line.SetPosition(0, transform.position);
             // Vector3 end = transform.position + (targetAsteroid.transform.forward);
             Vector3 end = targetAsteroid.transform.position;
@@ -221,33 +227,33 @@ public class TractorBeam : MonoBehaviour
             float distance = Vector3.Distance(transform.position, end);
             line.material.mainTextureScale = new Vector2(distance / textureLengthScale, 1); //This sets the scale of the texture so it doesn't look stretched
             line.material.mainTextureOffset -= new Vector2(Time.deltaTime * textureScrollSpeed, 0); //This scrolls the texture along the beam if not set to 0
-        }
-		
-        // Pulse the width of the beam
-        if (pulseExpanding) 
-        {
-            lerpValue += Time.deltaTime * pulseSpeed;
-        } 
-        else 
-        {
-            lerpValue -= Time.deltaTime * pulseSpeed;
-        }
+            
+            // Pulse the width of the beam
+            if (pulseExpanding) 
+            {
+                lerpValue += Time.deltaTime * pulseSpeed;
+            } 
+            else 
+            {
+                lerpValue -= Time.deltaTime * pulseSpeed;
+            }
 
-        if (lerpValue >= 1.0f) 
-        {
-            pulseExpanding = false;
-            lerpValue = 1.0f;
-        } 
-        else if (lerpValue <= 0.0f) 
-        {
-            pulseExpanding = true;
-            lerpValue = 0.0f;
-        }
+            if (lerpValue >= 1.0f) 
+            {
+                pulseExpanding = false;
+                lerpValue = 1.0f;
+            } 
+            else if (lerpValue <= 0.0f) 
+            {
+                pulseExpanding = true;
+                lerpValue = 0.0f;
+            }
 
-        float currentWidth = Mathf.Lerp(originalWidth, customWidth, Mathf.Sin(lerpValue * Mathf.PI));
+            float currentWidth = Mathf.Lerp(originalWidth, customWidth, Mathf.Sin(lerpValue * Mathf.PI));
 		
-        line.startWidth = currentWidth;
-        line.endWidth = currentWidth;
+            line.startWidth = currentWidth;
+            line.endWidth = currentWidth;
+        }
     }
     
     private void OnDrawGizmosSelected()

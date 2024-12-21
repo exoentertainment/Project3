@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "Enemy Clips", menuName = "Audio SO/Enemy Clips")]
 public class EnemyClipsSO : ScriptableObject
@@ -10,8 +11,12 @@ public class EnemyClipsSO : ScriptableObject
 
     #region -- Boss SFX --
 
-    public AudioClipSO boss1SpecialWeapon;
-    public AudioClipSO boss1SpecialWeaponCharging;
+    [FormerlySerializedAs("plasmaBoss1SpecialWeapon")] [FormerlySerializedAs("boss1SpecialWeapon")] public AudioClipSO plasmaBossSpecialWeapon;
+    [FormerlySerializedAs("boss1SpecialWeaponCharging")] public AudioClipSO plasmaBossSpecialWeaponCharging;
+
+    public AudioClipSO massDriverSpecialWeaponFire;
+
+    public AudioClipSO pulseLaserWeaponFire;
 
     #endregion
 }

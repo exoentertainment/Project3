@@ -9,7 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4013449367622590}
-  m_Layer: 0
+  - component: {fileID: 4346228134881574154}
+  - component: {fileID: 5755500374243821356}
+  - component: {fileID: 213654782756157110}
+  - component: {fileID: -6114845074016789480}
+  m_Layer: 8
   m_Name: Mass Driver Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1377483576127396}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.9}
+  m_LocalPosition: {x: 0, y: 0, z: 65.3}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63,8 +67,165 @@ Transform:
   - {fileID: 3935974738969425018}
   - {fileID: 5794162375579930482}
   - {fileID: 1728959212027303343}
+  - {fileID: 6851730849998230193}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &4346228134881574154
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377483576127396}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &5755500374243821356
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377483576127396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 50, y: 20, z: 140}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &213654782756157110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377483576127396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f5ce40279f8fe4383e93695a49b2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  lowHealthLimit: 25
+  healthSlider: {fileID: 5327818081702163112}
+  explosionPoints: []
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 191734806398983723}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onLowHealth:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8128448308608261256}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7057098981419596000}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2128188812704076719}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7057098981419596000}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  explosionPrefab: {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
+--- !u!114 &-6114845074016789480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377483576127396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030cbc9ef274fec4fb922a8b18912808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 75
+  standOffDistance: 400
+  planetKillingDistance: 400
+  coastDelay: 5
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  planetLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &101180738966701351
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184256728539879417}
   - component: {fileID: 1220728530991869458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boss 1 Entry Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +521,7 @@ GameObject:
   - component: {fileID: 4830819600470065436}
   - component: {fileID: 9008612275509434637}
   - component: {fileID: 2291629499745843623}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5278669827134702263}
   - component: {fileID: 8471477747297149654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +717,7 @@ GameObject:
   - component: {fileID: 4785816652502124554}
   - component: {fileID: 9012476366952742731}
   - component: {fileID: 8735001717351103357}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,6 +782,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1547082290755757802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019711771120211411}
+  m_Layer: 0
+  m_Name: Discharge point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019711771120211411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547082290755757802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -7.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6851730849998230193}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617385790590346987
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +825,7 @@ GameObject:
   - component: {fileID: 2457273274948093456}
   - component: {fileID: 1636304406457226325}
   - component: {fileID: 5104317769893037115}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +927,7 @@ GameObject:
   - component: {fileID: 6235510443716520260}
   - component: {fileID: 6740482718438835729}
   - component: {fileID: 5652231981700968329}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,8 +1026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728959212027303343}
-  - component: {fileID: 7426166141449151285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tractor Beams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,25 +1054,6 @@ Transform:
   - {fileID: 7241843028276998835}
   m_Father: {fileID: 4013449367622590}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7426166141449151285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128188812704076719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beccacd2177d5ce4a9868172318e8862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tractorBeams:
-  - {fileID: 8471477747297149654}
-  - {fileID: 4929381511929313763}
-  - {fileID: 4423927897492721932}
-  - {fileID: 6405752765617756013}
-  - {fileID: 1978943426349828636}
-  - {fileID: 4634167441613704679}
 --- !u!1 &2301923156688411914
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +1064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120051395225590058}
   - component: {fileID: 5327818081702163112}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +1153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6116683043030575388}
   - component: {fileID: 1978943426349828636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1042,7 +1214,7 @@ GameObject:
   - component: {fileID: 8626491281063561845}
   - component: {fileID: 5673427201002366833}
   - component: {fileID: 2455430643587156220}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7241843028276998835}
   - component: {fileID: 4634167441613704679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1201,7 +1373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186974625377498542}
   - component: {fileID: 3384505260507945255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boss 1 Defeat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1420,7 @@ GameObject:
   - component: {fileID: 205640030676594673}
   - component: {fileID: 6405309183276370096}
   - component: {fileID: 2852076776827012115}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1302,7 +1474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I will darken your skies with my missile barrages!
+  m_text: I will bury you under the rubble of your civilization!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1383,7 +1555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615489499270725087}
   - component: {fileID: 4423927897492721932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,7 +1649,7 @@ GameObject:
   - component: {fileID: 6124358451295925820}
   - component: {fileID: 5877132303671451507}
   - component: {fileID: 4479262200240590482}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5441857490239107292}
   - component: {fileID: 6405752765617756013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7395868906623221803}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,6 +1808,59 @@ RectTransform:
   m_AnchoredPosition: {x: -2.0535, y: 0}
   m_SizeDelta: {x: 65, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &7057098981419596000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6851730849998230193}
+  - component: {fileID: 1458725241655334272}
+  m_Layer: 0
+  m_Name: Asteroid Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6851730849998230193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7057098981419596000}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2019711771120211411}
+  m_Father: {fileID: 4013449367622590}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1458725241655334272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7057098981419596000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181deca999eca8c4f83e085f58a3e743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dischargeSpawnPoint: {fileID: 2019711771120211411}
+  fireRate: 3
+  firingFeedback: {fileID: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  asteroidPrefab: {fileID: 2548350775973622938, guid: 6215099a817a16f4d96afc4485d0a99c, type: 3}
+  dischargePrefab: {fileID: 196640, guid: b040df7bf31629f4b9c4c5c86646c3d0, type: 3}
 --- !u!1 &7270898308524682686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1872,7 @@ GameObject:
   - component: {fileID: 6177484671327135629}
   - component: {fileID: 8087582610190498284}
   - component: {fileID: 4580879411739485821}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1722,7 +1947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9188308210687326137}
   - component: {fileID: 4929381511929313763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +2007,7 @@ GameObject:
   - component: {fileID: 3681213358191673139}
   - component: {fileID: 4455246959156545451}
   - component: {fileID: 2476172554879489230}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,7 +2081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5794162375579930482}
   - component: {fileID: 6290396601425633308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boss 1 Low Health Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1904,7 +2129,7 @@ GameObject:
   - component: {fileID: 6189225983900088887}
   - component: {fileID: 8332146382686097657}
   - component: {fileID: 4430266812076562283}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2243,7 +2468,7 @@ GameObject:
   - component: {fileID: 5907012870428392100}
   - component: {fileID: 8474764457307528569}
   - component: {fileID: 8569191343545382915}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,8 +2522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start shooting the extra large missiles! Let's see how your planet likes
-    this!
+  m_text: I've been collecting extra large rocks for this moment.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2618,7 +2842,7 @@ GameObject:
   - component: {fileID: 8608030108250361487}
   - component: {fileID: 929698268790635888}
   - component: {fileID: 742461902715659226}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,6 +2919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
       objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2766,6 +2994,10 @@ PrefabInstance:
     - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
@@ -2851,6 +3083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart1
       objectReference: {fileID: 0}
+    - target: {fileID: 1496015543949834, guid: dd4f75ebeb7336f47ae1bb82f5c5083a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4412622836939256, guid: dd4f75ebeb7336f47ae1bb82f5c5083a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2921,6 +3157,10 @@ PrefabInstance:
     - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_Thruster
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4126939784349192, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_RootOrder
@@ -3006,6 +3246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart3
       objectReference: {fileID: 0}
+    - target: {fileID: 1829465759765154, guid: b2cf3355b3c53ca45844115259fc9ac9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4632837091348820, guid: b2cf3355b3c53ca45844115259fc9ac9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3079,6 +3323,10 @@ PrefabInstance:
     - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
@@ -3164,6 +3412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart2
       objectReference: {fileID: 0}
+    - target: {fileID: 1060984657034278, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4401396662581988, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3234,6 +3486,10 @@ PrefabInstance:
     - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
@@ -3306,6 +3562,10 @@ PrefabInstance:
     - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_Thruster
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4126939784349192, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_RootOrder
@@ -3391,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
       objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3462,6 +3726,10 @@ PrefabInstance:
     - target: {fileID: 1060984657034278, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060984657034278, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4401396662581988, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
       propertyPath: m_RootOrder
@@ -3545,6 +3813,10 @@ PrefabInstance:
     - target: {fileID: 1547673598524236, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547673598524236, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4901445836642474, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_RootOrder
@@ -3631,6 +3903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart2
       objectReference: {fileID: 0}
+    - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -3714,6 +3990,10 @@ PrefabInstance:
     - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder
@@ -3799,6 +4079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
       objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3871,6 +4155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart2
       objectReference: {fileID: 0}
+    - target: {fileID: 1060984657034278, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4401396662581988, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3941,6 +4229,10 @@ PrefabInstance:
     - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder
@@ -4025,6 +4317,10 @@ PrefabInstance:
     - target: {fileID: 1547673598524236, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547673598524236, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4901445836642474, guid: c6e1248f0b888dc4c9846fe8446a3e0e, type: 3}
       propertyPath: m_RootOrder
@@ -4111,6 +4407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart2
       objectReference: {fileID: 0}
+    - target: {fileID: 1060984657034278, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4401396662581988, guid: f73f01c6de809be4183250951ad4b0f0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4181,6 +4481,10 @@ PrefabInstance:
     - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder
@@ -4266,6 +4570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
       objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4337,6 +4645,10 @@ PrefabInstance:
     - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_ThrusterBasePart2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547584038515400, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4334897270240932, guid: ff8329a3b84c5a946bc4ac579aa4c84e, type: 3}
       propertyPath: m_RootOrder
@@ -4422,6 +4734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_ControlRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 1957973064178478, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4066547754592402, guid: ab8614ce4c65ece46b2e27c1fa871e3b, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -4505,6 +4821,10 @@ PrefabInstance:
     - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder
@@ -4590,6 +4910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart5
       objectReference: {fileID: 0}
+    - target: {fileID: 1556221387427108, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261133144189250, guid: 7541ae2ecb51d7e4693e3e63fddadc26, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -4661,6 +4985,10 @@ PrefabInstance:
     - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_Thruster
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677456370387974, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4126939784349192, guid: 28aa15353c5c03a4cbe2ec0df25fedff, type: 3}
       propertyPath: m_RootOrder
@@ -4746,6 +5074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
       objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -4829,6 +5161,10 @@ PrefabInstance:
     - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_Name
       value: GalacticLeopard_BasePart7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384830719473428, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4276445222571862, guid: 4c6b16f5e151c5049992c177149a29fd, type: 3}
       propertyPath: m_RootOrder

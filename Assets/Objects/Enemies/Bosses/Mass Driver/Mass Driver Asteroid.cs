@@ -1,19 +1,31 @@
 using System;
 using UnityEngine;
 
-public class MassDriverAsteroid : MonoBehaviour, IDamageable
+public class MassDriverAsteroid : MonoBehaviour
 {
     [SerializeField] AsteroidSO asteroidSO;
 
-    private float currentHealth;
-
-    private void Start()
+    private void FixedUpdate()
     {
-        currentHealth = asteroidSO.health;
+        if (Time.timeScale == 1)
+        {
+            Move();
+        }
     }
 
-    public void TakeDamage(float damage)
+    void Move()
     {
+        transform.position += transform.forward * (asteroidSO.moveSpeed * Time.deltaTime);
+    }
+    
+    private void OnCollisionEnter(Collision other)
+    {   
+        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+        {
+            hit.TakeDamage(asteroidSO.damage);
+            Instantiate(asteroidSO.explosionPrefab, transform.position, Quaternion.identity);
+        }
         
+        Destroy(gameObject);
     }
 }

@@ -113,19 +113,29 @@ public class AudioManager : MonoBehaviour
         PlaySound(enemyClips.smallExplosion);
     }
     
-    public void PlayBoss1WeaponCharging()
+    public void PlayPlasmaBossWeaponCharging()
     {
-        PlaySound(enemyClips.boss1SpecialWeaponCharging);
+        PlaySound(enemyClips.plasmaBossSpecialWeaponCharging);
     }
     
-    public void PlayBoss1WeaponFire()
+    public void PlayPlasmaBossWeaponFire()
     {
-        PlaySound(enemyClips.boss1SpecialWeapon);
+        PlaySound(enemyClips.plasmaBossSpecialWeapon);
+    }
+
+    public void PlayMassDriverBossWeaponFire()
+    {
+        PlaySound(enemyClips.massDriverSpecialWeaponFire);
+    }
+    
+    public void PlayPulseLaserBossWeaponFire()
+    {
+        PlaySound(enemyClips.pulseLaserWeaponFire);
     }
     
     #endregion
 
-    #region -- Weapon SFX --
+    #region -- Explosion SFX --
 
     public void PlaySmallExplosion()
     {

@@ -76,8 +76,8 @@ public class StationaryMissileLauncher : MonoBehaviour
 
     IEnumerator FireRoutine()
     {
-        // if(CameraManager.instance.IsObjectInView(transform))
-        //     AudioManager.instance.PlayLightMissileTurretSound();
+        if(CameraManager.instance.IsObjectInView(transform))
+            AudioManager.instance.PlayLightMissileTurretSound();
         
         foreach (Transform spawnPoint in spawnPoints)
         {

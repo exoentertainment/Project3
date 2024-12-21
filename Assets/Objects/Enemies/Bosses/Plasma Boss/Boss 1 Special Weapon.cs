@@ -52,7 +52,7 @@ public class Boss1SpecialWeapon : MonoBehaviour
         chargingEffect.SetActive(true);
         
         if(CameraManager.instance.IsObjectInView(transform))
-            AudioManager.instance.PlayBoss1WeaponCharging();
+            AudioManager.instance.PlayPlasmaBossWeaponCharging();
 
         while (true)
         {
@@ -70,7 +70,7 @@ public class Boss1SpecialWeapon : MonoBehaviour
         chargingEffect.SetActive(false);
         
         if(CameraManager.instance.IsObjectInView(transform))
-            AudioManager.instance.PlayBoss1WeaponFire();
+            AudioManager.instance.PlayPlasmaBossWeaponFire();
         
         Instantiate(projectilePrefab, spawnPoint.position, transform.rotation);
     }

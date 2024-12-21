@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Enemy Clips
   m_EditorClassIdentifier: 
   basicTurret: {fileID: 11400000, guid: 81e71fb27b33f2776843593e44c26972, type: 2}
-  lightMissileTurret: {fileID: 0}
+  lightMissileTurret: {fileID: 11400000, guid: 51d6ed18e39582058a9b9c8bde5429bb, type: 2}
   rotaryTurret: {fileID: 11400000, guid: f52b8c4e844a4d75e9a6ceee412bfd54, type: 2}
   smallExplosion: {fileID: 11400000, guid: f1eab4dccbca37acfa0f74a3ac15852e, type: 2}
-  boss1SpecialWeapon: {fileID: 11400000, guid: fcccf2bc54721ef4b814b14776b32f57, type: 2}
-  boss1SpecialWeaponCharging: {fileID: 11400000, guid: 40024cea947ccfb42929d5e54ba0b6ae, type: 2}
+  plasmaBossSpecialWeapon: {fileID: 11400000, guid: fcccf2bc54721ef4b814b14776b32f57, type: 2}
+  plasmaBossSpecialWeaponCharging: {fileID: 11400000, guid: 40024cea947ccfb42929d5e54ba0b6ae, type: 2}
+  massDriverSpecialWeaponFire: {fileID: 11400000, guid: 62b9db3e65e740c48ac2fe233361fa86, type: 2}
+  pulseLaserWeaponFire: {fileID: 11400000, guid: e163fad31d5021e4fa51f286dae1530b, type: 2}

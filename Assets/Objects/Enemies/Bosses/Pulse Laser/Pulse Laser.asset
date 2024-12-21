@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b096789aeddc164628132184299aec35, type: 3}
-  m_Name: Light Missile Turret Clip
+  m_Name: Pulse Laser
   m_EditorClassIdentifier: 
   audioType: 0
   audioMixer: {fileID: 4797775633348784603, guid: 6d0618246f8a8b4efa83dc95fad28c35, type: 2}
-  clip: {fileID: 8300000, guid: 8f3816230682937a9ae5ec28ab945976, type: 3}
-  volume: 0.1
+  clip: {fileID: 8300000, guid: bcc46c308ad629040808e6a3a85ff32f, type: 3}
+  volume: 0.5
   pitch: 1
   loop: 0

@@ -45,7 +45,6 @@ public class RailgunDamage : MonoBehaviour
             
             if (target.TryGetComponent<IDamageable>(out IDamageable hit))
             {
-                Debug.Log("damage");
                 hit.TakeDamage(projectileSO.damage);
                 Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
