@@ -13,6 +13,11 @@ public class TitleScreenButtonsManager : MonoBehaviour
         
     }
 
+    public void LoadControlsWindow()
+    {
+        GameObject window = (GameObject)Instantiate(Resources.Load("Controls Window"));
+    }
+    
     public void ExitGame()
     {
         Application.Quit();

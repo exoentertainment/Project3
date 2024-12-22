@@ -15,7 +15,7 @@ MonoBehaviour:
   maxHealth: 4
   moveSpeed: 100
   turnRate: 360
-  resourceReward: 10
+  resourceReward: 5
   standOffDistance: 75
   coastDelay: 2
   targetLayer:

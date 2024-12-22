@@ -33,13 +33,16 @@ public class ResourceStation : MonoBehaviour
 
     void SpawnCargoShip()
     {
-        if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
-        {
+        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, LayerMask.NameToLayer("Resource Station"));
+        
+        if(potentialTargets.Length > 1)
+            if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
+            {
 
-            GameObject cargoShip = Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
-            cargoShip.GetComponent<CargoShipMovement>().SetOriginStation(this.gameObject);
-            
-            lastSpawnTime = Time.time;
-        }
+                GameObject cargoShip = Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
+                cargoShip.GetComponent<CargoShipMovement>().SetOriginStation(gameObject);
+                
+                lastSpawnTime = Time.time;
+            }
     }
 }

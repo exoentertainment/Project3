@@ -67,14 +67,14 @@ public class LightMissileMove : MonoBehaviour
             FindTarget();
         }
         
-        transform.Translate(transform.up * swerveDirection * Time.deltaTime);
-        transform.Translate(transform.right * swerveDirection * Time.deltaTime);
-
-        if ((Time.time - lastRotationTime) > rotationTime)
-        {
-            lastRotationTime = Time.time;
-            swerveDirection *= -1.1f;
-        }
+        // transform.Translate(transform.up * swerveDirection * Time.deltaTime);
+        // transform.Translate(transform.right * swerveDirection * Time.deltaTime);
+        //
+        // if ((Time.time - lastRotationTime) > rotationTime)
+        // {
+        //     lastRotationTime = Time.time;
+        //     swerveDirection *= -1.1f;
+        // }
     }
     
 

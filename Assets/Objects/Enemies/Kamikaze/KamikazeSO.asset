@@ -19,7 +19,7 @@ MonoBehaviour:
   coastDelay: 2
   accelerationDistance: 10
   damage: 1
-  resourceReward: 15
+  resourceReward: 10
   targetLayer:
     serializedVersion: 2
     m_Bits: 64

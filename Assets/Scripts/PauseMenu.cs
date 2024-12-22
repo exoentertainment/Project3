@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,8 +16,13 @@ public class PauseMenu : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void LoadControlsWindow()
+    {
+        GameObject window = (GameObject)Instantiate(Resources.Load("Controls Window"));
+    }
+    
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Start Menu");
     }
 }
