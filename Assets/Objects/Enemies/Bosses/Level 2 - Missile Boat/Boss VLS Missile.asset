@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039eb61c79a290cf49e380d6e4e865bb, type: 3}
   m_Name: Boss VLS Missile
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 50
   coastDuration: 0.3
   coastSpeed: 50
   damage: 5

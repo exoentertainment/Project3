@@ -16,8 +16,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public static GameManager instance;
-
-    public GameObject lastEnemy;
+    
     private bool isLastEnemySet;
     private bool isNextLevelButtonDisplayed;
     bool isGameOver;
@@ -50,6 +49,7 @@ public class GameManager : MonoBehaviour
         {
             isGameOver = true;
             AudioManager.instance.PlayGameOver();
+            LoadGameOverWindow();
         }
     }
 

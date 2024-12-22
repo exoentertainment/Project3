@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f5ce40279f8fe4383e93695a49b2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 400
   lowHealthLimit: 25
   healthSlider: {fileID: 5327818081702163112}
   explosionPoints: []
@@ -203,7 +203,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  explosionPrefab: {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
+  explosionPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &-6114845074016789480
 MonoBehaviour:
   m_ObjectHideFlags: 0

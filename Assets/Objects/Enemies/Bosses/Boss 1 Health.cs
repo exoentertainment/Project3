@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class Boss1Health : MonoBehaviour, IDamageable
@@ -22,8 +23,9 @@ public class Boss1Health : MonoBehaviour, IDamageable
     [SerializeField] private UnityEvent onLowHealth;
     [SerializeField] private UnityEvent onDeath;
 
+    [FormerlySerializedAs("explosionPrefab")]
     [Header("Prefabs")] 
-    [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private GameObject[] explosionPrefabs;
 
     #endregion
 
@@ -44,7 +46,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
         currentHealth -= damage;
         UpdateHealthBar();
 
-        if (currentHealth <= lowHealthLimit && !isLowHealth)
+        if ((currentHealth/maxHealth) <= lowHealthLimit && !isLowHealth)
         {
             isLowHealth = true;
             onLowHealth?.Invoke();
@@ -68,21 +70,21 @@ public class Boss1Health : MonoBehaviour, IDamageable
     {
         if(CameraManager.instance.IsObjectInView(transform))
             AudioManager.instance.PlayEnemySmallExplosion();
-            
-        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject, 1);
+
+        foreach (GameObject explosion in explosionPrefabs)
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+        }
+        
+        GameManager.instance.LoadNextLevelButton();
+        Destroy(gameObject);
     }
     
     void PushSegmentAway()
     {
         foreach (Transform child in explosionPoints)
         {
-            child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(150, 300), transform.position, 500);
+            child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(150, 300), transform.position, 10);
         }
-    }
-
-    private void OnDestroy()
-    {
-        GameManager.instance.LoadNextLevelButton();
     }
 }

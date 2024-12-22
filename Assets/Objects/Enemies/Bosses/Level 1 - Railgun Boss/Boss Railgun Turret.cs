@@ -35,8 +35,10 @@ public class BossRailgunTurret : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            if(target == null)
+            if (target == null)
+            {
                 SearchForTarget();
+            }
 
             if (target != null)
             {

@@ -32,11 +32,10 @@ public class WeaponPlatformSlot : MonoBehaviour, iInteractable
         if(weaponPlatform != null)
             Destroy(weaponPlatform);
         
-        float newAngle = Vector3.Angle(transform.position, transform.parent.position);
         weaponPlatform = Instantiate(weaponPlatformObject, transform.position, Quaternion.Euler(0, 90, 0));
         weaponPlatform.transform.SetParent(transform);
 
-        gameObject.layer = LayerMask.NameToLayer("Weapon Platform");
+        //gameObject.layer = LayerMask.NameToLayer("Weapon Platform");
     }
     
     //Pause the game and activate the weapon platform selection window. Then pass the gameobject to the selection window

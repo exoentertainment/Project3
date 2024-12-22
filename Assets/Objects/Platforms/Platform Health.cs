@@ -56,11 +56,11 @@ public class PlatformHealth : MonoBehaviour, IDamageable
             if(CameraManager.instance.IsObjectInView(gameObject.transform))
                 AudioManager.instance.PlayPlatformExplosion();
                 
-            deathFeedback?.PlayFeedbacks();
-            Instantiate(healthSO.explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            //deathFeedback?.PlayFeedbacks();
+            //Instantiate(healthSO.explosionPrefab, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
             
-            //StartCoroutine(DestroyPlatformRoutine());
+            StartCoroutine(DestroyPlatformRoutine());
         }
     }
 
@@ -74,7 +74,7 @@ public class PlatformHealth : MonoBehaviour, IDamageable
                 AudioManager.instance.PlayPlatformExplosion();
                 
             deathFeedback?.PlayFeedbacks();
-            PushSegmentAway(i);
+            //PushSegmentAway(i);
             
             yield return new WaitForSeconds(healthSO.delayBetweenExplosions);
             
@@ -82,8 +82,8 @@ public class PlatformHealth : MonoBehaviour, IDamageable
             
             yield return new WaitForSeconds(healthSO.delayBetweenExplosions);
         }
-
-        Destroy(gameObject, 2);
+        
+        Destroy(gameObject);
     }
 
     void PushSegmentAway(int segment)
@@ -95,7 +95,7 @@ public class PlatformHealth : MonoBehaviour, IDamageable
         foreach (Transform child in childTransforms)
         {
             child.gameObject.AddComponent<Rigidbody>();
-            child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(minExplosionForce, maxExplosionForce), transform.position, 500);
+            child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(minExplosionForce, maxExplosionForce), transform.position, 10);
         }
     }
     

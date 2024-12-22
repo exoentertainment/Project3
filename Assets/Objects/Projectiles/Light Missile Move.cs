@@ -47,11 +47,11 @@ public class LightMissileMove : MonoBehaviour
 
         if (potentialTargets.Length > 0)
         {
-            target = potentialTargets[UnityEngine.Random.Range(0, potentialTargets.Length)].gameObject;
+            target = potentialTargets[Random.Range(0, potentialTargets.Length)].gameObject;
         }
         
         if(target != null)
-            targetOffset = new Vector3(Random.Range(-3f, 3f), Random.Range(-1f, 1f), Random.Range(-3f, 3f)) + target.transform.position;
+            targetOffset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)) + target.transform.position;
     }
     
     void Move()
@@ -60,9 +60,6 @@ public class LightMissileMove : MonoBehaviour
 
         if (target != null)
         {
-            if (CheckLineOfSight(target))
-                FindTarget();
-            
             transform.LookAt(targetOffset, transform.up);
         }
         else

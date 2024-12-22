@@ -191,6 +191,22 @@ PrefabInstance:
       propertyPath: widthMultiplier
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8999270339230592782, guid: 3d0e2d9856d9fd542b4837eb2861ed97, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999270339230592782, guid: 3d0e2d9856d9fd542b4837eb2861ed97, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999270339230592782, guid: 3d0e2d9856d9fd542b4837eb2861ed97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999270339230592782, guid: 3d0e2d9856d9fd542b4837eb2861ed97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
