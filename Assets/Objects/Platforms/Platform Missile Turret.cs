@@ -53,11 +53,12 @@ public class PlatformMissileTurret : MonoBehaviour
                     float distanceToEnemy =
                         Vector3.Distance(potentialTargets[x].transform.position, transform.position);
 
-                    if (distanceToEnemy < closestEnemy)
-                    {
-                        closestEnemy = distanceToEnemy;
-                        target = potentialTargets[x].gameObject;
-                    }
+                    if(!CheckLineOfSight())
+                        if (distanceToEnemy < closestEnemy)
+                        {
+                            closestEnemy = distanceToEnemy;
+                            target = potentialTargets[x].gameObject;
+                        }
                 }
             }
         }

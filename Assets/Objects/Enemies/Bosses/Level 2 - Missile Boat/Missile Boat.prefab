@@ -400,9 +400,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   explosionPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
+  - {fileID: 1593023632951020, guid: 7d437aaa93aff2744a4111ce4f46b959, type: 3}
 --- !u!114 &298825118749110651
 MonoBehaviour:
   m_ObjectHideFlags: 0

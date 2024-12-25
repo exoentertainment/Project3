@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2903874247959084229}
   - component: {fileID: 3373991846720507763}
   - component: {fileID: 6504599671182093761}
+  - component: {fileID: -6265842846720676163}
   m_Layer: 8
   m_Name: Missile Cruiser
   m_TagString: Untagged
@@ -396,6 +397,19 @@ MonoBehaviour:
         Velocity: {x: 5, y: 5, z: 5}
         ClearImpulseOnStop: 0
         DrawGizmos: 0
+--- !u!114 &-6265842846720676163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945394395542170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e71e6f50c966d493a5b95845bc936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySO: {fileID: 11400000, guid: 654ec87e189ae20468b14dbfe8e2419a, type: 2}
 --- !u!1 &49251956362930260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,7 +2873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 435d5fecb0f6a1a4c8609af7d4992958, type: 2}
-  missileSO: {fileID: 11400000, guid: cdbf2dab149d70147a1148ab4aea7e0e, type: 2}
   spawnPoints:
   - {fileID: 1757056841280953261}
 --- !u!1001 &2142892232688861509
@@ -3124,7 +3137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 435d5fecb0f6a1a4c8609af7d4992958, type: 2}
-  missileSO: {fileID: 11400000, guid: cdbf2dab149d70147a1148ab4aea7e0e, type: 2}
   spawnPoints:
   - {fileID: 2509132758564024848}
 --- !u!1001 &3198290148082638162

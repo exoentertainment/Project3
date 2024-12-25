@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1895986327944920478}
   - component: {fileID: 7162092307882108352}
   - component: {fileID: 6870682517479827785}
+  - component: {fileID: 7629584099691357117}
   m_Layer: 8
   m_Name: Heavy Cruiser
   m_TagString: Untagged
@@ -376,6 +377,19 @@ MonoBehaviour:
         Velocity: {x: 5, y: 5, z: 5}
         ClearImpulseOnStop: 0
         DrawGizmos: 0
+--- !u!114 &7629584099691357117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998759191570710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4e71e6f50c966d493a5b95845bc936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySO: {fileID: 11400000, guid: a0d17e6cfe7c4d846b56d1821f366d61, type: 2}
 --- !u!1 &49034969826415470
 GameObject:
   m_ObjectHideFlags: 0

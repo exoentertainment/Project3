@@ -577,8 +577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453e94c6b878a3741b7c281cc85579cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minspawnFrequency: 30
-  maxspawnFrequency: 90
+  minspawnFrequency: 60
+  maxspawnFrequency: 120
   sphereCollider: {fileID: 96322572}
   asteroidPrefabs:
   - {fileID: 7377380307997223407, guid: c4107baa76dc67142b6727d618dea35d, type: 3}
@@ -600,17 +600,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1505987119}
     m_Modifications:
+    - target: {fileID: 3432244494447225002, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 260560359}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -480.59998
+      value: -474.4
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -101
+      value: 160.2
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1627,7 +1631,7 @@ Transform:
   m_GameObject: {fileID: 178804337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: -480.59998, y: 58, z: -101}
+  m_LocalPosition: {x: -474.4, y: 300, z: 160.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

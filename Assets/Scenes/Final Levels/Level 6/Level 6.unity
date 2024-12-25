@@ -917,8 +917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453e94c6b878a3741b7c281cc85579cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minspawnFrequency: 30
-  maxspawnFrequency: 90
+  minspawnFrequency: 60
+  maxspawnFrequency: 120
   sphereCollider: {fileID: 96322572}
   asteroidPrefabs:
   - {fileID: 7377380307997223407, guid: c4107baa76dc67142b6727d618dea35d, type: 3}
@@ -940,17 +940,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1505987119}
     m_Modifications:
+    - target: {fileID: 3432244494447225002, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 260560359}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.x
       value: -423
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.699997
+      value: 160.2
       objectReference: {fileID: 0}
     - target: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2479,7 +2483,7 @@ Transform:
   m_GameObject: {fileID: 178804337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
-  m_LocalPosition: {x: -423, y: 200, z: 36.699997}
+  m_LocalPosition: {x: -423, y: 300, z: 160.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11863,6 +11867,10 @@ PrefabInstance:
     - target: {fileID: 3325194052997282038, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325194052997282038, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3744788238355405930, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_IsActive

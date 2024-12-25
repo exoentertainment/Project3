@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453e94c6b878a3741b7c281cc85579cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minspawnFrequency: 30
-  maxspawnFrequency: 90
+  minspawnFrequency: 60
+  maxspawnFrequency: 120
   sphereCollider: {fileID: 96322572}
   asteroidPrefabs:
   - {fileID: 7377380307997223407, guid: c4107baa76dc67142b6727d618dea35d, type: 3}

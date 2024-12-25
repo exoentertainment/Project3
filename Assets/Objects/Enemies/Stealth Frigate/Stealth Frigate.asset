@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e08b6e2ddc428587b65d127a21b98e9, type: 3}
-  m_Name: Light Frigate
+  m_Name: Stealth Frigate
   m_EditorClassIdentifier: 
   maxHealth: 2
   moveSpeed: 100

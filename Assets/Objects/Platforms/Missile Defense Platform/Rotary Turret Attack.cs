@@ -1,13 +1,15 @@
-using System;
-using System.Collections;
-using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections;
+using MoreMountains.Feedbacks;
 
-public class TurretAttack : MonoBehaviour
+public class RotaryTurretAttack : MonoBehaviour
 {
     #region -- Serialized Fields --
 
+    [Header("Variables")] 
+    [SerializeField] private float burstAmount;
+    
     [FormerlySerializedAs("platformTurretSO")]
     [Header("Scriptable Object")]
     [SerializeField] TurretSO turretSO;
@@ -88,28 +90,31 @@ public class TurretAttack : MonoBehaviour
 
     IEnumerator FireRoutine()
     {
-        foreach (Transform spawnPoint in spawnPoints)
+        for (int i = 0; i < burstAmount; i++)
         {
-            if (target != null)
+            foreach (Transform spawnPoint in spawnPoints)
             {
-                Vector3 targetVector = target.transform.position - spawnPoint.position;
-                targetVector.Normalize();
-
-                Quaternion targetRotation = Quaternion.LookRotation(targetVector);
-
-                if(turretSO.dischargePrefab != null)
-                    Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
-
-                if (CameraManager.instance.IsObjectInView(transform))
+                if (target != null)
                 {
-                    AudioManager.instance.PlayTurretSound();
-                    firingFeedback?.PlayFeedbacks();
+                    Vector3 targetVector = target.transform.position - spawnPoint.position;
+                    targetVector.Normalize();
+
+                    Quaternion targetRotation = Quaternion.LookRotation(targetVector);
+
+                    if(turretSO.dischargePrefab != null)
+                        Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
+
+                    if (CameraManager.instance.IsObjectInView(transform))
+                    {
+                        AudioManager.instance.PlayTurretSound();
+                        firingFeedback?.PlayFeedbacks();
+                    }
+
+                    Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
                 }
 
-                Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
+                yield return new WaitForSeconds(turretSO.delayPerBarrel);
             }
-
-            yield return new WaitForSeconds(turretSO.delayPerBarrel);
         }
     }
     

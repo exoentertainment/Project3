@@ -119,79 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &41882027
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702785273099874958, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_Name
-      value: Probe (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -463.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -54.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
 --- !u!1 &96322571
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +273,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4796555534222811147, guid: 63a3baf2970e421959abdeb224a5a747, type: 3}
   m_PrefabInstance: {fileID: 109412177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &145566279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -362.74307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 338.05356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &160943614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -490.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 374.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &178804337
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +567,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &183788653
+--- !u!1001 &191991128
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -534,63 +575,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2268873298483111468, guid: 07e25d94eb123042da48fec75a118960, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 2268873298483111468, guid: 07e25d94eb123042da48fec75a118960, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -532.0629
+      value: -641.2
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.389668
+      value: 0.000030517578
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -155.9297
+      value: 140.4
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2678697213521981761, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3643933880019363767, guid: 07e25d94eb123042da48fec75a118960, type: 3}
-      propertyPath: m_Name
-      value: Dual Heavy Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07e25d94eb123042da48fec75a118960, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &260560358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -764,11 +797,182 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+--- !u!1001 &518142874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -628.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &533230492 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6573013455699226199, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
   m_PrefabInstance: {fileID: 993556280}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &534234788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -683
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 51.999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &546866767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -337.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &560558106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -955,7 +1159,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
   m_PrefabInstance: {fileID: 560558106}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &609497934
+--- !u!1001 &562107631
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -963,63 +1167,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702785273099874958, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_Name
-      value: Probe (1)
+      value: Enemy Cruiser Missile (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -584.1
+      value: -297
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.1
+      value: 25.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1027,7 +1215,121 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &640896951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -417.44308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 478.45355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &660506467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -745.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 481.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &716345683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1374,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &734128080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -768.85693
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 176.54642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &767425632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1464,120 @@ Transform:
   - {fileID: 560558107}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &774948270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -828.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 360.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &799674394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -391.80002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 438.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &816908501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1518,6 +1991,291 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+--- !u!1001 &1094284553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -575.4569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -172.15356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1195693358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -580.571
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.39212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574256628090915476, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200488188235838334, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+      propertyPath: m_Name
+      value: Missile Defense Platform
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7aac0923e2e32b0a657477e8224550, type: 3}
+--- !u!1001 &1236441031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -351.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 165.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1258673128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -410.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1263524115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -690.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &1304385251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1696,7 +2454,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1400169571
+--- !u!1001 &1449303811
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1704,63 +2462,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702785273099874958, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_Name
-      value: Probe (2)
+      value: Enemy Cruiser Missile (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -524.7
+      value: -298.2
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.1
+      value: 22.4
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1768,7 +2510,121 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1464592640
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -465.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 58.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1491771199
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1107.3569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 162.84644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &1505987118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,12 +2659,7 @@ Transform:
   - {fileID: 1909610467}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1843634284 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
-  m_PrefabInstance: {fileID: 1304385251}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1895616912
+--- !u!1001 &1599005461
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1816,55 +2667,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409392127548181450, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702785273099874958, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_Name
-      value: Probe
+      value: Enemy Cruiser Missile (15)
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -611.2724
+      value: -352.90002
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000030517578
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -86.09099
+      value: 162.79999
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8706569343927088080, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1872,7 +2715,126 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae927c56aab9db24e81f8b678a6c1594, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!4 &1843634284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+  m_PrefabInstance: {fileID: 1304385251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1880398204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -883.60004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 500.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &1905126545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -688.85693
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -279.35355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &1909610466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2001,16 +2963,244 @@ MonoBehaviour:
     FrequencyGain: 1
     Duration: 1
     m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!1001 &1955310731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -906.75696
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -286.05356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!4 &1986762815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2859759879874299766, guid: 44694d4ddf2c72445a6f3d8fdd80272f, type: 3}
   m_PrefabInstance: {fileID: 816908501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2047818570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -968.9569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 143.34644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &2077062481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2372705727273444699, guid: 3d49bab5ea3985144a00e803f3356be0, type: 3}
   m_PrefabInstance: {fileID: 719328049618354172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2090657141
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -615.55695
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100.346436
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+--- !u!1001 &2114840726
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -576.657
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -175.25357
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1 &2140107778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,6 +3280,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2143962285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1212212991423974, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Cruiser Missile (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -545.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 514.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044864873231502, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9058a45e3ff1b964597f92bd690a750b, type: 3}
 --- !u!1001 &719328049618354172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2603,8 +3850,31 @@ SceneRoots:
   - {fileID: 178804343}
   - {fileID: 96322573}
   - {fileID: 716345685}
-  - {fileID: 183788653}
-  - {fileID: 1895616912}
-  - {fileID: 609497934}
-  - {fileID: 1400169571}
-  - {fileID: 41882027}
+  - {fileID: 1195693358}
+  - {fileID: 145566279}
+  - {fileID: 640896951}
+  - {fileID: 191991128}
+  - {fileID: 546866767}
+  - {fileID: 799674394}
+  - {fileID: 2090657141}
+  - {fileID: 160943614}
+  - {fileID: 2143962285}
+  - {fileID: 734128080}
+  - {fileID: 1263524115}
+  - {fileID: 660506467}
+  - {fileID: 2047818570}
+  - {fileID: 774948270}
+  - {fileID: 1880398204}
+  - {fileID: 1491771199}
+  - {fileID: 562107631}
+  - {fileID: 1236441031}
+  - {fileID: 1094284553}
+  - {fileID: 1449303811}
+  - {fileID: 1599005461}
+  - {fileID: 2114840726}
+  - {fileID: 1258673128}
+  - {fileID: 1464592640}
+  - {fileID: 1905126545}
+  - {fileID: 518142874}
+  - {fileID: 534234788}
+  - {fileID: 1955310731}

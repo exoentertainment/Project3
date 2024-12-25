@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 400
-  lowHealthLimit: 25
+  lowHealthLimit: 0.25
   healthSlider: {fileID: 5327818081702163112}
   explosionPoints: []
   onSpawn:
@@ -203,10 +203,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4441286570838061584}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   explosionPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1744157813687134, guid: b5efd7f5b89aae148a607cc58c94bbf1, type: 3}
+  - {fileID: 1593023632951020, guid: 7d437aaa93aff2744a4111ce4f46b959, type: 3}
 --- !u!114 &-6114845074016789480
 MonoBehaviour:
   m_ObjectHideFlags: 0
