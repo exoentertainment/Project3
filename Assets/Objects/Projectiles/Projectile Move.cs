@@ -27,6 +27,17 @@ public class ProjectileMove : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {   
+        if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
+        {
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
+            {
+                hit.TakeDamage(projectileSO.damage);
+                
+                if(projectileSO.explodeEffectPrefab != null)
+                    Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
+            }
+        }
+        
         Destroy(gameObject);
     }
 }

@@ -19,6 +19,5 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 8320
-  dischargeEffectPrefab: {fileID: 146160, guid: 9e990a01552c805499d75883678aecf8, type: 3}
   projectilePrefab: {fileID: 148176, guid: 5d4411113967d4142b2297d3dceec856, type: 3}
-  explodeEffectPrefab: {fileID: 184014, guid: 9ba06b22c38c99747acf3af2bdec3b00, type: 3}
+  explodeEffectPrefab: {fileID: 0}

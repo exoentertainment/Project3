@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b096789aeddc164628132184299aec35, type: 3}
-  m_Name: Pulse Laser
+  m_Name: Pulse Laser Boss
   m_EditorClassIdentifier: 
   audioType: 0
   audioMixer: {fileID: 4797775633348784603, guid: 6d0618246f8a8b4efa83dc95fad28c35, type: 2}

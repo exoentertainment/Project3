@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718efbe744b5d71b0b4f744de49dbfc4, type: 3}
   m_Name: Wave 5
   m_EditorClassIdentifier: 
-  numSpawns: 10
+  numSpawns: 15
   timeBetweenSpawns: 2
   enemyShipsPrefabs:
   - {fileID: 1998759191570710, guid: 0487259b19ea81d4ba530c74c08049e1, type: 3}

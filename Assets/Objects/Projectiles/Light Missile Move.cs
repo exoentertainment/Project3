@@ -116,7 +116,7 @@ public class LightMissileMove : MonoBehaviour
             }
         }
 
-        if(CameraManager.instance.IsObjectInView(transform))
+        if(CameraManager.instance.IsObjectInView(transform) && Random.Range(0, 2) == 1)
             AudioManager.instance.PlaySmallExplosion();
             
         Instantiate(missileSO.explodeEffectPrefab, transform.position, Quaternion.identity);

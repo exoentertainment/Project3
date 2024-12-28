@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 19809016}
   - component: {fileID: 19993846}
   - component: {fileID: 9678794}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,7 +4856,7 @@ GameObject:
   - component: {fileID: 431454}
   - component: {fileID: 10867582}
   - component: {fileID: 7105083728006206584}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4978,7 +4978,7 @@ GameObject:
   - component: {fileID: 408643239800486535}
   - component: {fileID: 2304896020965008993}
   - component: {fileID: 8724858357670706362}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Special Weapon Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4995,7 +4995,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 493380}
@@ -5076,7 +5076,7 @@ GameObject:
   - component: {fileID: 459988}
   - component: {fileID: 19876406}
   - component: {fileID: 19973966}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9867,7 +9867,7 @@ GameObject:
   - component: {fileID: 493380}
   - component: {fileID: 19873854}
   - component: {fileID: 19916638}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: EnergySphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

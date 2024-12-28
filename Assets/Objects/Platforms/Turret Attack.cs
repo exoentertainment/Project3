@@ -115,12 +115,15 @@ public class TurretAttack : MonoBehaviour
     
     void RotateTurret()
     {
-        Vector3 targetVector = target.transform.position - transform.position;
-        targetVector.Normalize();
+        if (barrelTransform.Length > 0)
+        {
+            Vector3 targetVector = target.transform.position - transform.position;
+            targetVector.Normalize();
 
-        Quaternion targetRotation = Quaternion.LookRotation(targetVector);
-            
-        transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
+            Quaternion targetRotation = Quaternion.LookRotation(targetVector);
+
+            transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
+        }
     }
 
     void RotateBarrel()

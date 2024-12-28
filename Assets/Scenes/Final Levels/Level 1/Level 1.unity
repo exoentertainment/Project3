@@ -913,11 +913,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[0]'
@@ -942,15 +942,23 @@ PrefabInstance:
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: de92e5798ff850542a9953b006aee5ac, type: 2}
+      objectReference: {fileID: 11400000, guid: e87dfe088285b304389d1a07247eec59, type: 2}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: aa8ec6b9131783b4dabf4047cf283dca, type: 2}
+      objectReference: {fileID: 11400000, guid: 6ea213791807b6fc480cdeb66c64b8f2, type: 2}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: 07956b98d4cb57544ab77a5baf2832e8, type: 2}
+      objectReference: {fileID: 11400000, guid: d49538974d5a7b2a1885c3c90d647704, type: 2}
+    - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 34a38c123b3719dd4bb5b8659c485f8c, type: 2}
+    - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 93715979edcde6b8b9db2a16e64bcdff, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1887,11 +1895,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[0]'
@@ -1916,19 +1924,27 @@ PrefabInstance:
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: bde235aaa45a34f4b81d8925ea18a6cb, type: 2}
+      objectReference: {fileID: 11400000, guid: 7bd5dfcf0d031bf908637650f2db908f, type: 2}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: c7ab699a90e0d6d429d710460b3e0c86, type: 2}
+      objectReference: {fileID: 11400000, guid: 7ba8b873565642b5fbfb204a53058214, type: 2}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: 2a119616b2704344ba7a9c1eaf727847, type: 2}
+      objectReference: {fileID: 11400000, guid: d5feef956b214ad6fb2dbbb14cce2fb9, type: 2}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: 'spawnWavesSO.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: c0677e58a8e8e844c92a97863aba8452, type: 2}
+      objectReference: {fileID: 11400000, guid: 2af46d6c0cf267777a6c4e48536f6153, type: 2}
+    - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b94bbc6cb72e5b46997887fe2aee25f, type: 2}
+    - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bde235aaa45a34f4b81d8925ea18a6cb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

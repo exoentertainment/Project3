@@ -15,6 +15,6 @@ MonoBehaviour:
   audioType: 0
   audioMixer: {fileID: 4797775633348784603, guid: 6d0618246f8a8b4efa83dc95fad28c35, type: 2}
   clip: {fileID: 8300000, guid: 5e9622add6c12ad1e94d3638812fe776, type: 3}
-  volume: 1
+  volume: 0.2
   pitch: 1
   loop: 0

@@ -92,6 +92,12 @@ public class RotaryTurretAttack : MonoBehaviour
     {
         for (int i = 0; i < burstAmount; i++)
         {
+            if (CameraManager.instance.IsObjectInView(transform))
+            {
+                AudioManager.instance.PlayTurretSound();
+                firingFeedback?.PlayFeedbacks();
+            }
+            
             foreach (Transform spawnPoint in spawnPoints)
             {
                 if (target != null)
@@ -103,12 +109,6 @@ public class RotaryTurretAttack : MonoBehaviour
 
                     if(turretSO.dischargePrefab != null)
                         Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
-
-                    if (CameraManager.instance.IsObjectInView(transform))
-                    {
-                        AudioManager.instance.PlayTurretSound();
-                        firingFeedback?.PlayFeedbacks();
-                    }
 
                     Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
                 }
