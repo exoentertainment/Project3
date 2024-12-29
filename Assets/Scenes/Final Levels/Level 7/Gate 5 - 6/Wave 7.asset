@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718efbe744b5d71b0b4f744de49dbfc4, type: 3}
+  m_Name: Wave 7
+  m_EditorClassIdentifier: 
+  numSpawns: 6
+  timeBetweenSpawns: 3
+  enemyShipsPrefabs:
+  - {fileID: 1998759191570710, guid: 0487259b19ea81d4ba530c74c08049e1, type: 3}
+  - {fileID: 7777344892903085196, guid: 449a6a7ae8dc7354c8022906c75ac0ce, type: 3}
+  - {fileID: 1945394395542170, guid: daf9821e13de4b8408fbd3953e38a74c, type: 3}
+  - {fileID: 2932255946319442920, guid: 711b2b41731cd3a4284e1f3018a67d99, type: 3}
