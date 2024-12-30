@@ -211,7 +211,9 @@ public class WeaponPlatformWindow : MonoBehaviour
         if(playSound)
             AudioManager.instance.PlayUIClose();
         
-        Time.timeScale = 1;
+        if(!GameManager.instance.IsPaused())
+            Time.timeScale = 1;
+        
         gameObject.SetActive(false);
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     private bool isLastEnemySet;
     private bool isNextLevelButtonDisplayed;
     bool isGameOver;
+    private bool isPaused;
     private int NumPlanets;
     
     private void Start()
@@ -74,5 +76,27 @@ public class GameManager : MonoBehaviour
         
         LoadNextLevelWindow.SetActive(true);
         AudioManager.instance.PlayLevelCleared();
+    }
+    
+    public void PauseGame(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+                isPaused = true;
+            }
+            else
+            {
+                Time.timeScale = 1;
+                isPaused = false;
+            }
+        }
+    }
+
+    public bool IsPaused()
+    {
+        return isPaused;
     }
 }

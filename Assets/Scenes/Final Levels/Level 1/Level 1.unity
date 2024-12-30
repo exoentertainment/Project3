@@ -748,6 +748,10 @@ PrefabInstance:
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
       value: -1303.5475
       objectReference: {fileID: 0}
@@ -1454,6 +1458,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 384658421257811625, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
   m_PrefabInstance: {fileID: 817965208}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &828735852 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+  m_PrefabInstance: {fileID: 1069089521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1cc67b656e1cb4c97c1e56f99dd08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &993556280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1672,6 +1687,46 @@ PrefabInstance:
       propertyPath: currentResources
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_ActionId
+      value: 589e99e6-148f-44af-9764-e33269f7e4a5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_ActionName
+      value: 'Player/Pause[/Keyboard/space]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 828735852}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188810617804021757, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
+      propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -1781,6 +1836,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 767425633}
     m_Modifications:
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
       value: -950.6848

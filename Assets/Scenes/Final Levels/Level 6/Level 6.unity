@@ -8870,6 +8870,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 775635201}
+  - {fileID: 877639934}
   - {fileID: 2101219870}
   - {fileID: 1622929016}
   - {fileID: 795198931}
@@ -8884,16 +8885,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 767425633}
     m_Modifications:
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.x
-      value: 193.6963
+      value: 396.04254
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.y
-      value: -37.682743
+      value: -77.04828
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.z
-      value: 1486.9639
+      value: 1444.7194
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _orbitCenter.x
@@ -8905,15 +8910,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.x
-      value: -92.40511
+      value: 174.49533
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.y
-      value: -22.63243
+      value: -74.556694
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.z
-      value: 893.0774
+      value: 1398
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: OrbitCenterOffset.x
@@ -8934,7 +8939,7 @@ PrefabInstance:
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: OrbitCenterTransform
       value: 
-      objectReference: {fileID: 1986762815}
+      objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _worldRotationAxis.x
       value: 1.07
@@ -9936,8 +9941,12 @@ PrefabInstance:
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -151.70102
+      value: 1085.1432
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
@@ -9945,7 +9954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: 1089.4893
+      value: -180.17856
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRadius
@@ -9957,7 +9966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -132
+      value: 1066
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
@@ -9965,7 +9974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: 948
+      value: -177
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.y
@@ -9982,7 +9991,7 @@ PrefabInstance:
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterTransform
       value: 
-      objectReference: {fileID: 1986762815}
+      objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _worldRotationAxis.x
       value: 0
@@ -10948,6 +10957,204 @@ Transform:
   - {fileID: 2143046108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &877639933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 767425633}
+    m_Modifications:
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _radius.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _radius.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _radius.z
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRadius
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _orbitCenter.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _orbitCenter.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _orbitCenter.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _snappedPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _snappedPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _snappedPosition.z
+      value: 1398
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitCenterOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitCenterOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitCenterOffset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRotationAxis.x
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitCenterTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _worldRotationAxis.x
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: _worldRotationAxis.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971870873573984902, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_Name
+      value: Gate 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 189
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000059624385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: spawnWavesSO.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ef9bb6014f4919c41b98282dfd5aab92, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fd304b41a8be34419cbe59360f9ac2f, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d9e43c0d0205c1a40a652b731a1f24dc, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b48792a61d5a734887de52a65f16799, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 997b721d44c81e845a80f7371bec3efc, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f70a6453aca84ed448991424d13cdfa5, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: cad06b8f4e50a92f5a3825ad0ec8a50b, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 584b688136ae88f53ac9e23f7cb3b5d0, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1325be389cbb3541e9f7bcd112d4b618, type: 2}
+    - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: 'spawnWavesSO.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e00b8048fa4dc75fb7c0da4c8161a0b, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+--- !u!4 &877639934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+  m_PrefabInstance: {fileID: 877639933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &885418468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17341,8 +17548,12 @@ PrefabInstance:
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -137.91002
+      value: 275.61508
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
@@ -17350,7 +17561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: 990.44476
+      value: 961.26807
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRadius
@@ -17362,7 +17573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -132
+      value: 285
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
@@ -17370,7 +17581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: 948
+      value: 994
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.y
@@ -17387,7 +17598,7 @@ PrefabInstance:
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterTransform
       value: 
-      objectReference: {fileID: 1986762815}
+      objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _worldRotationAxis.x
       value: 0
@@ -21625,16 +21836,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 767425633}
     m_Modifications:
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: Orbiting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.x
-      value: 193.6963
+      value: 612.18427
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.y
-      value: -37.682743
+      value: -119.09767
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.z
-      value: 1486.9639
+      value: -1364.2017
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _orbitCenter.x
@@ -21646,15 +21861,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.x
-      value: -92.40511
+      value: 397.0713
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.y
-      value: -22.63243
+      value: -117.857834
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.z
-      value: 893.0774
+      value: -1350
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: OrbitCenterOffset.x
@@ -21675,7 +21890,7 @@ PrefabInstance:
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: OrbitCenterTransform
       value: 
-      objectReference: {fileID: 1986762815}
+      objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _worldRotationAxis.x
       value: 1.07
