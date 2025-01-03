@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using MoreMountains.Feedbacks;
 
 public class PlasmaTurretAttack : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlasmaTurretAttack : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Transform[] barrelTransform;
 
+    [SerializeField] MMFeedbacks firingFeedback;
+    
     #endregion
 
     float lastFireTime;
@@ -27,15 +30,20 @@ public class PlasmaTurretAttack : MonoBehaviour
     {
         if (Time.timeScale == 1)
         {
-            RotateTurret();
-            RotateBarrel();
-            Fire();
+            if(target == null)
+                SearchForTarget();
+            else
+            {
+                RotateTurret();
+                RotateBarrel();
+                Fire();
+            }
         }
     }
 
     void SearchForTarget()
     {
-        if (target == null || Vector3.Distance(transform.position, target.transform.position) > turretSO.attackRange)
+        if (target == null)
         {
             float closestEnemy = Mathf.Infinity;
 
@@ -48,7 +56,7 @@ public class PlasmaTurretAttack : MonoBehaviour
                     float distanceToEnemy =
                         Vector3.Distance(potentialTargets[x].transform.position, transform.position);
 
-                    if (distanceToEnemy < closestEnemy)
+                    if (distanceToEnemy < closestEnemy && !CheckLineOfSight(potentialTargets[x].gameObject))
                     {
                         closestEnemy = distanceToEnemy;
                         target = potentialTargets[x].gameObject;
@@ -67,46 +75,81 @@ public class PlasmaTurretAttack : MonoBehaviour
     {
         if (target != null)
         {
-            if (!target.TryGetComponent<BoxCollider>(out BoxCollider boxCollider) && !target.TryGetComponent<SphereCollider>(out SphereCollider sphereCollider))
+            if (Vector3.Distance(transform.position, target.transform.position) > turretSO.attackRange)
             {
                 target = null;
                 return;
             }
-                
+            
             if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
             {
-                StartCoroutine(FireRoutine());
+                if (!CheckLineOfSight(target))
+                {
+                    StartCoroutine(FireRoutine());
 
-                lastFireTime = Time.time;
+                    lastFireTime = Time.time;
+                }
+                else
+                {
+                    target = null;
+                }
             }
         }
     }
 
     IEnumerator FireRoutine()
     {
-        if(target != null)
-            for (int x = 0; x < spawnPoints.Length; x++)
+        // if(target != null)
+        //     for (int x = 0; x < spawnPoints.Length; x++)
+        //     {
+        //         Vector3 targetVector = target.transform.position - spawnPoints[x].position;
+        //         targetVector.Normalize();
+        //         float rotateAmountZ = Vector3.Cross(targetVector, barrelTransform[0].forward).z;
+        //         float rotateAmountX = Vector3.Cross(targetVector, barrelTransform[0].forward).x;
+        //         float rotateAmountY = Vector3.Cross(targetVector, barrelTransform[0].forward).y;
+        //         
+        //         float newAngleZ = barrelTransform[0].rotation.eulerAngles.z + (-rotateAmountZ);
+        //         float newAngleX = barrelTransform[0].rotation.eulerAngles.x + (-rotateAmountX);
+        //         float newAngleY = barrelTransform[0].rotation.eulerAngles.y + (-rotateAmountY);
+        //         
+        //         if(CameraManager.instance.IsObjectInView(transform))
+        //             AudioManager.instance.PlayPlasmaTurretSound();
+        //         
+        //         GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, Quaternion.identity);
+        //         projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
+        //         
+        //         yield return new WaitForSeconds(turretSO.delayPerBarrel);
+        //     }
+
+        foreach (Transform spawnPoint in spawnPoints)
+        {
+            if (target != null)
             {
-                Vector3 targetVector = target.transform.position - spawnPoints[x].position;
+                Vector3 targetVector = target.transform.position - spawnPoint.position;
                 targetVector.Normalize();
-                float rotateAmountZ = Vector3.Cross(targetVector, barrelTransform[0].forward).z;
-                float rotateAmountX = Vector3.Cross(targetVector, barrelTransform[0].forward).x;
-                float rotateAmountY = Vector3.Cross(targetVector, barrelTransform[0].forward).y;
-                
-                float newAngleZ = barrelTransform[0].rotation.eulerAngles.z + (-rotateAmountZ);
-                float newAngleX = barrelTransform[0].rotation.eulerAngles.x + (-rotateAmountX);
-                float newAngleY = barrelTransform[0].rotation.eulerAngles.y + (-rotateAmountY);
-                
-                if(CameraManager.instance.IsObjectInView(transform))
+
+                Quaternion targetRotation = Quaternion.LookRotation(targetVector);
+
+                if (turretSO.dischargePrefab != null)
+                    Instantiate(turretSO.dischargePrefab, spawnPoint.position, Quaternion.identity);
+
+                if (CameraManager.instance.IsObjectInView(transform))
+                {
                     AudioManager.instance.PlayPlasmaTurretSound();
-                
-                GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoints[x].position, Quaternion.identity);
-                projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
-                
-                yield return new WaitForSeconds(turretSO.delayPerBarrel);
+                    firingFeedback?.PlayFeedbacks();
+                }
+
+                Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
             }
+            else
+            {
+                break;
+            }
+            
+            yield return new WaitForSeconds(turretSO.delayPerBarrel);
+        }
     }
-    
+
     void RotateTurret()
     {
         if (target != null)
@@ -133,25 +176,25 @@ public class PlasmaTurretAttack : MonoBehaviour
         }
     }
 
-    bool CheckLineOfSight()
+    bool CheckLineOfSight(GameObject target)
     {
-        Ray ray = new Ray(transform.position, target.transform.position - transform.position);
-        
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+        if (target != null)
         {
-            if (hit.collider != null)
+            Ray ray = new Ray(transform.position, target.transform.position - transform.position);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
             {
-                if (1 << hit.collider.gameObject.layer == turretSO.targetLayer)
+                if (hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
                 {
                     return true;
                 }
             }
+            else
+            {
+                return false;
+            }
         }
-        else
-        {
-            return false;
-        }
-        
+
         return false;
     }
     

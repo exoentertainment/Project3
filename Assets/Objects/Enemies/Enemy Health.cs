@@ -26,6 +26,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
 
     private float currentHealth;
     private bool isDead;
+    private bool isBeingHit;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,31 +37,38 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
     private void Update()
     {
         healthSlider.transform.LookAt(Camera.main.transform);
+        
+        if(isBeingHit)
+            isBeingHit = false;
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        UpdateHealthBar();
+        if (!isBeingHit)
+        {
+            isBeingHit = true;
+            currentHealth -= damage;
+            UpdateHealthBar();
+        }
 
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            
-            if(CameraManager.instance.IsObjectInView(transform))
+
+            if (CameraManager.instance.IsObjectInView(transform))
                 AudioManager.instance.PlayEnemySmallExplosion();
-                
+
             ResourceManager.instance?.IncreaseResources(enemySO.resourceReward);
             Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
-            
+
             CameraManager.instance.RemoveTrackingObject();
-            
+
             deathFeedback?.PlayFeedbacks();
-            
-            if(isFragments)
+
+            if (isFragments)
                 StartCoroutine(ExplodeShip());
-            
-            if(isFragments)
+
+            if (isFragments)
                 Destroy(transform.root.gameObject, 1f);
             else
                 Destroy(gameObject);

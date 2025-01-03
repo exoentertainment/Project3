@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using MoreMountains.Feedbacks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -34,8 +35,7 @@ public class TurretAttack : MonoBehaviour
         {
             if(target == null)
                 SearchForTarget();
-
-            if (target != null)
+            else
             {
                 RotateTurret();
                 RotateBarrel();
@@ -46,7 +46,7 @@ public class TurretAttack : MonoBehaviour
 
     void SearchForTarget()
     {
-        if (target == null || Vector3.Distance(transform.position, target.transform.position) > turretSO.attackRange)
+        if (target == null)
         {
             float closestEnemy = Mathf.Infinity;
 
@@ -73,6 +73,12 @@ public class TurretAttack : MonoBehaviour
     {
         if ((Time.time - lastFireTime) >= turretSO.attackSpeed)
         {
+            if (Vector3.Distance(transform.position, target.transform.position) > turretSO.attackRange)
+            {
+                target = null;
+                return;
+            }
+
             if (!CheckLineOfSight(target))
             {
                 StartCoroutine(FireRoutine());
@@ -107,6 +113,10 @@ public class TurretAttack : MonoBehaviour
                 }
 
                 Instantiate(turretSO.projectilePrefab, spawnPoint.position, targetRotation);
+            }
+            else
+            {
+                break;
             }
 
             yield return new WaitForSeconds(turretSO.delayPerBarrel);

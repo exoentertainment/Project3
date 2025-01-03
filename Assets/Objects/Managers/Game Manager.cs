@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject LoadNextLevelWindow;
     [SerializeField] private GameObject GameOverWindow;
 
+    [Header("GameObjects")]
+    [SerializeField] GameObject pauseIcon;
+    
     #endregion
 
     public static GameManager instance;
@@ -86,11 +89,13 @@ public class GameManager : MonoBehaviour
             {
                 Time.timeScale = 0;
                 isPaused = true;
+                pauseIcon.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
                 isPaused = false;
+                pauseIcon.SetActive(false);
             }
         }
     }

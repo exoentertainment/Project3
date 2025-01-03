@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38ef0f87f44380568f22f575208c4d9, type: 3}
   m_Name: Multi Turret Platform SO
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 150
   resourceCost: 200
   platformPrefab: {fileID: 3643933880019363767, guid: 07e25d94eb123042da48fec75a118960, type: 3}
   explosionPrefab: {fileID: 1169761733123858, guid: b1c0e9c3335d9c7c88de35b111949249, type: 3}

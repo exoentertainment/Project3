@@ -4,6 +4,8 @@ public class RailgunDamage : MonoBehaviour
 {
     [Header("Scriptable Objects")]
     [SerializeField] IProjectileScriptableObject projectileSO;
+
+    private GameObject hitObject;
     
     // Update is called once per frame
     void Update()
@@ -55,7 +57,7 @@ public class RailgunDamage : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Instantiate(projectileSO.explodeEffectPrefab, transform.position, Quaternion.identity);
-
+        
         if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
         {
             if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))

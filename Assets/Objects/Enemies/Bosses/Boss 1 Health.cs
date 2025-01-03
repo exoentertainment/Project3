@@ -31,6 +31,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
 
     private bool isDead;
     private bool isLowHealth;
+    private bool isBeingHit;
     private float currentHealth;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,10 +42,19 @@ public class Boss1Health : MonoBehaviour, IDamageable
         onDeath.AddListener(GameManager.instance.LoadNextLevelButton);
     }
 
+    private void Update()
+    {
+        if(isBeingHit)
+            isBeingHit = false;
+    }
+
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        UpdateHealthBar();
+        if (!isBeingHit)
+        {
+            currentHealth -= damage;
+            UpdateHealthBar();
+        }
 
         if ((currentHealth/maxHealth) <= lowHealthLimit && !isLowHealth)
         {

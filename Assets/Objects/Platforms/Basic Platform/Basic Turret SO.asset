@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6c9415477f1023fae1816dc1daed68, type: 3}
   m_Name: Basic Turret SO
   m_EditorClassIdentifier: 
-  attackSpeed: 1
+  attackSpeed: 0.5
   delayPerBarrel: 0.25
   attackRange: 300
   targetLayer:

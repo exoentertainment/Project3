@@ -78,23 +78,27 @@ public class ProbeTurretAttack : MonoBehaviour
     {
         foreach (Transform spawnPoint in spawnPoints)
         {
-            Vector3 targetVector = target.transform.position - spawnPoint.position;
-            targetVector.Normalize();
-            float rotateAmountZ = Vector3.Cross(targetVector, spawnPoint.forward).z;
-            float rotateAmountX = Vector3.Cross(targetVector, spawnPoint.forward).x;
-            float rotateAmountY = Vector3.Cross(targetVector, spawnPoint.forward).y;
-            
-            float newAngleZ = spawnPoint.rotation.eulerAngles.z + (-rotateAmountZ);
-            float newAngleX = spawnPoint.rotation.eulerAngles.x + (-rotateAmountX);
-            float newAngleY = spawnPoint.rotation.eulerAngles.y + (-rotateAmountY);
-            
-            if(CameraManager.instance.IsObjectInView(transform))
-                AudioManager.instance.PlayEnemyRotarySound();
-            
-            GameObject projectile = Instantiate(turretSO.projectilePrefab, spawnPoint.position, Quaternion.identity);
-            projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
-            
-            yield return new WaitForSeconds(turretSO.delayPerBarrel);
+            if (target != null)
+            {
+                Vector3 targetVector = target.transform.position - spawnPoint.position;
+                targetVector.Normalize();
+                float rotateAmountZ = Vector3.Cross(targetVector, spawnPoint.forward).z;
+                float rotateAmountX = Vector3.Cross(targetVector, spawnPoint.forward).x;
+                float rotateAmountY = Vector3.Cross(targetVector, spawnPoint.forward).y;
+
+                float newAngleZ = spawnPoint.rotation.eulerAngles.z + (-rotateAmountZ);
+                float newAngleX = spawnPoint.rotation.eulerAngles.x + (-rotateAmountX);
+                float newAngleY = spawnPoint.rotation.eulerAngles.y + (-rotateAmountY);
+
+                if (CameraManager.instance.IsObjectInView(transform))
+                    AudioManager.instance.PlayEnemyRotarySound();
+
+                GameObject projectile =
+                    Instantiate(turretSO.projectilePrefab, spawnPoint.position, Quaternion.identity);
+                projectile.transform.rotation = Quaternion.Euler(newAngleX, newAngleY, newAngleZ);
+
+                yield return new WaitForSeconds(turretSO.delayPerBarrel);
+            }
         }
         // for (int x = 0; x < barrelTransform.Length; x++)
         // {

@@ -31,7 +31,8 @@ public class PlatformHealth : MonoBehaviour, IDamageable
     #endregion
     
     float currentHealth; 
-    bool isDestroyed = false;
+    bool isDestroyed;
+    private bool isBeingHit;
 
     private void Start()
     {
@@ -41,12 +42,19 @@ public class PlatformHealth : MonoBehaviour, IDamageable
     private void Update()
     {
         healthSlider.transform.LookAt(Camera.main.transform);
+        
+        if(isBeingHit)
+            isBeingHit = false;
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        UpdateHealthBar();
+        if (!isBeingHit)
+        {
+            isBeingHit = true;
+            currentHealth -= damage;
+            UpdateHealthBar();
+        }
 
         if (currentHealth <= 0 && !isDestroyed)
         {
