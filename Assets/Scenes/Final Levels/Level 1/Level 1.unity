@@ -1555,6 +1555,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3325194052997282038, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_Name
       value: UI
@@ -1579,6 +1583,7 @@ PrefabInstance:
     - {fileID: 6452927167388041514, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     - {fileID: 1878420911116678361, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     - {fileID: 7764410360985075205, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+    - {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 95428315563390969, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       insertIndex: 2
@@ -1610,11 +1615,6 @@ GameObject:
 --- !u!224 &993556283 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 95428315563390969, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-  m_PrefabInstance: {fileID: 993556280}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &993556284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
   m_PrefabInstance: {fileID: 993556280}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1069089521
@@ -1672,7 +1672,7 @@ PrefabInstance:
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: GameOverWindow
       value: 
-      objectReference: {fileID: 993556284}
+      objectReference: {fileID: 0}
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: LoadNextLevelWindow
       value: 

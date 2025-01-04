@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     void LoadGameOverWindow()
     {
-        GameOverWindow.SetActive(true);
+        GameObject window = (GameObject)Instantiate(Resources.Load("Game Lost"));
     }
     
     void PlayMusic()

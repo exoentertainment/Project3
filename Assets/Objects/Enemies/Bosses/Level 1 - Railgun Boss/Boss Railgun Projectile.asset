@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boss Railgun Projectile
   m_EditorClassIdentifier: 
   moveSpeed: 500
-  damage: 1
+  damage: 2
   lifeTime: 2
   blastRadius: 5
   targetLayer:

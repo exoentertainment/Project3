@@ -108,7 +108,7 @@ public class CameraManager : MonoBehaviour
         Vector3 direction = defaultCamera.transform.right;
         direction.y = 0;
         direction.Normalize();
-        defaultCamera.transform.Translate(direction * (Time.deltaTime * -panSpeed), Space.World);
+        defaultCamera.transform.Translate(direction * (Time.unscaledDeltaTime * -panSpeed), Space.World);
     }
     
     void PanCameraRight()
@@ -116,7 +116,7 @@ public class CameraManager : MonoBehaviour
         Vector3 direction = defaultCamera.transform.right;
         direction.y = 0;
         direction.Normalize();
-        defaultCamera.transform.Translate(direction * (Time.deltaTime * panSpeed), Space.World);
+        defaultCamera.transform.Translate(direction * (Time.unscaledDeltaTime * panSpeed), Space.World);
     }
     
     void PanCameraDown()
@@ -124,7 +124,7 @@ public class CameraManager : MonoBehaviour
         Vector3 direction = defaultCamera.transform.forward;
         direction.y = 0;
         direction.Normalize();
-        defaultCamera.transform.Translate(direction * (Time.deltaTime * -panSpeed), Space.World);
+        defaultCamera.transform.Translate(direction * (Time.unscaledDeltaTime * -panSpeed), Space.World);
     }
     
     void PanCameraUp()
@@ -132,19 +132,19 @@ public class CameraManager : MonoBehaviour
         Vector3 direction = defaultCamera.transform.forward;
         direction.y = 0;
         direction.Normalize();
-        defaultCamera.transform.Translate(direction * (Time.deltaTime * panSpeed), Space.World);
+        defaultCamera.transform.Translate(direction * (Time.unscaledDeltaTime * panSpeed), Space.World);
     }
 
     void RotateCameraLeft()
     {
-        float newAngle = defaultCamera.transform.eulerAngles.y + (rotateSpeed * Time.deltaTime);
+        float newAngle = defaultCamera.transform.eulerAngles.y + (rotateSpeed * Time.unscaledDeltaTime);
         
         defaultCamera.transform.rotation = Quaternion.Euler(defaultCamera.transform.rotation.eulerAngles.x, newAngle, 0);
     }
 
     void RotateCameraRight()
     {
-        float newAngle = defaultCamera.transform.eulerAngles.y - (rotateSpeed * Time.deltaTime);
+        float newAngle = defaultCamera.transform.eulerAngles.y - (rotateSpeed * Time.unscaledDeltaTime);
         
         defaultCamera.transform.rotation = Quaternion.Euler(defaultCamera.transform.rotation.eulerAngles.x, newAngle, 0);
     }
@@ -153,8 +153,8 @@ public class CameraManager : MonoBehaviour
     {
         if (scrollDirection > 0)
         {
-            if(defaultCamera.transform.position.y + defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) > zoomInMax) 
-                defaultCamera.transform.position += defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            if(defaultCamera.transform.position.y + defaultCamera.transform.forward.y * (zoomSpeed * Time.unscaledDeltaTime) > zoomInMax) 
+                defaultCamera.transform.position += defaultCamera.transform.forward * (zoomSpeed * Time.unscaledDeltaTime);
             else
                 defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomInMax, defaultCamera.transform.position.z);
             
@@ -165,8 +165,8 @@ public class CameraManager : MonoBehaviour
         {
             //defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
             
-            if(defaultCamera.transform.position.y - defaultCamera.transform.forward.y * (zoomSpeed * Time.deltaTime) < zoomOutMax) 
-                defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.deltaTime);
+            if(defaultCamera.transform.position.y - defaultCamera.transform.forward.y * (zoomSpeed * Time.unscaledDeltaTime) < zoomOutMax) 
+                defaultCamera.transform.position -= defaultCamera.transform.forward * (zoomSpeed * Time.unscaledDeltaTime);
             else
                 defaultCamera.transform.position = new Vector3(defaultCamera.transform.position.x, zoomOutMax, defaultCamera.transform.position.z);
         }

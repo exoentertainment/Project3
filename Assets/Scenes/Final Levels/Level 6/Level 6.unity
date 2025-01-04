@@ -9085,7 +9085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -10197,7 +10197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -11186,7 +11186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -12197,7 +12197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 574227821999699244, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1550876025119979229, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       propertyPath: m_IsActive
@@ -12254,6 +12254,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7764410360985075205, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+    - {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 95428315563390969, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       insertIndex: -1
@@ -12873,7 +12874,7 @@ PrefabInstance:
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: GameOverWindow
       value: 
-      objectReference: {fileID: 2060163978}
+      objectReference: {fileID: 0}
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: LoadNextLevelWindow
       value: 
@@ -17856,7 +17857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -21876,11 +21877,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4369188681197098505, guid: dcc5d0a67db22b946bb77ff52a3c6fff, type: 3}
   m_PrefabInstance: {fileID: 2049964811}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2060163978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-  m_PrefabInstance: {fileID: 993556280}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2076890603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22232,7 +22228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size

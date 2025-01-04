@@ -1037,15 +1037,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -1303.5475
+      value: -1302.6095
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
-      value: -716.95123
+      value: -716.43524
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: 191.68965
+      value: 199.8223
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _orbitCenter.y
@@ -1057,15 +1057,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -1339.6594
+      value: -1127.7593
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
-      value: -436.98276
+      value: -320.43765
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: 197
+      value: 173
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.y
@@ -1205,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -1251,7 +1251,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 37e6b8977181e65b7973bba6f5a27707, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1335,7 +1337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -1018.41785
+      value: -228.20374
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
@@ -1343,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: -1101.2833
+      value: -1482.5393
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRadius
@@ -1367,7 +1369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -1464
+      value: -649
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
@@ -1375,7 +1377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: -1566
+      value: -1905
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.x
@@ -1523,7 +1525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -1569,7 +1571,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 37e6b8977181e65b7973bba6f5a27707, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2117,7 +2121,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7764410360985075205, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+    - {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 95428315563390969, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       insertIndex: -1
@@ -2203,7 +2209,7 @@ PrefabInstance:
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: GameOverWindow
       value: 
-      objectReference: {fileID: 2060163978}
+      objectReference: {fileID: 0}
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: LoadNextLevelWindow
       value: 
@@ -2214,7 +2220,7 @@ PrefabInstance:
       objectReference: {fileID: 993556281}
     - target: {fileID: 5628751379938865685, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: currentResources
-      value: 400
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name
@@ -2251,15 +2257,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -792.60834
+      value: 1662.8903
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
-      value: 82.22932
+      value: 1110.5144
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: 1834.3965
+      value: 39.41409
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_Enabled
@@ -2279,15 +2285,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -842.6369
+      value: 2659.0505
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
-      value: 87.41954
+      value: 1775.772
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: 1950.1815
+      value: 63.025238
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRotationAxis.x
@@ -2367,7 +2373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -2417,7 +2423,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[10]'
       value: 
       objectReference: {fileID: 11400000, guid: c7a6a3b344eb33c4495dcb44983ea0bc, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2777,7 +2785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -2823,7 +2831,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 37e6b8977181e65b7973bba6f5a27707, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3108,11 +3118,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2859759879874299766, guid: 44694d4ddf2c72445a6f3d8fdd80272f, type: 3}
   m_PrefabInstance: {fileID: 816908501}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2060163978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-  m_PrefabInstance: {fileID: 993556280}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2077062481 stripped
 GameObject:

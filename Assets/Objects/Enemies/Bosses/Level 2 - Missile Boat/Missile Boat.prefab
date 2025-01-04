@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f5ce40279f8fe4383e93695a49b2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 400
   lowHealthLimit: 0.25
   healthSlider: {fileID: 9158970101966667170}
   explosionPoints: []

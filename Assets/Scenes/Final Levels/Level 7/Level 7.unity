@@ -4315,7 +4315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5532729846325724873, guid: 341760c21180c7e40a5bd1ee752c5c5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1064
+      value: 1325
       objectReference: {fileID: 0}
     - target: {fileID: 5532729846325724873, guid: 341760c21180c7e40a5bd1ee752c5c5e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4323,7 +4323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5532729846325724873, guid: 341760c21180c7e40a5bd1ee752c5c5e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -733
+      value: -181
       objectReference: {fileID: 0}
     - target: {fileID: 5532729846325724873, guid: 341760c21180c7e40a5bd1ee752c5c5e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8987,15 +8987,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.x
-      value: 193.6963
+      value: 396.04254
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.y
-      value: -37.682743
+      value: -77.04828
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _radius.z
-      value: 1486.9639
+      value: 1444.7194
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _orbitCenter.x
@@ -9006,16 +9006,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.x
-      value: -92.40511
+      value: 174.49533
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.y
-      value: -22.63243
+      value: -74.556694
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.z
-      value: 893.0774
+      value: 1398
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: OrbitCenterOffset.x
@@ -9103,7 +9107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -10039,15 +10043,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: 878.88385
+      value: 156.93452
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
-      value: 624.00745
+      value: 111.42352
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: -219.4948
+      value: 1083.0311
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRadius
@@ -10058,16 +10062,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: OrbitRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: 708.7295
+      value: 169.53659
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
-      value: 503.19794
+      value: 120.370995
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: -177
+      value: 1170
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.y
@@ -10167,7 +10175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1066
+      value: 255
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10175,7 +10183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -177
+      value: 1170
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10207,7 +10215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -10253,7 +10261,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 308652213976c00bb846080f0ebb614d, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12027,6 +12037,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7764410360985075205, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
+    - {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 95428315563390969, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
       insertIndex: -1
@@ -12646,7 +12657,7 @@ PrefabInstance:
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: GameOverWindow
       value: 
-      objectReference: {fileID: 2060163978}
+      objectReference: {fileID: 0}
     - target: {fileID: 5129021196184656998, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: LoadNextLevelWindow
       value: 
@@ -14428,7 +14439,7 @@ PrefabInstance:
       objectReference: {fileID: 1986762815}
     - target: {fileID: 1841692137692265808, guid: 8059df90e5b5ca307a8533aa809e55b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 829
+      value: -205
       objectReference: {fileID: 0}
     - target: {fileID: 1841692137692265808, guid: 8059df90e5b5ca307a8533aa809e55b8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14436,7 +14447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1841692137692265808, guid: 8059df90e5b5ca307a8533aa809e55b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 565
+      value: 978
       objectReference: {fileID: 0}
     - target: {fileID: 1841692137692265808, guid: 8059df90e5b5ca307a8533aa809e55b8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16132,6 +16143,10 @@ PrefabInstance:
       value: 342.32
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.x
       value: 344.6918
       objectReference: {fileID: 0}
@@ -16197,7 +16212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 189
+      value: -1346
       objectReference: {fileID: 0}
     - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16205,7 +16220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1398
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 3084852811095566375, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16237,7 +16252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -17939,7 +17954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.x
-      value: -137.91002
+      value: -989.61664
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.y
@@ -17947,7 +17962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _radius.z
-      value: 990.44476
+      value: -143.73236
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRadius
@@ -17958,8 +17973,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+      propertyPath: OrbitRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
-      value: -132
+      value: -1019
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.y
@@ -17967,7 +17986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.z
-      value: 948
+      value: -148
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitCenterOffset.y
@@ -18067,7 +18086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 285
+      value: -1019
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18075,7 +18094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 994
+      value: -148
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18107,7 +18126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8130368248598156261, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: spawnWavesSO.Array.size
@@ -18153,7 +18172,9 @@ PrefabInstance:
       propertyPath: 'spawnWavesSO.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 308652213976c00bb846080f0ebb614d, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1667817666998702811, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+    - {fileID: 3279901282745404011, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -22234,11 +22255,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4369188681197098505, guid: dcc5d0a67db22b946bb77ff52a3c6fff, type: 3}
   m_PrefabInstance: {fileID: 2049964811}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2060163978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1741299986893719853, guid: b4fce1474f9a1f14297258fd9f62e551, type: 3}
-  m_PrefabInstance: {fileID: 993556280}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2076890603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22485,6 +22501,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
+      propertyPath: OrbitRotationSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416880523236111117, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: _snappedPosition.x
       value: 381.97025
       objectReference: {fileID: 0}
@@ -22582,7 +22602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: timeBetweenWaves
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3167469470118076489, guid: a213ee1523aaaad4bbba239452dabee2, type: 3}
       propertyPath: spawnWavesSO.Array.size

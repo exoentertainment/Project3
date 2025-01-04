@@ -18,7 +18,7 @@ MonoBehaviour:
   turnRate: 360
   coastDelay: 2
   accelerationDistance: 10
-  damage: 1
+  damage: 5
   resourceReward: 5
   targetLayer:
     serializedVersion: 2
