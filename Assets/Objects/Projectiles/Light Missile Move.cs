@@ -47,14 +47,20 @@ public class LightMissileMove : MonoBehaviour
 
         if (potentialTargets.Length > 0)
         {
-            while (true)
-            {
-                int randomTarget = Random.Range(0, potentialTargets.Length);
-                target = potentialTargets[randomTarget].gameObject;
-
-                if (!CheckLineOfSight(target))
-                    break;
-            }
+            target = potentialTargets[Random.Range(0, potentialTargets.Length)].gameObject;
+            // while (true)
+            // {
+            //     int randomTarget = Random.Range(0, potentialTargets.Length);
+            //
+            //     if (potentialTargets[randomTarget].gameObject != null)
+            //     {
+            //         if (!CheckLineOfSight(potentialTargets[randomTarget].gameObject))
+            //         {
+            //             target = potentialTargets[randomTarget].gameObject;
+            //             break;
+            //         }
+            //     }
+            // }
         }
     }
     
