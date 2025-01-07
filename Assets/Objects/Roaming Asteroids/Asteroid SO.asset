@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Asteroid SO
   m_EditorClassIdentifier: 
   moveSpeed: 25
-  health: 20
+  health: 30
   damage: 75
   lifespan: 120
   targetLayers:

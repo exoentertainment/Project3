@@ -19,8 +19,6 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
     
     [Header("Feedbacks")]
     [SerializeField] MMFeedbacks deathFeedback;
-
-    [SerializeField] private bool isFragments;
     
     #endregion
 
@@ -64,33 +62,8 @@ public class EnemyHealth : MonoBehaviour, IDamageable, IRepairable
             CameraManager.instance.RemoveTrackingObject();
 
             deathFeedback?.PlayFeedbacks();
-
-            if (isFragments)
-                StartCoroutine(ExplodeShip());
-
-            if (isFragments)
-                Destroy(transform.root.gameObject, 1f);
-            else
-                Destroy(gameObject);
-        }
-    }
-
-    IEnumerator ExplodeShip()
-    {
-        Transform[] shipParts = transform.GetComponentsInChildren<Transform>();
-
-        Rigidbody rb;
             
-        foreach (Transform part in shipParts)
-        {
-            part.gameObject.AddComponent<Rigidbody>();
-            rb = part.gameObject.GetComponent<Rigidbody>();
-            
-            rb.AddExplosionForce(300, transform.position, 50);
-            rb.AddExplosionForce(300, part.position, 50);
-            Instantiate(enemySO.explosionPrefab, part.position, Quaternion.identity);
-
-            yield return new WaitForSeconds(.1f);
+            Destroy(gameObject);
         }
     }
     

@@ -825,7 +825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4148091229805386785
 Transform:
   m_ObjectHideFlags: 0
@@ -931,7 +931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1049204902436574248
 Transform:
   m_ObjectHideFlags: 0
@@ -998,7 +998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4451543297970806443
 Transform:
   m_ObjectHideFlags: 0
@@ -1224,7 +1224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2380096091124582375
 Transform:
   m_ObjectHideFlags: 0
@@ -1609,6 +1609,10 @@ MonoBehaviour:
   - {fileID: 1660197557314283265}
   - {fileID: 5991940513743264556}
   - {fileID: 1267960844805714831}
+  - {fileID: 3282787009119068305}
+  - {fileID: 2459651262369437879}
+  - {fileID: 6796476036669726511}
+  - {fileID: 6083111542515920434}
   missileTubeTransform: {fileID: 6705282028854615991}
   targetLayer:
     serializedVersion: 2
@@ -1777,6 +1781,10 @@ MonoBehaviour:
   - {fileID: 7726084082752903810}
   - {fileID: 563950619143788843}
   - {fileID: 792019868484892074}
+  - {fileID: 2380096091124582375}
+  - {fileID: 4451543297970806443}
+  - {fileID: 4148091229805386785}
+  - {fileID: 1049204902436574248}
   missileTubeTransform: {fileID: 6798986100855217192}
   targetLayer:
     serializedVersion: 2

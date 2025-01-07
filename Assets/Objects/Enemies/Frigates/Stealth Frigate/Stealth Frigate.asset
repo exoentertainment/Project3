@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e08b6e2ddc428587b65d127a21b98e9, type: 3}
+  m_Name: Stealth Frigate
+  m_EditorClassIdentifier: 
+  maxHealth: 15
+  moveSpeed: 100
+  turnRate: 360
+  resourceReward: 15
+  standOffDistance: 225
+  coastDelay: 5
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  shipPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 1169761733123858, guid: 072ffd0cb178cfc4192123d603eb58f4, type: 3}

@@ -427,7 +427,7 @@ MonoBehaviour:
           DissipationMode: 2
           DissipationDistance: 1000
           PropagationSpeed: 10000
-        Velocity: {x: 5, y: 5, z: 5}
+        Velocity: {x: 0.5, y: 0.5, z: 0.5}
         ClearImpulseOnStop: 0
         DrawGizmos: 0
 --- !u!1 &501700411310108509
@@ -4922,6 +4922,7 @@ MonoBehaviour:
   - {fileID: 2269535407735880633}
   barrelTransform:
   - {fileID: 2266874034573139846}
+  firingFeedback: {fileID: 0}
 --- !u!4 &4789845269204895839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 531718799512746510, guid: 5c033c98d4795c44cb9b1254acfd930b, type: 3}
@@ -5519,6 +5520,7 @@ MonoBehaviour:
   - {fileID: 8532318754758464270}
   barrelTransform:
   - {fileID: 731142678273496496}
+  firingFeedback: {fileID: 0}
 --- !u!4 &5547084841779949434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 531718799512746510, guid: 5c033c98d4795c44cb9b1254acfd930b, type: 3}
@@ -6167,6 +6169,7 @@ MonoBehaviour:
   - {fileID: 463983607571510422}
   barrelTransform:
   - {fileID: 6800714181704574092}
+  firingFeedback: {fileID: 0}
 --- !u!4 &7756009654788749104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 531718799512746510, guid: 5c033c98d4795c44cb9b1254acfd930b, type: 3}
@@ -6977,6 +6980,7 @@ MonoBehaviour:
   - {fileID: 5492474995648417587}
   barrelTransform:
   - {fileID: 1391688476604184533}
+  firingFeedback: {fileID: 0}
 --- !u!4 &8028452352240563562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1822191825338638541, guid: 5c033c98d4795c44cb9b1254acfd930b, type: 3}

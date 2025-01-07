@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Resource Station SO
   m_EditorClassIdentifier: 
   cargoShipSpawnTime: 30
-  maxHealth: 200
+  maxHealth: 250

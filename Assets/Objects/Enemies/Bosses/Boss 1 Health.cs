@@ -13,10 +13,11 @@ public class Boss1Health : MonoBehaviour, IDamageable
     [Header("Variables")] 
     [SerializeField] private float maxHealth;
     [SerializeField] private float lowHealthLimit;
+    [SerializeField] private int numExplosions;
+    [SerializeField] float delayBetweenExplosions;
 
     [Header("Components")]
     [SerializeField] Slider healthSlider;
-    [SerializeField] private Transform[] explosionPoints;
     
     [Header("Events")] 
     [SerializeField] private UnityEvent onSpawn;
@@ -52,6 +53,7 @@ public class Boss1Health : MonoBehaviour, IDamageable
     {
         if (!isBeingHit)
         {
+            isBeingHit = true;
             currentHealth -= damage;
             UpdateHealthBar();
         }
@@ -65,9 +67,8 @@ public class Boss1Health : MonoBehaviour, IDamageable
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            //CameraManager.instance.ZoomOnBoss(transform);
-            //PushSegmentAway();
-            DestroyShip();
+            onDeath?.Invoke();
+            StartCoroutine(DestroyShip());
         }
     }
     
@@ -76,25 +77,22 @@ public class Boss1Health : MonoBehaviour, IDamageable
         healthSlider.value = currentHealth/maxHealth;
     }
 
-    void DestroyShip()
+    IEnumerator DestroyShip()
     {
         if(CameraManager.instance.IsObjectInView(transform))
             AudioManager.instance.PlayEnemySmallExplosion();
 
-        foreach (GameObject explosion in explosionPrefabs)
+        for (int i = 0; i < numExplosions; i++)
         {
-            Instantiate(explosion, transform.position, Quaternion.identity);
+            int randomExplosion = Random.Range(0, explosionPrefabs.Length);
+            BoxCollider collider = GetComponent<BoxCollider>();
+            Vector3 randomPosition = new Vector3(Random.Range(collider.bounds.min.x, collider.bounds.max.x), Random.Range(collider.bounds.min.y, collider.bounds.max.y), Random.Range(collider.bounds.min.z, collider.bounds.max.z));
+            Instantiate(explosionPrefabs[randomExplosion], randomPosition, Quaternion.identity);
+            yield return new WaitForSeconds(delayBetweenExplosions);
         }
         
+        yield return new WaitForSeconds(2);
         GameManager.instance.LoadNextLevelButton();
         Destroy(gameObject);
-    }
-    
-    void PushSegmentAway()
-    {
-        foreach (Transform child in explosionPoints)
-        {
-            child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(Random.Range(150, 300), transform.position, 10);
-        }
     }
 }
