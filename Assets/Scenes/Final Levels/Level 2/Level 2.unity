@@ -546,6 +546,14 @@ PrefabInstance:
       propertyPath: OrbitCenterTransform
       value: 
       objectReference: {fileID: 1986762815}
+    - target: {fileID: 2779014945604712975, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779014945604712975, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 2913637122738662463, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
       propertyPath: m_Name
       value: Planet 1
@@ -554,6 +562,14 @@ PrefabInstance:
       propertyPath: weaponPlatformWindow
       value: 
       objectReference: {fileID: 993556282}
+    - target: {fileID: 5338781199601520778, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338781199601520778, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7312125030379841547, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1481,7 +1497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3766430886134215979, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7636755862328089944, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2220,7 +2236,7 @@ PrefabInstance:
       objectReference: {fileID: 993556281}
     - target: {fileID: 5628751379938865685, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: currentResources
-      value: 600
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name

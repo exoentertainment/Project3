@@ -582,7 +582,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  deathFeedback: {fileID: 3554494075331803847}
+  deathFeedback: {fileID: 0}
   minExplosionForce: 150
   maxExplosionForce: 300
 --- !u!65 &5648810492010234857
@@ -604,7 +604,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 60, y: 50, z: 200}
+  m_Size: {x: 90, y: 90, z: 200}
   m_Center: {x: -42.88, y: 0, z: 0}
 --- !u!54 &8366621237231239485
 Rigidbody:

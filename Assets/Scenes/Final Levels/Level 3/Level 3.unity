@@ -9539,7 +9539,7 @@ PrefabInstance:
       objectReference: {fileID: 993556281}
     - target: {fileID: 5628751379938865685, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: currentResources
-      value: 800
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name

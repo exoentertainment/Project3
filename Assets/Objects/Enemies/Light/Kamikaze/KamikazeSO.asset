@@ -17,8 +17,8 @@ MonoBehaviour:
   kamikazeSpeed: 150
   turnRate: 360
   coastDelay: 2
-  accelerationDistance: 10
-  damage: 5
+  accelerationDistance: 5
+  damage: 4
   resourceReward: 5
   targetLayer:
     serializedVersion: 2

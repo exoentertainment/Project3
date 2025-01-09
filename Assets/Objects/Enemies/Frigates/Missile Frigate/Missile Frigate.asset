@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e08b6e2ddc428587b65d127a21b98e9, type: 3}
   m_Name: Missile Frigate
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 12
   moveSpeed: 100
   turnRate: 360
   resourceReward: 10

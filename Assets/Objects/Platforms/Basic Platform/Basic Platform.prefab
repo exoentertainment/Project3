@@ -224,7 +224,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  deathFeedback: {fileID: 8140547482631681002}
+  deathFeedback: {fileID: 0}
   minExplosionForce: 150
   maxExplosionForce: 300
 --- !u!114 &8140547482631681002
