@@ -23,11 +23,8 @@ public class VLSTurret : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
-        {
-            SearchForTarget();
-            Fire();
-        }
+        SearchForTarget();
+        Fire();
     }
 
     void SearchForTarget()
@@ -57,15 +54,15 @@ public class VLSTurret : MonoBehaviour
 
     void Fire()
     {
-        if (target != null)
+        if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
         {
-            if ((Time.time - lastFireTime) >= platformTurretSO.attackSpeed)
+            if (target != null)
             {
                 StartCoroutine(FireRoutine());
-                
+            
                 lastFireTime = Time.time;
             }
-        }
+       }
     }
 
     IEnumerator FireRoutine()

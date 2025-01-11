@@ -9,18 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 039eb61c79a290cf49e380d6e4e865bb, type: 3}
-  m_Name: Light Frigate VLS Missile SO
+  m_Script: {fileID: 11500000, guid: 0f742e8deb140546cae3c2a361c13528, type: 3}
+  m_Name: Enemy Frigate Missile
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  coastDuration: 0.3
-  coastSpeed: 50
-  damage: 1
+  minMoveSpeed: 75
+  maxMoveSpeed: 125
+  damage: 1.5
   attackRange: 300
-  lifeTime: 5
+  lifeTime: 10
   targetLayer:
     serializedVersion: 2
     m_Bits: 64
-  projectilePrefab: {fileID: 1212212991423974, guid: 2072908559829864c9a9d99cea377c3b, type: 3}
   dischargeEffectPrefab: {fileID: 147176, guid: 0af4eb487d774d328877fba6c59e1c6f, type: 3}
-  explodeEffectPrefab: {fileID: 1043624379182380, guid: 65f8f19ba8d539d29b4bd62a129aedd3, type: 3}
+  explodeEffectPrefab: {fileID: 134280, guid: f9b7f4cc394305e4c89c5b3a980ace80, type: 3}

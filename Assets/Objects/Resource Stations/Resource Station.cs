@@ -14,6 +14,7 @@ public class ResourceStation : MonoBehaviour
     [Header("Scriptable Object")] 
     [SerializeField] private ResourceStationScriptableObject resourceStationSO;
     
+    [SerializeField] LayerMask resourceStationLayerMask;
     #endregion
 
     private float lastSpawnTime;
@@ -25,24 +26,24 @@ public class ResourceStation : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
-        {
-            SpawnCargoShip();
-        }
+        SpawnCargoShip();
     }
 
     void SpawnCargoShip()
     {
-        Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, LayerMask.NameToLayer("Resource Station"));
-        
-        if(potentialTargets.Length > 1)
-            if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
-            {
+        if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
+        {
+            Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, resourceStationLayerMask);
+            Debug.Log(potentialTargets.Length);
 
-                GameObject cargoShip = Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
+            if (potentialTargets.Length > 1)
+            {
+                GameObject cargoShip =
+                    Instantiate(cargoShipPrefab, cargoShipSpawnPoint.position, Quaternion.identity);
                 cargoShip.GetComponent<CargoShipMovement>().SetOriginStation(gameObject);
-                
+
                 lastSpawnTime = Time.time;
             }
+        }
     }
 }

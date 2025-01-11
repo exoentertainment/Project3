@@ -558,6 +558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2913637122738662463, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3178947395790040060, guid: e25ab352d013866198726f1f6b2eee1c, type: 3}
       propertyPath: weaponPlatformWindow
       value: 
@@ -1007,6 +1011,10 @@ PrefabInstance:
     - target: {fileID: 5101994322502746449, guid: f8525de550cf49cc09bf31f83d9416c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253535308535612197, guid: f8525de550cf49cc09bf31f83d9416c1, type: 3}
+      propertyPath: resourceStationLayerMask.m_Bits
+      value: 4096
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1998,6 +2006,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1444187487876550680, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2671311864207392042, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2006,9 +2018,21 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3303630561816734482, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633271172164476658, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8069585287690494547, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686318115770115381, guid: e896a0675e79e819ea61285f493b45ed, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2236,7 +2260,7 @@ PrefabInstance:
       objectReference: {fileID: 993556281}
     - target: {fileID: 5628751379938865685, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: currentResources
-      value: 1500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7307168633310663561, guid: 45a235ebbf2fcc847b72ec985dbee1de, type: 3}
       propertyPath: m_Name
@@ -2588,6 +2612,10 @@ PrefabInstance:
     - target: {fileID: 5101994322502746449, guid: f8525de550cf49cc09bf31f83d9416c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253535308535612197, guid: f8525de550cf49cc09bf31f83d9416c1, type: 3}
+      propertyPath: resourceStationLayerMask.m_Bits
+      value: 4096
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

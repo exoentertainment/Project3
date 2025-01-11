@@ -15,5 +15,5 @@ MonoBehaviour:
   moveSpeed: 100
   moveDelay: 0.5
   maxHealth: 5
-  resourceAmount: 5
+  resourceAmount: 10
   explodePrefab: {fileID: 1043624379182380, guid: 65f8f19ba8d539d29b4bd62a129aedd3, type: 3}

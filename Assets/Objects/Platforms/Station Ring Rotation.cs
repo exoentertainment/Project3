@@ -20,18 +20,17 @@ public class StationRingRotation : MonoBehaviour
 
     void RotateRing()
     {
-        if(Time.timeScale == 1)
-            if (rotateX)
-            {
-                transform.rotation *= Quaternion.Euler(rotationSpeed * Time.deltaTime, 0, 0);
-            }
-            else if(rotateY)
-            {
-                transform.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-            }
-            else if (rotateZ)
-            {
-                transform.rotation *= Quaternion.Euler(0, 0, rotationSpeed * Time.deltaTime);
-            }
+        if (rotateX)
+        {
+            transform.rotation *= Quaternion.Euler(rotationSpeed * Time.deltaTime, 0, 0);
+        }
+        else if(rotateY)
+        {
+            transform.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+        }
+        else if (rotateZ)
+        {
+            transform.rotation *= Quaternion.Euler(0, 0, rotationSpeed * Time.deltaTime);
+        }
     }
 }

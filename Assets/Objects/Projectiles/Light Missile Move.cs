@@ -33,10 +33,7 @@ public class LightMissileMove : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
-        {
-            Move();
-        }
+        Move();
     }
     
     void FindTarget()
@@ -127,7 +124,7 @@ public class LightMissileMove : MonoBehaviour
             }
         }
 
-        if(CameraManager.instance.IsObjectInView(transform) && Random.Range(0, 2) == 1)
+        if(CameraManager.instance.IsObjectInView(transform))
             AudioManager.instance.PlaySmallExplosion();
             
         Instantiate(missileSO.explodeEffectPrefab, transform.position, Quaternion.identity);

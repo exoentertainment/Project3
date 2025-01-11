@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407803044532099141}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 40.2}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b871a1053faa49623a4c7b6bddad9940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformTurretSO: {fileID: 11400000, guid: 323c0e9f95c1df64a963d0e4db3c81e4, type: 2}
+  platformTurretSO: {fileID: 11400000, guid: 99c682389491c71eb852d3de7cd93651, type: 2}
   spawnPoints:
   - {fileID: 4804196766748517821}
 --- !u!4 &4804196766748517821 stripped
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b871a1053faa49623a4c7b6bddad9940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformTurretSO: {fileID: 11400000, guid: 323c0e9f95c1df64a963d0e4db3c81e4, type: 2}
+  platformTurretSO: {fileID: 11400000, guid: 99c682389491c71eb852d3de7cd93651, type: 2}
   spawnPoints:
   - {fileID: 5802927936969431243}
 --- !u!4 &5802927936969431243 stripped

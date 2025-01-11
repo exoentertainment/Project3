@@ -29,13 +29,10 @@ public class PlatformMissileTurret : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
-        {
-            SearchForTarget();
-            RotateTurret();
-            RotateBarrel();
-            Fire();
-        }
+        SearchForTarget();
+        RotateTurret();
+        RotateBarrel();
+        Fire();
     }
 
     void SearchForTarget()
@@ -52,13 +49,12 @@ public class PlatformMissileTurret : MonoBehaviour
                 {
                     float distanceToEnemy =
                         Vector3.Distance(potentialTargets[x].transform.position, transform.position);
-
-                    //if(!CheckLineOfSight())
-                        if (distanceToEnemy < closestEnemy)
-                        {
-                            closestEnemy = distanceToEnemy;
-                            target = potentialTargets[x].gameObject;
-                        }
+                    
+                    if (distanceToEnemy < closestEnemy)
+                    {
+                        closestEnemy = distanceToEnemy;
+                        target = potentialTargets[x].gameObject;
+                    }
                 }
             }
         }
@@ -113,7 +109,6 @@ public class PlatformMissileTurret : MonoBehaviour
         if (target != null)
         {
             missileTubeTransform.LookAt(target.transform);
-            
         }
     }
     

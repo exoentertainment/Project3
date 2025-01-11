@@ -31,16 +31,13 @@ public class TurretAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 1)
+        if(target == null)
+            SearchForTarget();
+        else
         {
-            if(target == null)
-                SearchForTarget();
-            else
-            {
-                RotateTurret();
-                RotateBarrel();
-                Fire();
-            }
+            RotateTurret();
+            RotateBarrel();
+            Fire();
         }
     }
 

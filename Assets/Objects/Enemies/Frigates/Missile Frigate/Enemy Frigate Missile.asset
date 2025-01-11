@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minMoveSpeed: 75
   maxMoveSpeed: 125
-  damage: 1.5
+  damage: 1
   attackRange: 250
   lifeTime: 10
   targetLayer:

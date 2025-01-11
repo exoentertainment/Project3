@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038917d47d95650c78d1b15cb9b4fb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSO: {fileID: 11400000, guid: 5b46a630300207244943787a9393bc6f, type: 2}
+  missileSO: {fileID: 11400000, guid: 141a7e26389561dd2ad9c613c5c2aacf, type: 2}
   rotationTime: 0
 --- !u!1001 &715481144372986090
 PrefabInstance:
