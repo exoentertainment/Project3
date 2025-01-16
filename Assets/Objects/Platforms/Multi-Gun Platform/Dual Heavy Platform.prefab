@@ -281,8 +281,8 @@ GameObject:
   - component: {fileID: 2678697213521981761}
   - component: {fileID: 3554494075331803847}
   - component: {fileID: 5306385368455906041}
-  - component: {fileID: 5648810492010234857}
   - component: {fileID: 8366621237231239485}
+  - component: {fileID: 7693886462841330844}
   m_Layer: 7
   m_Name: Dual Heavy Platform
   m_TagString: Untagged
@@ -585,27 +585,6 @@ MonoBehaviour:
   deathFeedback: {fileID: 0}
   minExplosionForce: 150
   maxExplosionForce: 300
---- !u!65 &5648810492010234857
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3643933880019363767}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 90, y: 90, z: 200}
-  m_Center: {x: -42.88, y: 0, z: 0}
 --- !u!54 &8366621237231239485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -633,6 +612,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!136 &7693886462841330844
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643933880019363767}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 56.7
+  m_Height: 234.99
+  m_Direction: 2
+  m_Center: {x: -40.1, y: 0, z: 0}
 --- !u!1 &4926179411839625583
 GameObject:
   m_ObjectHideFlags: 0

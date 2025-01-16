@@ -34,7 +34,6 @@ public class ResourceStation : MonoBehaviour
         if ((Time.time - lastSpawnTime) >= resourceStationSO.cargoShipSpawnTime)
         {
             Collider[] potentialTargets = Physics.OverlapSphere(transform.position, Mathf.Infinity, resourceStationLayerMask);
-            Debug.Log(potentialTargets.Length);
 
             if (potentialTargets.Length > 1)
             {

@@ -23,8 +23,7 @@ public class VLSMissile : MonoBehaviour
 
     private void Update()
     {
-        if(Time.timeScale == 1)
-            Move();
+        Move();
     }
     
     void FindTarget()
@@ -95,12 +94,9 @@ public class VLSMissile : MonoBehaviour
         //     }
         // }
         
-        if (other.gameObject.layer != LayerMask.NameToLayer("Celestial Body"))
+        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
         {
-            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable hit))
-            {
-                hit.TakeDamage(missileSO.damage);
-            }
+            hit.TakeDamage(missileSO.damage);
         }
         
         if(CameraManager.instance.IsObjectInView(transform))

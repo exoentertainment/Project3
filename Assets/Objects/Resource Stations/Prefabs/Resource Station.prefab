@@ -106,6 +106,9 @@ MonoBehaviour:
   cargoShipPrefab: {fileID: 5516814952251588023, guid: 0cbfb596ed7adf70387d373c23245887, type: 3}
   cargoShipSpawnPoint: {fileID: 7696743047677841553}
   resourceStationSO: {fileID: 11400000, guid: a20ffdd424ba2918fb552bbe4f8a6c00, type: 2}
+  resourceStationLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!114 &74588758745712584
 MonoBehaviour:
   m_ObjectHideFlags: 0

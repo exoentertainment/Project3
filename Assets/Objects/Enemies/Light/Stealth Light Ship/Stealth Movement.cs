@@ -78,7 +78,7 @@ public class StealthMovement : MonoBehaviour
 
     void MoveTowardsTarget()
     {
-        if (target == null && !isFloating)
+        if (target == null)
         {
             FindClosestTarget();
             return;

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039eb61c79a290cf49e380d6e4e865bb, type: 3}
   m_Name: VLS Missile SO
   m_EditorClassIdentifier: 
-  moveSpeed: 75
+  moveSpeed: 100
   coastDuration: 0.1
   coastSpeed: 50
-  damage: 1.5
-  attackRange: 1000
+  damage: 2
+  attackRange: 600
   lifeTime: 5
   targetLayer:
     serializedVersion: 2

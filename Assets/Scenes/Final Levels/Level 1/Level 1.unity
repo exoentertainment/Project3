@@ -768,7 +768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRotationSpeed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x
@@ -1749,7 +1749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: OrbitRotationSpeed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 823255542215716057, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
       propertyPath: _snappedPosition.x

@@ -98,10 +98,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 571799497702189200}
-  - component: {fileID: 5504128056372329208}
   - component: {fileID: 8503831548081582100}
   - component: {fileID: 178772855728329940}
   - component: {fileID: 8140547482631681002}
+  - component: {fileID: 1072139262652638874}
   m_Layer: 7
   m_Name: Basic Platform
   m_TagString: Untagged
@@ -130,27 +130,6 @@ Transform:
   - {fileID: 4058221465923700507}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5504128056372329208
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2566803272482970043}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 147, y: 100, z: 352}
-  m_Center: {x: -0.5, y: 0, z: 0}
 --- !u!54 &8503831548081582100
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -451,6 +430,29 @@ MonoBehaviour:
         Velocity: {x: 0.25, y: 0.25, z: 0.25}
         ClearImpulseOnStop: 0
         DrawGizmos: 0
+--- !u!136 &1072139262652638874
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566803272482970043}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 68.2
+  m_Height: 423.5
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3214545051587707769
 GameObject:
   m_ObjectHideFlags: 0

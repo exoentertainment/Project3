@@ -99,9 +99,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2413363654030295815}
   - component: {fileID: 2144836999871437429}
-  - component: {fileID: 8695139790356982587}
   - component: {fileID: 6796143857534482131}
   - component: {fileID: 7642945351168135178}
+  - component: {fileID: 409412418801997927}
   m_Layer: 7
   m_Name: Cruise Missile Platform
   m_TagString: Untagged
@@ -157,27 +157,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &8695139790356982587
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363980613958592321}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 100, y: 94.31047, z: 296.88675}
-  m_Center: {x: 0, y: 2.8447647, z: -85.29607}
 --- !u!114 &6796143857534482131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +431,29 @@ MonoBehaviour:
         Velocity: {x: 5, y: 5, z: 5}
         ClearImpulseOnStop: 0
         DrawGizmos: 0
+--- !u!136 &409412418801997927
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363980613958592321}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 50
+  m_Height: 322.43
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -82.9}
 --- !u!1 &1118368066194365307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 4adc5cad073204a9e9aac34df800a594, type: 2}
-  missileSO: {fileID: 11400000, guid: 554c5d5665332edcdaef54ce88869ee2, type: 2}
   spawnPoints:
   - {fileID: 6251876670725955760}
   - {fileID: 1754737889261428427}
@@ -2442,7 +2443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformTurretSO: {fileID: 11400000, guid: 4adc5cad073204a9e9aac34df800a594, type: 2}
-  missileSO: {fileID: 11400000, guid: 554c5d5665332edcdaef54ce88869ee2, type: 2}
   spawnPoints:
   - {fileID: 5107206411143873307}
   - {fileID: 3953012745379577817}

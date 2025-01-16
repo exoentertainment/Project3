@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4044864873231502}
   - component: {fileID: 5860432317186957111}
   - component: {fileID: 3732629581215302600}
-  - component: {fileID: 8296655413636033983}
+  - component: {fileID: -3040562566149089778}
   m_Layer: 14
   m_Name: Enemy Frigate Missile
   m_TagString: Untagged
@@ -91,7 +91,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!114 &8296655413636033983
+--- !u!114 &-3040562566149089778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,11 +100,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1212212991423974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038917d47d95650c78d1b15cb9b4fb88, type: 3}
+  m_Script: {fileID: 11500000, guid: 325a8ff123f6a141fb34f1cfc674ce1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSO: {fileID: 11400000, guid: 141a7e26389561dd2ad9c613c5c2aacf, type: 2}
-  rotationTime: 0
+  missileSO: {fileID: 11400000, guid: f4e643c0386e0924e8d35d6add303e94, type: 2}
 --- !u!1001 &715481144372986090
 PrefabInstance:
   m_ObjectHideFlags: 0
