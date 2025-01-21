@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7166116758514443882}
   - component: {fileID: 5225125381311422234}
   - component: {fileID: -4234289397594747554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid Grabber
   m_TagString: Asteroid Grabber
   m_Icon: {fileID: 0}
@@ -51,7 +51,6 @@ Transform:
   - {fileID: 3902327849539616883}
   - {fileID: 8041891929520885680}
   - {fileID: 3127438531095972109}
-  - {fileID: 7883429352754924684}
   - {fileID: 9037923037255188981}
   - {fileID: 1262215943262778799}
   m_Father: {fileID: 0}
@@ -72,7 +71,7 @@ MonoBehaviour:
   planetLayer:
     serializedVersion: 2
     m_Bits: 64
-  asteroidHaulSpeedModified: 3
+  asteroidHaulSpeedModified: 1
 --- !u!54 &7166116758514443882
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,7 +150,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathFeedback: {fileID: 0}
-  isFragments: 0
 --- !u!1 &321112525653043694
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +162,7 @@ GameObject:
   - component: {fileID: 3219326059073990300}
   - component: {fileID: 7134514062154261185}
   - component: {fileID: 8750301041179031120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +263,7 @@ GameObject:
   - component: {fileID: 6260133106819826821}
   - component: {fileID: 1722034329596302215}
   - component: {fileID: 1119006406315451324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,115 +327,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &5441530084621257596
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7883429352754924684}
-  - component: {fileID: 5585195112297220308}
-  - component: {fileID: 5729661132751230830}
-  - component: {fileID: 130677683621897071}
-  m_Layer: 0
-  m_Name: Asteroid Collider
-  m_TagString: Asteroid Grabber
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7883429352754924684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5441530084621257596}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4614109728242530}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5585195112297220308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5441530084621257596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adee130805a21ad4c8f08b63a8c32d01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnGrab:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7855594372353196727}
-        m_TargetAssemblyTypeName: AsteroidGrabberMovement, Assembly-CSharp
-        m_MethodName: FindClosestPlanet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!54 &5729661132751230830
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5441530084621257596}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &130677683621897071
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5441530084621257596}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 25
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7014349002239550016
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 177160068121331276}
   - component: {fileID: 7927176351295884230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1262215943262778799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Engine Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3918930524882098154}
   - component: {fileID: 4918428064412450390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Engine Trail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7508867302660528638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530308549405269697}
   - component: {fileID: 5465205604519022698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Engine Trail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +792,7 @@ GameObject:
   - component: {fileID: 8467529217123249170}
   - component: {fileID: 3128274455853535127}
   - component: {fileID: 8489624895445166472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,6 +867,10 @@ PrefabInstance:
     - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
@@ -1061,6 +954,10 @@ PrefabInstance:
     - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4286751350177294, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_RootOrder
@@ -1146,6 +1043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1243557430946426, guid: 9c2570f261b83d84f89b550640d53a56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4052571803819124, guid: 9c2570f261b83d84f89b550640d53a56, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1228,6 +1129,10 @@ PrefabInstance:
     - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
@@ -1312,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part1
       objectReference: {fileID: 0}
+    - target: {fileID: 1405944754418510, guid: ccae8c29324ac9a469721df097ad7503, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4827793388990484, guid: ccae8c29324ac9a469721df097ad7503, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1395,6 +1304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part1
       objectReference: {fileID: 0}
+    - target: {fileID: 1405944754418510, guid: ccae8c29324ac9a469721df097ad7503, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4827793388990484, guid: ccae8c29324ac9a469721df097ad7503, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1477,6 +1390,10 @@ PrefabInstance:
     - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4286751350177294, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_RootOrder
@@ -1562,6 +1479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
       objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1632,6 +1553,10 @@ PrefabInstance:
     - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
@@ -1716,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
       objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1798,6 +1727,10 @@ PrefabInstance:
     - target: {fileID: 1961795696135588, guid: af26bc493c00b6c4bb85f8ea3dc8fe68, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainBody_part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961795696135588, guid: af26bc493c00b6c4bb85f8ea3dc8fe68, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4136772458763292, guid: af26bc493c00b6c4bb85f8ea3dc8fe68, type: 3}
       propertyPath: m_RootOrder
@@ -1883,6 +1816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
       objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1957,6 +1894,10 @@ PrefabInstance:
     - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4286751350177294, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_RootOrder
@@ -2042,6 +1983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
       objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2124,6 +2069,10 @@ PrefabInstance:
     - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
@@ -2208,6 +2157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
       objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2290,6 +2243,10 @@ PrefabInstance:
     - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938751818190936, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4286751350177294, guid: dc8efb9d231275843978317ca3b400a8, type: 3}
       propertyPath: m_RootOrder
@@ -2374,6 +2331,10 @@ PrefabInstance:
     - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_Name
       value: SpaceSphinx_MainWing_part3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643667775980816, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4400056547435622, guid: 83d713737d8288446b37ebdbcced5407, type: 3}
       propertyPath: m_RootOrder

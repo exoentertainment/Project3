@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Missile Frigate
   m_EditorClassIdentifier: 
   maxHealth: 8
-  moveSpeed: 100
+  moveSpeed: 80
   turnRate: 360
-  resourceReward: 10
+  resourceReward: 20
   standOffDistance: 275
   coastDelay: 5
   targetLayer:

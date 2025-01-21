@@ -265,9 +265,9 @@ MonoBehaviour:
   spawnWavesSO:
   - {fileID: 11400000, guid: 2ba75c5040573a812b8bcff33b1d2e07, type: 2}
   spawnPoint:
-  - {fileID: 2140520540741385539, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
-  - {fileID: 5902370391010674208, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
-  - {fileID: 854534716827521646, guid: e94a74724ff88551c8d8a6e072af6fdb, type: 3}
+  - {fileID: 7020587780952346554}
+  - {fileID: 1289364638399320791}
+  - {fileID: 4885416808403711344}
   spawnLight: {fileID: 7898976355915750688}
 --- !u!114 &416880523236111117
 MonoBehaviour:

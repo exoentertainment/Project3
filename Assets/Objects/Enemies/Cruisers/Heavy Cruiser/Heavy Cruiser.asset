@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Heavy Cruiser
   m_EditorClassIdentifier: 
   maxHealth: 100
-  moveSpeed: 100
+  moveSpeed: 60
   turnRate: 360
   resourceReward: 50
-  standOffDistance: 275
+  standOffDistance: 100
   coastDelay: 5
   targetLayer:
     serializedVersion: 2

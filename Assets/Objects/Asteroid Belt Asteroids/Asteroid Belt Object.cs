@@ -67,11 +67,15 @@ public class AsteroidBeltObject : MonoBehaviour, IDamageable
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable target))
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Celestial Body") || other.gameObject.layer == LayerMask.NameToLayer("Weapon Platform"))
         {
-            target.TakeDamage(asteroidSO.damage);
-            Instantiate(asteroidSO.explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            if (other.gameObject.TryGetComponent<IDamageable>(out IDamageable target))
+            {
+                target.TakeDamage(asteroidSO.damage);
+                Instantiate(asteroidSO.explosionPrefab, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
         }
     }
 

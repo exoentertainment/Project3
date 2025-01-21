@@ -50,7 +50,7 @@ MonoBehaviour:
   cameraLayerMask:
     serializedVersion: 2
     m_Bits: 5056
-  panSpeed: 250
+  panSpeed: 500
   rotateSpeed: 100
   zoomSpeed: 1000
   zoomOutMax: 3000
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceText: {fileID: 0}
-  currentResources: 300
+  currentResources: 2000
 --- !u!1 &7307168633310663561
 GameObject:
   m_ObjectHideFlags: 0

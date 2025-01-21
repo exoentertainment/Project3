@@ -1,5 +1,8 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using MoreMountains.Tools;
+using Random = UnityEngine.Random;
 
 public class AsteroidGrabberMovement : MonoBehaviour
 {
@@ -58,17 +61,11 @@ public class AsteroidGrabberMovement : MonoBehaviour
         
         if (potentialTargets.Length > 0)
         {
-            for (int x = 0; x < potentialTargets.Length; x++)
-            {
-                float distanceToEnemy =
-                    Vector3.Distance(potentialTargets[x].transform.position, transform.position);
-                
-                if (distanceToEnemy < closestEnemy)
-                {
-                    closestEnemy = distanceToEnemy;
-                    target = potentialTargets[x].gameObject;
-                }
-            }
+            target = potentialTargets[Random.Range(0, potentialTargets.Length)].gameObject;
+        }
+        else
+        {
+            FindClosestPlanet();
         }
     }
 
@@ -116,9 +113,30 @@ public class AsteroidGrabberMovement : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position,
                     (enemySO.moveSpeed/currentAsteroidHaulSpeedModified) * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, target.transform.position) <= 10 && target.layer != LayerMask.NameToLayer("Celestial Body"))
+            {
+                GrabAsteroid();
+                FindClosestPlanet();
+            }
         }
     }
-    
+
+    void GrabAsteroid()
+    {
+        target.transform.SetParent(transform);
+        target.GetComponent<MMAutoRotate>().enabled = false;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Celestial Body"))
+        {
+            Instantiate(enemySO.explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

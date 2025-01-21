@@ -21,6 +21,7 @@ public class PlanetHealth : MonoBehaviour, IDamageable
 
     private float currentHealth;
     SphereCollider sphereCollider;
+    private bool isBeingHit;
     bool isDead;
 
     private void Awake()
@@ -37,12 +38,19 @@ public class PlanetHealth : MonoBehaviour, IDamageable
     private void Update()
     {
         healthSlider.transform.LookAt(Camera.main.transform);
+        
+        if(isBeingHit)
+            isBeingHit = false;
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        UpdateHealthBar();
+        if (!isBeingHit)
+        {
+            isBeingHit = true;
+            currentHealth -= damage;
+            UpdateHealthBar();
+        }
 
         if (currentHealth <= 0 && !isDead)
         {

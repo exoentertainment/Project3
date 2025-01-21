@@ -13,11 +13,13 @@ public class AsteroidGrabberGrab : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Asteroid"))
+        Debug.Log("grab something");
+        if (other.gameObject.layer == LayerMask.NameToLayer("Asteroid Belt"))
         {
             other.gameObject.transform.SetParent(transform.parent);
             other.gameObject.GetComponent<MMAutoRotate>().enabled = false;
             OnGrab?.Invoke();
+            Debug.Log("asteroid grab");
         }
     }
 }

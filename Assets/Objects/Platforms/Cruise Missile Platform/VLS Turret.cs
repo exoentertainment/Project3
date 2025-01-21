@@ -19,18 +19,16 @@ public class VLSTurret : MonoBehaviour
     private void Start()
     {
         lastFireTime = Time.time;
+        SearchForTarget();
     }
 
     private void Update()
     {
-        SearchForTarget();
         Fire();
     }
 
     void SearchForTarget()
     {
-        if (target == null)
-        {
             float closestEnemy = Mathf.Infinity;
 
             Collider[] potentialTargets = Physics.OverlapSphere(transform.position, platformTurretSO.attackRange, platformTurretSO.targetLayer);
@@ -49,7 +47,6 @@ public class VLSTurret : MonoBehaviour
                     }
                 }
             }
-        }
     }
 
     void Fire()
@@ -61,6 +58,10 @@ public class VLSTurret : MonoBehaviour
                 StartCoroutine(FireRoutine());
             
                 lastFireTime = Time.time;
+            }
+            else
+            {
+                SearchForTarget();
             }
        }
     }
@@ -75,8 +76,7 @@ public class VLSTurret : MonoBehaviour
             if(CameraManager.instance.IsObjectInView(transform))
                 AudioManager.instance.PlayCruiseMissileTurretSound();
             
-            // Instantiate(platformTurretSO.dischargePrefab, spawnPoint.position, transform.rotation);    
-            GameObject projectile = Instantiate(platformTurretSO.projectilePrefab, spawnPoint.position, Quaternion.Euler(-90, 0, 0));
+            Instantiate(platformTurretSO.projectilePrefab, spawnPoint.position, Quaternion.Euler(-90, 0, 0));
             
             yield return new WaitForSeconds(platformTurretSO.delayPerBarrel);
         }
